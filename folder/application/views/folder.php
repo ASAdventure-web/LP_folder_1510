@@ -9,14 +9,14 @@
 <body>
 	<div id="lp-folder-wrapper">
 		<!-- Header -->
-		<?php include 'includes/videowrapper.php'; ?>
-		<?php include 'includes/filermenu.php'; ?>
-
+<!-- 		<?php include 'includes/videowrapper.php'; ?>
+ --><!-- 		<?php include 'includes/filermenu.php'; ?>
+ -->
 
 		<!-- Eerste categoriehoofding -->
-		<div class="content-row z-shadow">
+<!-- 		<div class="content-row z-shadow">
 			<img data-src="http://static.asadventure.com/includes/landingpage/2015_zomerfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
-		</div>
+		</div> -->
 
 		<!-- start eerste contentrow -->
 		<div class="content-row">
