@@ -1,6 +1,6 @@
 <!-- print lookbookimage -->
 <?php if(isset($product['actie'])) { ?>
-	<div class="col-3 row-1 product-container lookbook" data-bg="http://static.asadventure.com/includes/landingpage/2015_zomerfolder/images/acties/<?php echo $product['img'] ?>">
+	<div class="col-3 row-1 product-container lookbook" data-bg="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/acties/<?php echo $product['img'] ?>">
 		<a href="<?php echo $product['link'] ?>" title="<?php echo $product['productomschrijving'] ?>">
 		<?php if($product['productnaam'] == 'lookbook') { ?>
 			<button>
