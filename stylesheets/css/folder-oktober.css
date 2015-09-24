@@ -2,22 +2,6 @@
 /**************************************
 	STYLING FOR MAART-FOLDER
 **************************************/
-@font-face {
-  font-family: 'Ventography';
-  src: url("http://static.asadventure.com//includes/landingpage/lentefolder2015/fonts/ventography/ventography.eot");
-  /* IE9 Compat Modes */
-  src: url("http://static.asadventure.com//includes/landingpage/lentefolder2015/fonts/ventography/ventography.eot?#iefix") format("embedded-opentype"), url("http://static.asadventure.com//includes/landingpage/lentefolder2015/fonts/ventography/ventography.woff") format("woff"), url("http://static.asadventure.com//includes/landingpage/lentefolder2015/fonts/ventography/ventography.ttf") format("truetype"), url("http://static.asadventure.com//includes/landingpage/lentefolder2015/fonts/ventography/ventography.svg#cafa9fb1a6115aa67dcd91cae32f723a") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 400; }
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("http://static.asadventure.com/includes/landingpage/lentefolder2015/fonts/proxima_nova/proxima_nova_extra_condensed.eot");
-  /* IE9 Compat Modes */
-  src: url("http://static.asadventure.com/includes/landingpage/lentefolder2015/fonts/proxima_nova/proxima_nova_extra_condensed.eot?#iefix") format("embedded-opentype"), url("http://static.asadventure.com/includes/landingpage/lentefolder2015/fonts/proxima_nova/proxima_nova_extra_condensed.woff") format("woff"), url("http://static.asadventure.com/includes/landingpage/lentefolder2015/fonts/proxima_nova/proxima_nova_extra_condensed.ttf") format("truetype"), url("http://static.asadventure.com/includes/landingpage/lentefolder2015/fonts/proxima_nova/proxima_nova_extra_condensed.svg#cafa9fb1a6115aa67dcd91cae32f723a") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 400; }
 #lp-folder-wrapper {
   font-size: 15.5px;
   padding-bottom: 1px;
