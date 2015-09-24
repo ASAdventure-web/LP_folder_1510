@@ -49,7 +49,7 @@
 			<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 			
 			<div class="logo-container">
-				<img data-src="http://static.asadventure.com/includes/landingpage/2015_zomerfolder/images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
+				<img data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
 				<?php if(strlen($product['kleur'])>0) { ?>
 				<div class="swatch-container">
 					<?php $kleuren = explode(" ", $product['kleur']); 
@@ -58,7 +58,7 @@
 							<span class="swatch" style="background: <?php echo $kleur ?>"></span>								
 					<?php 	}
 							else { ?>
-								<span class="swatch" data-bg="http://static.asadventure.com/includes/landingpage/2015_zomerfolder/images/kleuren/<?php echo $kleur ?>"></span>
+								<span class="swatch" data-bg="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/kleuren/<?php echo $kleur ?>"></span>
 							<?php }
 					}
 					?>
