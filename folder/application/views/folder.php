@@ -14,9 +14,9 @@
  -->
 
 		<!-- Eerste categoriehoofding -->
-<!-- 		<div class="content-row z-shadow">
+		<div class="content-row z-shadow">
 			<img data-src="http://static.asadventure.com/includes/landingpage/2015_zomerfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
-		</div> -->
+		</div>
 
 		<!-- start eerste contentrow -->
 		<div class="content-row">
