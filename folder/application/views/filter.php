@@ -9,8 +9,8 @@
 <body>
 	<div id="lp-folder-wrapper">
 		<!-- filermenu -->
-		<?php include 'includes/filermenu.php'; ?>
-		<!-- start eerste contentrow -->
+<!-- 		<?php include 'includes/filermenu.php'; ?>
+ -->		<!-- start eerste contentrow -->
 		<div class="content-row">
 		<!-- loop door producten -->
 		<?php foreach ($products as $product) { ?>
