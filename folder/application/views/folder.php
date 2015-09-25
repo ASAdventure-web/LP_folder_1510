@@ -17,9 +17,6 @@
 		<div class="content-row z-shadow">
 			<img data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
 		</div>
-<!-- 		<div class="content-row z-shadow">
-			<img data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
-		</div> -->
 
 		<!-- start eerste contentrow -->
 		<div class="content-row">
