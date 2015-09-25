@@ -14,12 +14,14 @@ class Products_model extends CI_Model {
 				$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` ORDER BY FIELD(Products.categorie,'fashion_binnen'), volgorde ASC");
 				return $query->result_array();
 			}
-			else {
-				$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` WHERE 'Products'.'".$filter."' IS NOT NULL ORDER BY FIELD(Products.categorie,'fashion_binnen'), volgorde ASC");
-				return $query->result_array();
-			}
+
 
 		}
+
+			else {
+				$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` WHERE `Products`.`".$filter."` IS NOT NULL ORDER BY `Products`.`".$filter."` ASC, volgorde ASC");
+				return $query->result_array();
+			}
 
 
 	}
