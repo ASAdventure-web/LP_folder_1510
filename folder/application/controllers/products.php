@@ -44,26 +44,23 @@ class Products extends CI_Controller {
 		$this->load->view('filter', $data);
 	}
 
-	// public function filter2()
-	// {
-	// 	$lang = $this->uri->segment(1);
-	// 	$page = $this->uri->segment(2);
+	public function filter_d_h()
+	{
+		$lang = $this->uri->segment(1);
+		$page = $this->uri->segment(2);
 
-	// 	$data['products'] = $this->products_model->get_products($lang, $page, "junior");
-	// 	$data['photos'] = $this->photo_model->get_photos($page);
-	// 	$data['links'] = $this->links_model->get_links($lang);	
-	// 	$data['active'] = $page;
-	// 	$data['count'] = 0;
-	// 	$data['gridcount'] = 0;
-	// 	$data['photocount'] = 0;
-	// 	$data['categorie'] = "adults";
-	// 	$data['secondfilter'] = "junior";
-	// 	$data['thirthfilter'] = "junior";
-	// 	$data['lang'] = $lang;
+		$data['products'] = $this->products_model->get_products($lang, $page);
+		$data['photos'] = $this->photo_model->get_photos($page);
+		$data['links'] = $this->links_model->get_links($lang);	
+		$data['active'] = $page;
+		$data['count'] = 0;
+		$data['gridcount'] = 0;
+		$data['photocount'] = 0;
+		$data['lang'] = $lang;
 
 
-	// 	$this->load->view('filter2', $data);
-	// }
+		$this->load->view('filter2', $data);
+	}
 
 	// public function uitrusting()
 	// {
