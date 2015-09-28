@@ -40,8 +40,8 @@
 
 $route['default_controller'] = 'products';
 $route[':any/alles'] = 'products';
-// $route[':any/badmode'] = 'products/filter2';
-// $route[':any/2plus1'] = 'products/damesheren';
+$route[':any/dames'] = 'products/filter_d_h';
+$route[':any/heren'] = 'products/filter_d_h';
 // $route[':any/uitrusting'] = 'products/uitrusting';
 $route[':any/:any'] = 'products/filter';
 
