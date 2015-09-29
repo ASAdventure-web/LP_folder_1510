@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-09-28 12:48:50 +0000
+# Generation Time: 2015-09-29 09:23:05 +0000
 # ************************************************************
 
 
@@ -48,9 +48,9 @@ LOCK TABLES `Fotos` WRITE;
 INSERT INTO `Fotos` (`id`, `beeld`, `link`, `alt`, `dames`, `heren`, `junior`, `fashion`, `outdoor`, `uitrusting`, `fietsenlopen`, `gadgets`, `hoofdcategorie`)
 VALUES
 	(149,'VROUW_DEKEN.jpg','test','test',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
-	(150,'VROUW_ACHTER.jpg','test','test',NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,10),
-	(151,'MAN_VAAG_VAARN.jpg','test','test',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
-	(152,'BERG.jpg','test','test',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60),
+	(150,'VROUW_ACHTER.jpg','test','test',1,NULL,NULL,1,NULL,NULL,NULL,NULL,10),
+	(151,'MAN_VAAG_VAARN.jpg','test','test',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(152,'BERG.jpg','test','test',1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60),
 	(153,'MAN_ROTSEN.jpg','test','test',NULL,NULL,NULL,NULL,1,2,NULL,NULL,50),
 	(154,'VISNETTEN.jpg','test','test',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(155,'STENEN.jpg','test','test',NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,100),
@@ -85,6 +85,41 @@ CREATE TABLE `Links` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+LOCK TABLES `Links` WRITE;
+/*!40000 ALTER TABLE `Links` DISABLE KEYS */;
+
+INSERT INTO `Links` (`id`, `url`, `linknaam`, `taal`, `paginanaam`)
+VALUES
+	(01,'','Alles','nl','alles'),
+	(02,'','Dames','nl','dames'),
+	(03,'','Heren','nl','heren'),
+	(04,'','Junior','nl','junior'),
+	(05,'','Uitrusting','nl','uitrusting'),
+	(06,'','Fashion','nl','fashion'),
+	(07,'','Outdoor','nl','outdoor'),
+	(08,'','Bike','nl','fietsenlopen'),
+	(09,'','Must haves','nl','gadgets'),
+	(10,'','Tout','fr','alles'),
+	(11,'','Femmes','fr','dames'),
+	(12,'','Hommes','fr','heren'),
+	(13,'','Junior','fr','junior'),
+	(14,'','&Eacute;quipement','fr','uitrusting'),
+	(15,'','Pr&ecirc;t-&agrave;-porter','fr','Fashion'),
+	(16,'','Outdoor','fr','outdoor'),
+	(17,'','Cyclisme','fr','fitsenlopen'),
+	(18,'','Must haves','fr','gadgets'),
+	(19,'','All','en','alles'),
+	(20,'','Women','en','dames'),
+	(21,'','Men','en','heren'),
+	(22,'','Junior','en','junior'),
+	(23,'','Equipment','en','uitrusting'),
+	(24,'','Fashion','en','fashion'),
+	(25,'','Outdoor','en','outdoor'),
+	(26,'','Bike','en','fietsenlopen'),
+	(27,'','Must haves','en','gadgets');
+
+/*!40000 ALTER TABLE `Links` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table Merken
@@ -114,7 +149,7 @@ VALUES
 	(8,X'4A61636B20576F6C66736B696E',X'6A61636B776F6C66736B696E2E6A7067'),
 	(9,X'4569646572',X'65696465722E6A7067'),
 	(10,X'4D657272656C6C',X'6D657272656C6C2E706E67'),
-	(11,X'546865204E6F7274682046616365',X'4C6F676F2D4E6F7274682D666163652E706E67'),
+	(11,X'546865204E6F7274682046616365',X'4C6F676F2D4E6F7274682D666163652E6A7067'),
 	(12,X'53616D736F6E697465',X'53616D736F6E6974655F4C6F676F5F4E554F564F2E6A7067'),
 	(13,X'5370726179776179',X'53707261797761792D4C4F474F2E706E67'),
 	(14,X'42657267616E73',X'42657267616E735F6C6F676F2E706E67'),
@@ -228,7 +263,9 @@ VALUES
 	(122,X'4C657A796E65',X'4C6F676F5F4C657A796E652E6A7067'),
 	(123,X'4F72746C696562',X'4C6F676F5F4F72746C6965622E6A7067'),
 	(124,X'52482B',X'5A45524F2E6A7067'),
-	(125,X'436F6E7469676F',X'6C6F676F5F636F6E7469676F5F3132305F313230352E6A7067');
+	(125,X'436F6E7469676F',X'6C6F676F5F636F6E7469676F5F3132305F313230352E6A7067'),
+	(126,X'4D656E277320536F6369657479',X'6D656E732D736F63696574792E6A7067'),
+	(127,X'497A6F6C61',X'697A6F6C615F6C6F676F2E6A7067');
 
 /*!40000 ALTER TABLE `Merken` ENABLE KEYS */;
 UNLOCK TABLES;
