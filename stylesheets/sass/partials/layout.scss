@@ -157,6 +157,9 @@ form.mobile-nav{
 		content: "";
 		display: table;
 	}
+	img.lazy-loaded {
+    	width: 100%;
+	}
 	.product-container{
 		&.lookbook{
 			background-repeat: no-repeat !important;
