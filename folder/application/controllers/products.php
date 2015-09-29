@@ -72,47 +72,36 @@ class Products extends CI_Controller {
 		$this->load->view('filter2', $data);
 	}
 
-	// public function uitrusting()
-	// {
-	// 	$lang = $this->uri->segment(1);
-	// 	$page = $this->uri->segment(2);
 
-	// 	$data['products'] = $this->products_model->get_products($lang, $page, "camping");
-	// 	$data['photos'] = $this->photo_model->get_photos($page);
-	// 	$data['links'] = $this->links_model->get_links($lang);	
-	// 	$data['active'] = $page;
-	// 	$data['count'] = 0;
-	// 	$data['gridcount'] = 0;
-	// 	$data['photocount'] = 0;
-	// 	$data['categorie'] = "uitrusting";
-	// 	$data['secondfilter'] = "camping";
-	// 	$data['thirthfilter'] = "camping";
-	// 	$data['lang'] = $lang;
+	public function filter_outdoor()
+	{
+		$lang = $this->uri->segment(1);
+		$page = $this->uri->segment(2);
 
-	// 	$this->load->view('filter2', $data);
-	// }
-
-	// 	public function damesheren()
-	// {
-	// 	$lang = $this->uri->segment(1);
-	// 	$page = $this->uri->segment(2);
-
-	// 	$data['products'] = $this->products_model->get_products($lang, $page, "2plus1dames");
-	// 	$data['photos'] = $this->photo_model->get_photos($page);
-	// 	$data['links'] = $this->links_model->get_links($lang);	
-	// 	$data['active'] = $page;
-	// 	$data['count'] = 0;
-	// 	$data['gridcount'] = 0;
-	// 	$data['photocount'] = 0;
-	// 	$data['categorie'] = "adults";
-	// 	$data['secondfilter'] = "heren";
-	// 	$data['thirthfilter'] = "dames";
-	// 	$data['lang'] = $lang;
+		$data['products'] = $this->products_model->get_products($lang, $page);
+		for ($x = 0; $x < count($data['products']); $x++) {
+			if ($data['products'][$x][$page] < 100) {
+				$data['products'][$x]['categorie'] = 'none';
+			} elseif ($data['products'][$x][$page] < 200) {
+				$data['products'][$x]['categorie'] = 'fjallraven';
+			} elseif ($data['products'][$x][$page] < 300) {
+				$data['products'][$x]['categorie'] = 'ayacucho';
+			} else {
+				$data['products'][$x]['categorie'] = 'jackwolfskin';
+			}
+		}
+		$data['photos'] = $this->photo_model->get_photos($page);
+		$data['links'] = $this->links_model->get_links($lang);	
+		$data['active'] = $page;
+		$data['count'] = 0;
+		$data['gridcount'] = 0;
+		$data['photocount'] = 0;
+		$data['categorie'] = $data['products'][0]['categorie'];
+		$data['lang'] = $lang;
 
 
-	// 	$this->load->view('filter2', $data);
-	// }
-
+		$this->load->view('filter3', $data);
+	}
 
 
 }
