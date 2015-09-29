@@ -50,13 +50,13 @@ class Products extends CI_Controller {
 		$page = $this->uri->segment(2);
 
 		$data['products'] = $this->products_model->get_products($lang, $page);
-		foreach ($data['products'] as $product) {
-			if ($product[$page] < 100) {
-				$product['categorie'] = 'fashion';
-			} elseif ($product[$page] < 200) {
-				$product['categorie'] = 'outdoor';
+		for ($x = 0; $x < count($data['products']); $x++) {
+			if ($data['products'][$x][$page] < 100) {
+				$data['products'][$x]['categorie'] = 'fashion';
+			} elseif ($data['products'][$x][$page] < 200) {
+				$data['products'][$x]['categorie'] = 'outdoor';
 			} else {
-				$product['categorie'] = 'bike';
+				$data['products'][$x]['categorie'] = 'bike';
 			}
 		}
 		$data['photos'] = $this->photo_model->get_photos($page);
