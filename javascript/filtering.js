@@ -1,11 +1,15 @@
 $(document).ready(function(){
 	//scroll to #camping
 	var url = window.location.href;
-	if (url.match("#camping$")) {
-		var theOffset = $('#camping').offset();
+	if (url.match(/.*#.*/)) {
+		var element = url.split('#')[1]
+		var theOffset = $('#'+element).offset();
         $('body, html').animate({
             scrollTop: theOffset.top - 170
         });
+        console.log(element);
+        console.log(theOffset);
+
 	}
 
 	// Change URL on select change 
