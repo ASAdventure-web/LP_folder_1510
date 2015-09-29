@@ -9,9 +9,8 @@
 <body>
 	<div id="lp-folder-wrapper">
 		<!-- Header -->
-<!-- 		<?php include 'includes/videowrapper.php'; ?>
- --><!-- 		<?php include 'includes/filermenu.php'; ?>
- -->
+ 		<?php include 'includes/videowrapper.php'; ?>
+		<?php include 'includes/filermenu.php'; ?>
 
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">

@@ -9,6 +9,10 @@
 	}
 }
 
+body{
+	margin:0;
+}
+
 //GRID
 @for $i from 1 through $num-cols{
 	.content-row .col-#{$i}{
@@ -59,7 +63,7 @@
 	justify-content: center;
 	font-weight: bold;
 	margin: 0;
-	padding: 2em 0;
+	padding: 0.5em 0;
 	position: relative;
 	z-index: 3;
 	&:after{
@@ -71,11 +75,12 @@
 		box-sizing: border-box;
 		float: left;
 		list-style-type: none;
-		padding: 0 1.1em;
+		padding: 0.5em 1.1em;
+		color:#000000;
 		&:first-child{
 			border-right: 1px solid #9b9b9b;
 		}
-		&:nth-last-child(3){
+		&:nth-last-child(5){
 			border-left: 1px solid #9b9b9b;
 		}
 		@include tablet-landscape{
@@ -84,17 +89,19 @@
 		@include tablet-portrait{
 			font-size: .6em;
 		}
+		&:hover{
+			background-color:#A1BDBE;
+			color:#ffffff!important;
+
+		}
 	}
 	a{
-		color: #9B9B9B;
+		color:inherit;
 		display: block;
 		font-weight: 400;
 		height: 100%;
 		text-decoration: none;
 		transition: .1s color linear;
-		&:hover{
-			color: #252525;
-		}
 	}
 	@include mobile{
 		display: none;
