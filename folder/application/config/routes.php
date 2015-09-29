@@ -42,7 +42,7 @@ $route['default_controller'] = 'products';
 $route[':any/alles'] = 'products';
 $route[':any/dames'] = 'products/filter_d_h';
 $route[':any/heren'] = 'products/filter_d_h';
-// $route[':any/uitrusting'] = 'products/uitrusting';
+$route[':any/outdoor'] = 'products/filter_outdoor';
 $route[':any/:any'] = 'products/filter';
 
 
