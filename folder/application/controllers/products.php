@@ -83,11 +83,11 @@ class Products extends CI_Controller {
 			if ($data['products'][$x][$page] < 100) {
 				$data['products'][$x]['categorie'] = 'none';
 			} elseif ($data['products'][$x][$page] < 200) {
-				$data['products'][$x]['categorie'] = 'fjallraven';
+				$data['products'][$x]['categorie'] = 'jackwolfskin';
 			} elseif ($data['products'][$x][$page] < 300) {
 				$data['products'][$x]['categorie'] = 'ayacucho';
 			} else {
-				$data['products'][$x]['categorie'] = 'jackwolfskin';
+				$data['products'][$x]['categorie'] = 'fjallraven';
 			}
 		}
 		$data['photos'] = $this->photo_model->get_photos($page);
