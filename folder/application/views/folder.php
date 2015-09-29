@@ -14,7 +14,7 @@
 
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
-			<img data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
+			<img id="<?php echo strtolower($categorie) ?>" data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
 		</div>
 
 		<!-- start eerste contentrow -->
@@ -43,7 +43,7 @@
 
 					<!-- categorie herdefiniëren -->
 						<?php $categorie = $product["categorie"]; ?>
-						<img data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
+						<img id="<?php echo strtolower($categorie) ?>" data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
 					</div>
 					<div class="content-row">
 				<!-- end if -->
