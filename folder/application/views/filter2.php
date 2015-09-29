@@ -10,7 +10,7 @@
 	<div id="lp-folder-wrapper" class="filter">
 		<!-- filermenu -->
 		<?php include 'includes/filermenu.php'; ?>
-
+		<?php var_dump($products) ?>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
 			<img data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/tussentitels/<?php echo strtolower($categorie) ?>_<?php echo($lang) ?>.jpg">
