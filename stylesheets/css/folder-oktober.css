@@ -280,6 +280,8 @@ form.mobile-nav {
   clear: both;
   content: "";
   display: table; }
+.content-row .image, .content-block .image {
+  width: 100%; }
 .content-row .product-container.lookbook, .content-block .product-container.lookbook {
   background-repeat: no-repeat !important;
   background-size: auto 100% !important;
