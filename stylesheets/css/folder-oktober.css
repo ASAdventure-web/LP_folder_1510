@@ -280,7 +280,7 @@ form.mobile-nav {
   clear: both;
   content: "";
   display: table; }
-.content-row img.lazy-loaded, .content-block img.lazy-loaded {
+.content-row .image, .content-block .image {
   width: 100%; }
 .content-row .product-container.lookbook, .content-block .product-container.lookbook {
   background-repeat: no-repeat !important;
