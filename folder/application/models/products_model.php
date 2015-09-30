@@ -11,7 +11,7 @@ class Products_model extends CI_Model {
 
 		if ($filter === FALSE) {
 			if ($lang === 'nl'){
-				$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` ORDER BY FIELD(Products.categorie,'fashion_binnen'), volgorde ASC");
+				$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` WHERE `Products`.`volgorde` IS NOT NULL ORDER BY FIELD(Products.categorie,'fashion', 'outdoor', 'fashion kids', 'bike', 'gadgets'), volgorde ASC");
 				return $query->result_array();
 			}
 
