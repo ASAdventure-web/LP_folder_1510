@@ -7,9 +7,6 @@ $(document).ready(function(){
         $('body, html').animate({
             scrollTop: theOffset.top - 170
         });
-        console.log(element);
-        console.log(theOffset);
-
 	}
 
 	// Change URL on select change 
