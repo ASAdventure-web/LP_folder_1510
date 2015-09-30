@@ -1,7 +1,7 @@
 <!-- print lookbookimage -->
 <?php if(isset($product['actie'])) { ?>
 	<div class="col-3 row-1 product-container lookbook" data-bg="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/acties/<?php echo $product['img'] ?>">
-		<a href="<?php echo $product['link'] ?>" title="<?php echo $product['productomschrijving'] ?>">
+		<?php if(isset($product['link'])) { ?><a href="<?php echo $product['link'] ?>" title="<?php echo $product['productomschrijving'] ?>"> <?php } ?>
 		<?php if($product['productnaam'] == 'lookbook') { ?>
 			<button>
 			<?php switch ($lang) {
@@ -20,7 +20,7 @@
 <?php	}  else {?>
 <!-- print product -->
 <div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive-'.$lang.''); } if (isset($product['uitverkocht'])) { print(' sold-out-'.$lang.''); } if (isset($product['groeneprijs'])) { print(' groeneprijs-'.$lang.''); } if (isset($product['2plus1'])) { print(' t-shirts'); }?>">
-	<a href="<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
+			<?php if(isset($product['link'])) { ?><a href="<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink"> <?php } ?>
 		<img class="product-image" data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 		<div class="bottom-container">
 			<div class="price-tag">
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 		<?php } ?>
-	</a>
+			<?php if(isset($product['link'])) { ?></a> <?php } ?>
 </div>
 
 <?php $count++;
