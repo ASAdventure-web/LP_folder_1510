@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.42)
 # Database: folder
-# Generation Time: 2015-09-30 08:14:33 +0000
+# Generation Time: 2015-09-30 08:18:54 +0000
 # ************************************************************
 
 
@@ -113,7 +113,7 @@ VALUES
 	(15,'http://www.asadventure.com/befr/content/fr/depliantdete2015-pret-a-porter','Pr&ecirc;t-&agrave;-porter','fr','Fashion'),
 	(16,'http://www.asadventure.com/befr/content/fr/depliantdete2015-outdoor','Outdoor','fr','outdoor'),
 	(17,'http://www.asadventure.com/befr/content/fr/depliantdete2015-cyclisme','Cyclisme','fr','fitsenlopen'),
-	(18,'http://www.asadventure.com/befr/content/fr/depliantdete2015-gadget','Must haves','fr','gadgets'),
+	(18,'http://www.asadventure.com/befr/content/fr/depliantdete2015-gadgets','Must haves','fr','gadgets'),
 	(19,'http://www.asadventure.com/en/content/en/summerbrochure2015','All','en','alles'),
 	(20,'http://www.asadventure.com/en/content/en/summerbrochure2015-women','Women','en','dames'),
 	(21,'http://www.asadventure.com/en/content/en/summerbrochure2015-men','Men','en','heren'),
