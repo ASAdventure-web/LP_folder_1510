@@ -1,0 +1,852 @@
+# ************************************************************
+# Sequel Pro SQL dump
+# Version 4135
+#
+# http://www.sequelpro.com/
+# http://code.google.com/p/sequel-pro/
+#
+# Host: localhost (MySQL 5.5.42)
+# Database: folder
+# Generation Time: 2015-10-01 09:19:31 +0000
+# ************************************************************
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table Fotos
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Fotos`;
+
+CREATE TABLE `Fotos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `beeld` varchar(200) NOT NULL DEFAULT 'srclink.jpg',
+  `link` varchar(200) DEFAULT NULL,
+  `alt` varchar(100) DEFAULT NULL,
+  `dames` tinyint(1) DEFAULT NULL,
+  `heren` tinyint(1) DEFAULT NULL,
+  `junior` tinyint(1) DEFAULT NULL,
+  `fashion` tinyint(1) DEFAULT NULL,
+  `outdoor` tinyint(1) DEFAULT NULL,
+  `uitrusting` tinyint(1) DEFAULT NULL,
+  `fietsenlopen` tinyint(1) DEFAULT NULL,
+  `gadgets` tinyint(1) DEFAULT NULL,
+  `hoofdcategorie` int(11) NOT NULL DEFAULT '10',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `Fotos` WRITE;
+/*!40000 ALTER TABLE `Fotos` DISABLE KEYS */;
+
+INSERT INTO `Fotos` (`id`, `beeld`, `link`, `alt`, `dames`, `heren`, `junior`, `fashion`, `outdoor`, `uitrusting`, `fietsenlopen`, `gadgets`, `hoofdcategorie`)
+VALUES
+	(149,'VROUW_DEKEN.jpg',NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(150,'VROUW_ACHTER.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(151,'MAN_VAAG_VAARN.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(152,'BERG.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(153,'MAN_ROTSEN.jpg','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,100),
+	(154,'VISNETTEN.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(155,'STENEN.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,100),
+	(156,'MAN_TREKKING.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(157,'MAN_FOTO.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(158,'VROUW_TREKKING.jpg',NULL,NULL,2,NULL,NULL,NULL,2,NULL,NULL,NULL,100),
+	(159,'MAN_BIJL.jpg',NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(160,'VROUW_FASHION.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(161,'MAN_AYA.jpg',NULL,NULL,NULL,2,NULL,NULL,3,NULL,NULL,NULL,40),
+	(162,'BIKE.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,60),
+	(163,'UITRUSTING.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(164,'UITRUSTING_BOOT.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,100),
+	(165,'MAN_FASHION.jpg',NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,20),
+	(166,'GADGETS.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,70),
+	(167,'KIND_SCHAAP.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(168,'MANNEN_FASHION.jpg',NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,100),
+	(169,'VROUWEN_FASHION.jpg',NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,10),
+	(170,'FJALL_RAVEN.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,30),
+	(171,'JW.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,50),
+	(172,'VROUW_AYA.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(173,'BOOT_MEER.jpg',NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(174,'VROUW_BINNEN_FASHION.jpg',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(175,'KINDEREN.jpg',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,100),
+	(176,'MEER_BERG.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,100),
+	(177,'HUIS.jpg',NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100);
+
+/*!40000 ALTER TABLE `Fotos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table Links
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Links`;
+
+CREATE TABLE `Links` (
+  `id` int(2) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `url` varchar(100) NOT NULL DEFAULT '',
+  `linknaam` varchar(30) DEFAULT NULL,
+  `taal` varchar(2) DEFAULT NULL,
+  `paginanaam` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `Links` WRITE;
+/*!40000 ALTER TABLE `Links` DISABLE KEYS */;
+
+INSERT INTO `Links` (`id`, `url`, `linknaam`, `taal`, `paginanaam`)
+VALUES
+	(01,'http://www.asadventure.com/benl/content/nl/zomerfolder2015','Alles','nl','alles'),
+	(02,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-dames','Dames','nl','dames'),
+	(03,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-heren','Heren','nl','heren'),
+	(04,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-junior','Junior','nl','junior'),
+	(05,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-uitrusting','Uitrusting','nl','uitrusting'),
+	(06,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-fashion','Fashion','nl','fashion'),
+	(07,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-outdoor','Outdoor','nl','outdoor'),
+	(08,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-fietsen','Bike','nl','fietsenlopen'),
+	(09,'http://www.asadventure.com/benl/content/nl/zomerfolder2015-gadgets','Must haves','nl','gadgets'),
+	(10,'http://www.asadventure.com/befr/content/fr/depliantdete2015','Tout','fr','alles'),
+	(11,'http://www.asadventure.com/befr/content/fr/depliantdete2015-femmes','Femmes','fr','dames'),
+	(12,'http://www.asadventure.com/befr/content/fr/depliantdete2015-hommes','Hommes','fr','heren'),
+	(13,'http://www.asadventure.com/befr/content/fr/depliantdete2015-junior','Junior','fr','junior'),
+	(14,'http://www.asadventure.com/befr/content/fr/depliantdete2015-equipement','&Eacute;quipement','fr','uitrusting'),
+	(15,'http://www.asadventure.com/befr/content/fr/depliantdete2015-pret-a-porter','Pr&ecirc;t-&agrave;-porter','fr','Fashion'),
+	(16,'http://www.asadventure.com/befr/content/fr/depliantdete2015-outdoor','Outdoor','fr','outdoor'),
+	(17,'http://www.asadventure.com/befr/content/fr/depliantdete2015-cyclisme','Cyclisme','fr','fitsenlopen'),
+	(18,'http://www.asadventure.com/befr/content/fr/depliantdete2015-gadgets','Must haves','fr','gadgets'),
+	(19,'http://www.asadventure.com/en/content/en/summerbrochure2015','All','en','alles'),
+	(20,'http://www.asadventure.com/en/content/en/summerbrochure2015-women','Women','en','dames'),
+	(21,'http://www.asadventure.com/en/content/en/summerbrochure2015-men','Men','en','heren'),
+	(22,'http://www.asadventure.com/en/content/en/summerbrochure2015-junior','Junior','en','junior'),
+	(23,'http://www.asadventure.com/en/content/en/summerbrochure2015-equipment','Equipment','en','uitrusting'),
+	(24,'http://www.asadventure.com/en/content/en/summerbrochure2015-fashion','Fashion','en','fashion'),
+	(25,'http://www.asadventure.com/en/content/en/summerbrochure2015-outdoor','Outdoor','en','outdoor'),
+	(26,'http://www.asadventure.com/en/content/en/summerbrochure2015-cycling','Bike','en','fietsenlopen'),
+	(27,'http://www.asadventure.com/en/content/en/summerbrochure2015-gadgets','Must haves','en','gadgets');
+
+/*!40000 ALTER TABLE `Links` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table Merken
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Merken`;
+
+CREATE TABLE `Merken` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `merknaam` varchar(50) COLLATE utf8_bin NOT NULL DEFAULT 'merknaam',
+  `logo` varchar(200) COLLATE utf8_bin NOT NULL DEFAULT 'srclogo.jpg',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+LOCK TABLES `Merken` WRITE;
+/*!40000 ALTER TABLE `Merken` DISABLE KEYS */;
+
+INSERT INTO `Merken` (`id`, `merknaam`, `logo`)
+VALUES
+	(1,X'434D50',X'6C6F676F5F636D705F63616D7061676E6F6C6F2E706E67'),
+	(2,X'417961637563686F',X'4C6F676F5F417961637563686F2E706E67'),
+	(3,X'427269616E20616E64204E6570686577',X'6C6F676F5F42616E644E2E706E67'),
+	(4,X'5065746974204C6F756965',X'70657469745F6C6F7569652E706E67'),
+	(5,X'4C6F6E672049736C616E64',X'6C6F6E6769736C616E64732E706E67'),
+	(6,X'44616B696E65',X'64616B696E652E706E67'),
+	(7,X'436F7274696E61',X'636F7274696E615F312E706E67'),
+	(8,X'4A61636B20576F6C66736B696E',X'6A61636B776F6C66736B696E2E6A7067'),
+	(9,X'4569646572',X'65696465722E6A7067'),
+	(10,X'4D657272656C6C',X'6D657272656C6C2E706E67'),
+	(11,X'546865204E6F7274682046616365',X'4C6F676F2D4E6F7274682D666163652E706E67'),
+	(12,X'53616D736F6E697465',X'53616D736F6E6974655F4C6F676F5F4E554F564F2E6A7067'),
+	(13,X'5370726179776179',X'53707261797761792D4C4F474F2E706E67'),
+	(14,X'42657267616E73',X'42657267616E735F6C6F676F2E706E67'),
+	(15,X'42796E6F6C7974',X'62796E6F6C79742E706E67'),
+	(16,X'426C61636B204469616D6F6E64',X'626C61636B6469616D6F6E642E706E67'),
+	(17,X'5065747A6C',X'5065747A6C2D4C6F676F2E706E67'),
+	(18,X'4761726D696E',X'6761726D696E2E706E67'),
+	(19,X'4D696C6C6574',X'6D696C6C65742D6C6F676F2D7072696D6172792E706E67'),
+	(20,X'44696472696B736F6E732031393133',X'44696472696B736F6E73313931332D6C6F676F2E706E67'),
+	(21,X'4E6F726469736B',X'6E6F726469736B2E6A7067'),
+	(22,X'4F7370726579',X'6C6F676F6F73707265792E706E67'),
+	(23,X'496365627265616B6572',X'696365627265616B65726C6F676F2E6A7067'),
+	(24,X'436F6C756D626961',X'636F6C756D6269612E706E67'),
+	(25,X'54696D6265726C616E64',X'74696D6265726C616E642E6A7067'),
+	(26,X'4F7574646F6F72205265736561726368',X'4F525F4C6F676F5F576F72646D61726B5F7265762E6A7067'),
+	(27,X'43616D656C62616B',X'63616D656C62616B2D6C6F676F2D373330783238382E6A7067'),
+	(28,X'49636869',X'49636869322E706E67'),
+	(29,X'434B53',X'636B732E706E67'),
+	(30,X'53696E6E6572',X'73696E6E65722E706E67'),
+	(31,X'536972697573',X'7369726975732D6C6F676F2E6A7067'),
+	(32,X'4C6F6D6F677261706879',X'6C6F6D6F2D6C6F676F2E706E67'),
+	(33,X'5369676E756D',X'7369676E756D2D6C6F676F2E706E67'),
+	(34,X'44737472657A7A6564',X'44535F4C4F474F5F414E4E4F323031327A5F4E4547312E706E67'),
+	(35,X'4A61636B2026204A6F6E6573',X'4A61636B4A6F6E65736C6F676F626C61636B2D726564436F6E7665727465642E706E67'),
+	(36,X'4B696E67204C6F756965',X'4B696E672D4C6F7569652E6A7067'),
+	(37,X'4F6E6C79',X'6F6E6C792E6A7067'),
+	(38,X'4861676C6F6673',X'6A6C3335335F6861676C6F66735F6C6F676F2E6A7067'),
+	(39,X'466174626F79',X'666174626F795F6C6F676F2E706E67'),
+	(40,X'4F757477656C6C',X'6F757477656C6C2E6A7067'),
+	(41,X'59617961',X'594159412D4C4F474F2D7065777465723134302E6A7067'),
+	(42,X'4C6F7475736772696C6C',X'6C6F7475735F6772696C6C2E6A7067'),
+	(43,X'5375636B20554B',X'6C675F7375636B756B322E6A7067'),
+	(44,X'4573736368657274',X'65737363686572742E6A7067'),
+	(45,X'58746F726D',X'6C6F676F2D78746F726D2E6A7067'),
+	(46,X'436F7572657572206475206D6F6E6465',X'63646D5F6C6F676F2E6A7067'),
+	(47,X'446176616E7469',X'4C6F676F5A77617274446176616E746942696B65776561722E6A7067'),
+	(48,X'4465206D6172636869',X'44655F4D61726368695F6E65775F6C6F676F2E706E67'),
+	(49,X'4D616C6F6A61',X'4D616C6F6A612E6A7067'),
+	(50,X'47656E746C656D616E2773204861726477617265',X'47454E544C454D454E5F535F48415244574152455F42414E4E45525F3130323478313032342E6A7067'),
+	(51,X'42726F6F6B73',X'42726F6F6B732D4C6F676F2E6A7067'),
+	(52,X'4372616674',X'63726166742D6C6F676F2D3330307837392E6A7067'),
+	(53,X'476F72652042696B652057656172',X'61366437336239613432353434323234666532336532333035633335313039392E6A7067'),
+	(54,X'4E696B65',X'6E696B652E706E67'),
+	(55,X'43756265',X'3230303070782D437562655F4C6F676F2E7376672E6A7067'),
+	(56,X'4E65772042616C616E6365',X'6E65775F62616C616E63655F6C6F676F5F33303030352E6A7067'),
+	(57,X'416469646173',X'6164696461732E6A7067'),
+	(58,X'4E617468616E',X'4E617468616E2E6A7067'),
+	(59,X'546F6D546F6D',X'746F6D746F6D2D6C6F676F2E6A7067'),
+	(60,X'417A757269',X'617A7572692E6A7067'),
+	(61,X'426C61636B20457965',X'626C61636B6579655F4C4F474F2E6A7067'),
+	(62,X'436F6C656D616E',X'6C6F676F5F636F6C656D616E2E6A7067'),
+	(63,X'476F50726F',X'676F70726F5F6C6F676F2E6A7067'),
+	(64,X'4561676C6520437265656B',X'4C6F676F5F4561676C655F437265656B2E6A7067'),
+	(65,X'4F7574646F6F722054656368',X'6F7574646F6F727465636B5F6C6F676F2E6A7067'),
+	(66,X'546572726520426C657565',X'74657272655F626C6575655F6C6F676F2E6A7067'),
+	(67,X'4C75636B696573',X'6C75636B6965735F7765622E6A7067'),
+	(68,X'416D617A6F6E6173',X'616D617A6F6E61735F6C6F676F2E6A7067'),
+	(69,X'446575746572',X'6465757465725F6C6F676F2E6A7067'),
+	(70,X'4361726520506C7573',X'63617265706C75735F6C6F676F2E6A7067'),
+	(71,X'5661727461',X'76617274615F6C6F676F2E6A7067'),
+	(72,X'4C6564204C656E736572',X'6C65646C656E7365725F6C6F676F2E6A7067'),
+	(73,X'52756D626C',X'72756D626C5F6C6F676F2E6A7067'),
+	(74,X'4C696E6761646F7265',X'6C696E6761646F72655F6C6F676F2E6A7067'),
+	(75,X'4D6F6C6F206B696473',X'6D6F6C6F6B6964735F6C6F676F2E6A7067'),
+	(76,X'4E616D65204974',X'6E616D6569745F6C6F676F2E6A7067'),
+	(77,X'4A756C626F',X'6A756C626F5F6C6F676F2E6A7067'),
+	(78,X'53706565646F',X'73706565646F5F6C6F676F2E6A7067'),
+	(79,X'51757574',X'717575745F6C6F676F2E6A7067'),
+	(80,X'4861766169616E6173',X'6861766169616E61735F6C6F676F2E6A7067'),
+	(81,X'52656566',X'726565665F6C6F676F2E6A7067'),
+	(82,X'43726F6373',X'63726F63735F6C6F676F2E6A7067'),
+	(83,X'4970616E656D61',X'6970616E656D615F6C6F676F2E6A7067'),
+	(84,X'5269646572',X'72696465725F6C6F676F2E6A7067'),
+	(85,X'4261727473',X'62617274735F6C6F676F2E6A7067'),
+	(86,X'4A264A2054656368',X'6A5F6A5F746563685F6C6F676F2E6A7067'),
+	(87,X'50726F74657374',X'70726F746573745F6C6F676F2E6A7067'),
+	(88,X'4E69766561',X'6E697665615F6C6F676F2E6A7067'),
+	(89,X'5661756465',X'76617564655F6C6F676F2E6A7067'),
+	(90,X'554158',X'7561785F6C6F676F2E6A7067'),
+	(91,X'50617461676F6E6961',X'70617461676F6E69615F6C6F676F2E6A7067'),
+	(92,X'526F79616C20526F6262696E73',X'726F79616C726F62696E735F6C6F676F2E6A7067'),
+	(93,X'54657661',X'746576615F6C6F676F2E6A7067'),
+	(94,X'4F7665727374696D73',X'6F7665727374696D735F6C6F676F2E6A7067'),
+	(95,X'53656120746F2053756D6D6974',X'736561746F73756D6D69745F6C6F676F2E6A7067'),
+	(96,X'4B697465204F7074696373',X'6B6974656F70746963735F6C6F676F2E6A7067'),
+	(97,X'5375756E746F',X'7375756E746F5F6C6F676F2E6A7067'),
+	(98,X'41627573',X'616275735F6C6F676F2E6A7067'),
+	(99,X'4461686F6E',X'6461686F6E5F6C6F676F2E6A7067'),
+	(100,X'436173636F',X'636173636F5F6C6F676F2E6A7067'),
+	(101,X'42617461767573',X'626174617675735F6C6F676F2E6A7067'),
+	(102,X'436C6172696A73',X'636C6172696A735F6C6F676F2E6A7067'),
+	(103,X'4C696978',X'6C6969785F6C6F676F2E6A7067'),
+	(104,X'4F646C6F',X'6F646C6F5F6C6F676F2E6A7067'),
+	(105,X'43616D656C20416374697665',X'63616D656C6163746976655F6C6F676F2E6A7067'),
+	(106,X'4C616C6179',X'6C616C61795F6C6F676F2E6A7067'),
+	(107,X'42656163686C696665',X'62656163686C6966655F6C6F676F2E6A7067'),
+	(108,X'506965636573',X'5069656365732E6A7067'),
+	(109,X'54756D626C6520276E20447279',X'544E442D7765622E6A7067'),
+	(110,X'53746F6E6573202620426F6E6573',X'73746F6E65732D626F6E65732E6A7067'),
+	(111,X'536F6D656F6E65',X'536F6D656F6E652E6A7067'),
+	(112,X'5765776F6F64',X'6C6F676F5F7765776F6F642E6A7067'),
+	(113,X'4B696B6B65726C616E64',X'6B696B6B65726C616E642D7765622E6A7067'),
+	(114,X'5072656D69756D',X'5072656D69756D2D62792D4A4A2D626C61636B2E6A7067'),
+	(115,X'426C656E64',X'426C656E646C6F676F5F626C61636B2E6A7067'),
+	(116,X'466A616C6C726176656E',X'4C6F676F5F466A616C6C726176656E2E6A7067'),
+	(117,X'5261792D42616E',X'4C6F676F5F5261792D42616E312E6A7067'),
+	(118,X'4C6561746865726D616E',X'4C6F676F5F4C6561746865726D616E2E6A7067'),
+	(119,X'4C756E6468616773',X'6C6F676F2D77656231382D312E6A7067'),
+	(120,X'4C6F7761',X'4C6F676F5F4C6F77612E6A7067'),
+	(121,X'43616E6E6F6E64616C65',X'4C6F676F5F43616E6E6F6E64616C652D312E6A7067'),
+	(122,X'4C657A796E65',X'4C6F676F5F4C657A796E652E6A7067'),
+	(123,X'4F72746C696562',X'4C6F676F5F4F72746C6965622E6A7067'),
+	(124,X'52482B',X'5A45524F2E6A7067'),
+	(125,X'436F6E7469676F',X'6C6F676F5F636F6E7469676F5F3132305F313230352E6A7067'),
+	(126,X'4D656E277320536F6369657479',X'6D656E732D736F63696574792E6A7067'),
+	(127,X'497A6F6C61',X'697A6F6C615F6C6F676F2E6A7067');
+
+/*!40000 ALTER TABLE `Merken` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table Products
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Products`;
+
+CREATE TABLE `Products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `productnaam` varchar(100) DEFAULT NULL,
+  `productomschrijving` varchar(100) DEFAULT NULL,
+  `merk` varchar(50) DEFAULT NULL,
+  `img` varchar(200) DEFAULT NULL,
+  `link` varchar(200) DEFAULT NULL,
+  `oudeprijs` varchar(7) DEFAULT NULL,
+  `nieuweprijs` varchar(7) DEFAULT NULL,
+  `kleur` varchar(300) DEFAULT NULL,
+  `specialeactie` varchar(50) DEFAULT NULL,
+  `exclusief` int(1) DEFAULT NULL,
+  `uitverkocht` int(1) DEFAULT NULL,
+  `dames` int(1) DEFAULT NULL,
+  `heren` int(1) DEFAULT NULL,
+  `junior` int(1) DEFAULT NULL,
+  `fashion` int(1) DEFAULT NULL,
+  `outdoor` int(1) DEFAULT NULL,
+  `uitrusting` int(1) DEFAULT NULL,
+  `fietsenlopen` int(1) DEFAULT NULL,
+  `gadgets` int(1) DEFAULT NULL,
+  `categorie` varchar(25) NOT NULL DEFAULT 'O',
+  `volgorde` int(11) DEFAULT '10',
+  `actie` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `Products` WRITE;
+/*!40000 ALTER TABLE `Products` DISABLE KEYS */;
+
+INSERT INTO `Products` (`id`, `productnaam`, `productomschrijving`, `merk`, `img`, `link`, `oudeprijs`, `nieuweprijs`, `kleur`, `specialeactie`, `exclusief`, `uitverkocht`, `dames`, `heren`, `junior`, `fashion`, `outdoor`, `uitrusting`, `fietsenlopen`, `gadgets`, `categorie`, `volgorde`, `actie`)
+VALUES
+	(1,'Jacquelina','Blazer Dames','CKS','CKS_JAQUELINEA_4141D52036_5252.jpg','/cks-dames-blazer-jaquelinea-4141d52036?id_colour=3154','79,99','55','cksblazer.jpg','',1,NULL,1,NULL,NULL,1,NULL,NULL,NULL,NULL,'fashion',1,NULL),
+	(2,'Jumpsuit','Dames','Yaya','YAYA_JUMPSUIT_4198D52016_7010.jpg','/yaya-jumpsuit-021634-4198d52016?id_colour=4118','89,95','59','marmer.jpg','',1,NULL,3,NULL,NULL,4,NULL,NULL,NULL,NULL,'fashion',4,NULL),
+	(3,'Balance','Cross Dress','King Louie','KING-LOUIE_BALANCE_4162D52032_3911.jpg','/king-louie-jurk-balance-cross-4162d52032?id_colour=2117','79,99','55','balance.jpg','',1,NULL,6,NULL,NULL,7,NULL,NULL,NULL,NULL,'fashion',7,NULL),
+	(4,'Nara','Cross Dress','King Louie','KING-LOUIE_NARA_4162D52033_4465.jpg','/king-louie-jurk-nara-cross-4162d52033?id_colour=2548','79,99','55','nara.jpg','',1,NULL,9,NULL,NULL,10,NULL,NULL,NULL,NULL,'fashion',10,NULL),
+	(5,'Flower Lurex','Cardigan Dames','King Louie','KING-LOUIE_FLOWER-LUREX_4144D52101_4444.jpg','/king-louie-cardigan-flower-lurex-4144d52101?id_colour=2530','69,99','49','#404F7F #CD1F62','',1,NULL,12,NULL,NULL,13,NULL,NULL,NULL,NULL,'fashion',13,NULL),
+	(6,'Date','Horloge','Wewood','2541d52001_6210_01_be.jpg','/wewood-horloge-date-2541d52001?id_colour=3656','','99,95','#B68A6E','In de kijker',NULL,NULL,15,1,NULL,16,NULL,NULL,NULL,1,'fashion',16,NULL),
+	(7,'Bird is the word','Juwelenrekje','Kikkerland','KIKKERLAND_BIRD-IS-THE-WORD_2g31c50007_7070_01_be.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-holder-2h41c52043?id_colour=4168','','8,95','#000','In de kijker',NULL,NULL,17,NULL,NULL,NULL,NULL,NULL,NULL,3,'fashion',14,NULL),
+	(8,'Timmy','Jas Heren','Premium','PREMIUM_TIMMY_4355D52026_3939.jpg','/premium-jas-timmy-4355d52026?id_colour=2140','','49,99','#4B4858 #D26F6F #1E1E20','Slechts',NULL,NULL,NULL,5,NULL,30,NULL,NULL,NULL,NULL,'fashion',40,NULL),
+	(9,'Hemd','','Dstrezzed','DESTREZZED_HEMD_4331D52232_7103.jpg','/dstrezzed-hemd-300001137smu-4331d52232?id_colour=2728','79,95','49','hemd1.jpg hemd2.jpg','',NULL,NULL,NULL,7,NULL,23,NULL,NULL,NULL,NULL,'fashion',25,NULL),
+	(10,'Trui','Heren','Blend','BLEND_TRUI_4349D52042_4110.jpg','/blend-trui-20700314-4349d52042?id_colour=2270','69,95','49','sneeuw.jpg','',NULL,NULL,NULL,10,NULL,25,NULL,NULL,NULL,NULL,'fashion',28,NULL),
+	(11,'Tri','Jacket Dames','Ichi','ICHI_TRI_4153D52055_4151.jpg','/ichi-jas-tri-4153d52055?id_colour=2306','149','99','ichiruit1.jpg ichiruit2.jpg','',1,NULL,20,NULL,NULL,5,NULL,NULL,NULL,NULL,'fashion',5,NULL),
+	(12,'Greenland No 1','Donsjas Heren','Fjallraven','FJALLRAVEN_GREENLAND_33A2D40010_4142.jpg','/fjaellraeven-jas-greenland-no-1-down-3352d42051?id_colour=2297','','499,95','greenland.jpg','',NULL,NULL,NULL,100,NULL,29,301,NULL,NULL,NULL,'fashion',34,NULL),
+	(13,'Portefeuille','','Camel Active','CAMEL-ACTIVE-BAGS_PORTEFEUILLE_2392c52011_6161_02_be.jpg','/camel-active-bags-portefeuille-165703-2392c52011?id_colour=3622','49,95','25','#50423F #845139','',NULL,NULL,NULL,15,NULL,32,NULL,NULL,NULL,5,'fashion',37,NULL),
+	(15,'Borealis Classic ','Dagrugzak','The North Face','THENORTHFACEborealis2111D500147253.jpg','/the-north-face-dagrugzak-borealis-classic-2111d50014?id_colour=4169','79,95','59','#322B32 borblauw','',NULL,NULL,102,20,NULL,NULL,NULL,1,NULL,NULL,'fashion',43,NULL),
+	(16,'Tilton Mid Leather Gore-Tex','Schoen Dames','Timberland','TIMBERLAND_TILTON-MID-LATHER-GTX-WOMEN_3716D52002_6235.jpg','/timberland-schoen-tilton-mid-leather-gore-tex-dames-3716d52002?id_colour=3676','119,95','85','timberdames.jpg','',NULL,NULL,105,NULL,NULL,NULL,3,NULL,NULL,NULL,'outdoor',55,NULL),
+	(17,'Mount Adams Mid Waterproof','Schoen Heren','Timberland','TIMBERLAND_MOUNT-ADAMS-MID-WATERPROOF_3726D52002_6161.jpg','/timberland-schoen-mount-adams-mid-waterproof-3726d52002?id_colour=3622','125,95','89','timberheren.jpg','',NULL,NULL,NULL,103,NULL,NULL,6,NULL,NULL,NULL,'outdoor',56,NULL),
+	(18,'Highland','Padded jas Heren','Ayacucho','AYACUCHO_HIGHLAND-PADDED_3353D52016_4747.jpg','/ayacucho-jas-highland-padded-3353d52016?id_colour=2764','','169,95','#26657E #CA4B3A','In de kijker',NULL,NULL,NULL,106,NULL,NULL,209,NULL,NULL,NULL,'outdoor',50,NULL),
+	(19,'Nordic Wood','Sweater Heren','Ayacucho','AYACUCHO_NORDIC-WOOD_3325D52007_7171.jpg','/ayacucho-trui-nordic-wood-3325d52007?id_colour=3544','','69,95','ayacucho-sneeuw.jpg','In de kijker',NULL,NULL,NULL,107,NULL,36,212,NULL,NULL,NULL,'outdoor',98,NULL),
+	(20,'Inverno 280','Fleece Dames','Ayacucho','AYACUCHO_INVERNO-280_3124d42016_4949_02_be.jpg','/ayacucho-fleece-inverno-280-3124d42016?id_colour=2920','59,95','39,95','inverno.jpg','',NULL,NULL,108,NULL,NULL,NULL,215,NULL,NULL,NULL,'outdoor',48,NULL),
+	(21,'Porter 46','Travelpack','Osprey','OSPREY_PORTER-46_2221d42002_7071_01_be.jpg','/osprey-reistas-porter-46-2221d42002?id_colour=4169','109,95','75','#3A3635','',NULL,NULL,111,110,NULL,NULL,NULL,3,NULL,NULL,'outdoor',50,NULL),
+	(22,'Stowaway','Coat Dames','Ayacucho','AYACUCHO_STOWAWAY-COAT_3157d52001_7303_01_be.jpg','/ayacucho-jas-stowaway-3157d52001?id_colour=4422','','74,95','stow1.jpg stow2.jpg','In de kijker',NULL,NULL,115,NULL,NULL,21,221,NULL,NULL,NULL,'outdoor',49,NULL),
+	(23,'Mojave','Rugzak 28l','Ayacucho','AYACUCHO_MOJAVE-28-II_1212c10002_7070_02_Ver1.jpg','/ayacucho-dagrugzak-mojave-28-ii-1212c10002?id_colour=4168','64,95','39','moj.jpg','',NULL,NULL,118,113,NULL,NULL,NULL,6,NULL,NULL,'outdoor',67,NULL),
+	(24,'Signal','Multitool','Leatherman','LEATHERMAN_SIGNAL_2C41D52001_7015.jpg','/leatherman-multitool-signal-2c41d52001?id_colour=4123','','179,95','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,9,NULL,10,'outdoor',70,NULL),
+	(25,'Carina','Fleece Dames','Sprayway','SPRAYWAY_CARINA_3124D52019_3030.jpg','/sprayway-fleece-carina-3124d52019?id_colour=1438','69,95','49','#B8152E #287D9D','',NULL,NULL,130,NULL,NULL,NULL,22,NULL,NULL,NULL,'outdoor',73,NULL),
+	(26,'Sapphira','3-in-1 Jas Dames','Sprayway','SPRAYWAY_SAPPHIRA_3151D42033_4747.jpg','/sprayway-jas-sapphira-3-in-1-3151d42033?id_colour=3154','149,95','109','#1B6890','',NULL,NULL,135,NULL,NULL,NULL,24,NULL,NULL,NULL,'outdoor',76,NULL),
+	(27,'Limford','Jas Heren','Vaude','VAUDE_LIMFORD_3353D32003_4141.jpg','/vaude-jas-limford-3353d32003?id_colour=2296','199,95','139','#535D75','',NULL,NULL,NULL,116,NULL,NULL,26,NULL,NULL,NULL,'outdoor',79,NULL),
+	(28,'Froso','Sweater Heren','Lundhags','LUNDHAGS_FROSO_3325D52006_5454.jpg','/lundhags-trui-froso-3325d52006?id_colour=3310','99,95','69','#795F55 #7F7A76','',NULL,NULL,NULL,119,NULL,NULL,28,NULL,NULL,NULL,'outdoor',44,NULL),
+	(29,'Nordald Island','3-in-1 Jas Heren','Millet','MILLET_NORDALD-ISLAND_3351D22017_5656.jpg','/millet-jas-nordald-island-3-in-1-3351d22017?id_colour=3466','279,95','189','#A4A191 #6F6F71','',NULL,NULL,NULL,122,NULL,NULL,30,NULL,NULL,NULL,'outdoor',45,NULL),
+	(30,'Heritage','Fleece Heren','Sprayway','SPRAYWAY_HERITAGE_3324D42017_4141.jpg','/sprayway-fleece-heritage-3324d42017?id_colour=2296','94,95','64','#226388 #959698','',NULL,NULL,NULL,125,NULL,NULL,32,NULL,NULL,NULL,'outdoor',88,NULL),
+	(31,'Etrex Touch 25','GPS','Garmin','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-gps-etrex-touch-25-2512c52007?id_colour=2397','','249','','Met gratis batterij t.w.v. € 26,99',NULL,NULL,NULL,NULL,NULL,NULL,NULL,12,NULL,13,'outdoor',91,NULL),
+	(32,'Wave Limited','Multitool','Leatherman','LEATHERMAN_WAVE_2841d40002_6464_01_be.jpg','/leatherman-multitool-wave-2c41d42001?id_colour=3856','144,95','99','','Slechts',1,NULL,NULL,NULL,NULL,NULL,NULL,15,NULL,16,'outdoor',94,NULL),
+	(33,'Bronia','Fleece Dames','Vaude','VAUDE_BRONIA_3124D52007_7272.jpg','/vaude-fleece-bronia-3124d52007?id_colour=4324','99,95','69','bronia-grijs.jpg','',NULL,NULL,138,NULL,NULL,NULL,32,NULL,NULL,NULL,'outdoor',45,NULL),
+	(34,'100 Glacier','Fleece Dames','The North Face','THE-NORTH-FACE_GLACIER_3142d30017_7171_10-2.jpg','','69,95','49','#524B48 #93919E','',NULL,NULL,140,NULL,NULL,NULL,35,NULL,NULL,NULL,'outdoor',100,NULL),
+	(35,'Chimborazo Pro FZ','Fleece Heren','The North Face','THE-NORTH-FACE_CHIMBORAZO-PRO_3342d40019_7272_03-2.jpg','/the-north-face-fleece-chimborazo-pro-3324d42009?id_colour=4324','99,95','69','#696B77','',NULL,NULL,NULL,130,NULL,NULL,38,NULL,NULL,NULL,'outdoor',103,NULL),
+	(36,'Madison','Jas Dames','Jack Wolfskin','JACK-WOLFSKIN_MADISON_3153D52011_4141.jpg','/jack-wolfskin-jas-madison-3153d52011?id_colour=2296','119,95','69','#414C66','',NULL,NULL,142,NULL,NULL,NULL,141,NULL,NULL,NULL,'outdoor',140,NULL),
+	(37,'Madison','Jas Heren','Jack Wolfskin','JACK-WOLFSKIN_MADISON_3353D52013_7171.jpg','/jack-wolfskin-jas-madison-3353d52013?id_colour=4246','119,95','69','#5E555A','',NULL,NULL,NULL,135,NULL,NULL,144,NULL,NULL,NULL,'outdoor',109,NULL),
+	(38,'Peridot','Fleece Dames','Jack Wolfskin','JACK-WOLFSKIN_PERIDOT_3124D52010_3232.jpg','/jack-wolfskin-fleece-peridot-3124d52010?id_colour=1594','99,95','59','#BD283F #A0A8AB','',NULL,NULL,146,NULL,NULL,NULL,147,NULL,NULL,NULL,'outdoor',112,NULL),
+	(39,'Caribou','Fleece Dames','Jack Wolfskin','JACK-WOLFSKIN_CARIBOU_3324D52018_4141.jpg','/jack-wolfskin-fleece-caribou-3324d52018?id_colour=2296','99,95','59','#3C84A #999EA2','',NULL,NULL,150,NULL,NULL,NULL,150,NULL,NULL,NULL,'outdoor',115,NULL),
+	(40,'Crush\'n ice','Jas Dames','Jack Wolfskin','JACK-WOLFSKIN_CRUSH-\'N-ICE_31B1D30005_4848.jpg','/jack-wolfskin-jas-crush-n-ice-3151d32005?id_colour=2842','199,95','124','#2E4F82','',NULL,NULL,152,NULL,NULL,NULL,153,NULL,NULL,NULL,'outdoor',118,NULL),
+	(41,'Stenton','Jas Heren','Jack Wolfskin','JACK-WOLFSKIN_STENTON_3351D52014_7070.jpg','/jack-wolfskin-jas-stenton-3351d52014?id_colour=4168','279,95','199','#525254','',NULL,NULL,NULL,137,NULL,NULL,156,NULL,NULL,NULL,'outdoor',121,NULL),
+	(43,'Upgrade','Heuptas','Jack Wolfskin','JACK-WOLFSKIN_UPGRADE_2361A62004_7070.jpg','/jack-wolfskin-heuptas-upgrade-2361a62004?id_colour=4168','','29,95','#3B3B3B','In de kijker',NULL,NULL,157,140,NULL,NULL,NULL,21,NULL,NULL,'outdoor',127,NULL),
+	(44,'Palermo GTX','Gore-tex Schoen Heren','Lowa','LOWA_PALERMO-MEN_3722D52001_6060_01.jpg','/lowa-schoen-palermo-gore-tex-3722d52001?id_colour=3544','129,95','99','#523E35','',NULL,NULL,160,NULL,NULL,NULL,60,NULL,NULL,NULL,'outdoor',130,NULL),
+	(45,'Palermo GTX','Gore-tex Schoen Dames','Lowa','LOWA_PALERMO-WOMEN_3712D52001_6090_01.jpg','/lowa-schoen-palermo-gore-tex-3712d52001?id_colour=3565','129,95','99','#4E433F','',NULL,NULL,NULL,143,NULL,NULL,63,NULL,NULL,NULL,'outdoor',133,NULL),
+	(46,'Sarek','Winterjas Dames','Fjallraven','FJALLRAVEN_SAREK_3153D42049_5454.jpg','/fjaellraeven-jas-sarek-winter-3153d42049?id_colour=3856','','399,95','#625249','In de kijker',NULL,NULL,163,NULL,NULL,NULL,366,NULL,NULL,NULL,'outdoor',53,NULL),
+	(47,'Frost','Trui Dames','Fjallraven','FJALLRAVEN_FROST_3125D12001_3040.jpg','/fjaellraeven-trui-frost-dames-3125d12001?id_colour=1448','','159,95','#825166','In de kijker',NULL,NULL,166,NULL,NULL,NULL,369,NULL,NULL,NULL,'outdoor',139,NULL),
+	(48,'Lada','Sweater Heren','Fjallraven','FJALLRAVEN_LADA_3325D22004_7171.jpg','/fjaellraeven-trui-lada-3325d22004?id_colour=4246','','149,95','lada-grijs.jpg lada-beige.jpg','In de kijker',NULL,NULL,NULL,146,NULL,NULL,372,NULL,NULL,NULL,'outdoor',52,NULL),
+	(49,'Nils','Broek Heren','Fjallraven','FJALLRAVEN_NILS_3381c20001_3030_01.jpg','/fjaellraeven-broek-nils-3341c22001?id_colour=1438','','129,95','#B4562B #5E5441','In de kijker',NULL,NULL,NULL,149,NULL,NULL,375,NULL,NULL,NULL,'outdoor',99,NULL),
+	(50,'Kanken','Rugzak','Fjallraven','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-dagrugzak-kanken-2111a80038?id_colour=1594','','79,95','#534030 #1F323F kanken-geel.jpg #3A423D','Vanaf',NULL,NULL,68,152,NULL,22,NULL,25,NULL,NULL,'fashion',30,NULL),
+	(51,'Checkmate','Hemd','Someone','SOMEONE_CHECKMATE_4132.jpg','/someone-hemd-checkmate-5331d52026?id_colour=2287','34,95','25','ruit_someone.jpg','',1,NULL,NULL,NULL,1,43,NULL,NULL,NULL,NULL,'fashion kids',151,NULL),
+	(52,'Funny Bunny','Trui Meisjes','Someone','SOMEONE_FUNNY-BUNNY_1111.jpg','/someone-trui-funny-bunny-5244d52014?id_colour=346','34,95','25','someone-checkmate.jpg','',NULL,NULL,NULL,NULL,1,46,NULL,NULL,NULL,NULL,'fashion kids',154,NULL),
+	(53,'Antonius Sweat Pant','Broek Jongens','Tumble \'n Dry','TUMBLE-\'N-DRY_ANTONIUS_7171.jpg','/tumble-n-dry-broek-antonius-sweat-pant-5374d52016?id_colour=4246','49,95','35','#5F5B60','',NULL,NULL,NULL,NULL,1,49,NULL,NULL,NULL,NULL,'fashion kids',157,NULL),
+	(54,'Roja','Broek Meisjes','CKS','CKS_ROJA_1136.jpg','/cks-kids-broek-roja-5291d52031?id_colour=366','49,95','35','ruit_roja.jpg ruit_donker_roja.jpg','',1,NULL,NULL,NULL,1,52,NULL,NULL,NULL,NULL,'fashion kids',160,NULL),
+	(55,'Mr Lama','Shirt Jongens','Stones & Bones','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360','24,95','17','#373425','',1,NULL,NULL,NULL,1,55,NULL,NULL,NULL,NULL,'fashion kids',163,NULL),
+	(56,'Nara','Cross Dress Meisjes','Petit Louie','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-jurk-nara-cross-5261d52001?id_colour=2805','39,95','29','nara.jpg','',1,NULL,NULL,NULL,1,58,NULL,NULL,NULL,NULL,'fashion kids',166,NULL),
+	(57,'Kids Zenon','Jacket junior','Jack Wolfskin','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-jas-zenon-kids-5184d42001?id_colour=1988','99,95','69','zenon-paars-zwart.jpg zenon-blauw.jpg zenon-geel-zwart.jpg','',NULL,NULL,NULL,NULL,1,61,180,NULL,NULL,NULL,'fashion kids',169,NULL),
+	(58,'Little Joe','Dagrugzak junior','Jack Wolfskin','JACK-WOLFSKIN_LITLLE-JOE_2121C22002_3071.jpg','/jack-wolfskin-dagrugzak-little-joe-2121c22002?id_colour=1474','','29,95','#C9233A #1B5490 harten_jack.jpg','In de kijker',NULL,NULL,NULL,NULL,1,NULL,NULL,27,NULL,NULL,'fashion kids',172,NULL),
+	(59,'Edge 25','GPS','Garmin','GARMIN_EDGE-20_2522c52003_7073_03_be_Ver1.jpg','/garmin-hartslagmeter-edge-25-2522c52004?id_colour=4171','','169','','In de kijker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,30,1,20,'bike',195,NULL),
+	(60,'Tesoro ','Fiets Heren','Cannondale','CANNONDALE_TESORO-2_A213C52007_4141-2.jpg','/cannondale-citybike-tesoro-2-a213c52007?id_colour=2296','','1.299','','Incl. 2 onderhoudsbeurten',NULL,NULL,NULL,201,NULL,NULL,NULL,33,3,NULL,'bike',178,NULL),
+	(61,'Macro 600 Lumen','Fietslicht','Lezyne','LEZYNE_MACRO-DRIVE-600_A372C52002_7070.jpg','','','69,95','','In de kijker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,36,5,23,'bike',181,NULL),
+	(62,'Back Roller Urban','Fietstas','Ortlieb','ORTLIEB_BACK-ROLLER-URBAN_7513c50002_4545_01_be.jpg','/ortlieb-fietstas-achter-back-roller-urban-a513c52002?id_colour=2608','74,95','59','#60676C #8A7D75','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,7,NULL,'bike',184,NULL),
+	(63,'Blowy','Jacket Heren','RH+','RHBLOWYJACKET9221d42011707001be.jpg','/rh-windstopper-blowy-9221d42011?id_colour=4168','149,95','99','#252525','',NULL,NULL,NULL,205,NULL,NULL,NULL,NULL,9,NULL,'bike',187,NULL),
+	(64,'Contest SO','Softshell','Gore Bike Wear','GBW_CONTEST-SO_7732B90002_3030.jpg','/gore-bike-wear-softshell-contest-so-9222b92003?id_colour=1438','149,95','99','gore-geel-zwart.jpg gore-rood-zwart.jpg','',NULL,NULL,NULL,207,NULL,NULL,NULL,NULL,11,NULL,'bike',177,NULL),
+	(65,'Fluid II','Broek','Vaude','VAUDEFLUIDII7745b80004707001.jpg','/vaude-broek-fluid-ii-9235b82003?id_colour=4168','','74,95','#272B2E','In de kijker',NULL,NULL,172,210,NULL,NULL,NULL,NULL,13,NULL,'bike',193,NULL),
+	(66,'Byron','Drinkfles','Contigo','Contigo-packshot.jpg','/contigo-isolatiefles-byron-1424d52002?id_colour=2397','','24,95','','Met gratis koffie en kop ',NULL,NULL,NULL,30,NULL,NULL,NULL,NULL,NULL,26,'gadgets',196,NULL),
+	(67,'Nested','Shotglazen','Izola','IZOLAShotGlassesIMG18922.jpg','/izola-gadget-nested-shot-glasses-2h21d52008?id_colour=1594','','29,95','#D82B46 #F2F1F0','',NULL,NULL,NULL,33,NULL,NULL,NULL,NULL,NULL,29,'gadgets',199,NULL),
+	(68,'Wiskey Stones','','Men\'s Society','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806','','19,95','','',NULL,NULL,NULL,36,NULL,NULL,NULL,NULL,NULL,32,'gadgets',202,NULL),
+	(69,'Money Clip','','Izola','IZOLA_RDAW-140522-Izola-Money-Clip-logo-living-well-1.jpg','/izola-gadget-money-clip-2h51d52003?id_colour=3778','','24,95','','',NULL,NULL,NULL,39,NULL,NULL,NULL,NULL,NULL,35,'gadgets',205,NULL),
+	(70,'Schoenlepel','','Izola','IZOLA_RDAW-140526-Izola-Shoehorn-Logo-talk-the-talk-1.jpg','/izola-gadget-shoe-horn-2h51d52004?id_colour=3778','','24,95','','',NULL,NULL,NULL,42,NULL,NULL,NULL,NULL,NULL,38,'gadgets',208,NULL),
+	(71,'Schoenenzak','','Izola','IZOLA_ShoeBag_DifShoes.jpg','/izola-gadget-shoe-bag-2h51d52005?id_colour=2296','','24,95','','',NULL,NULL,NULL,45,NULL,NULL,NULL,NULL,NULL,41,'gadgets',211,NULL),
+	(72,'Schoenschoonmaakset','','Men\'s Society','MENS_SOCIETY_SHOE-SHINE-KIT-64-2.jpg','/men-s-society-gadget-shoe-shine-kit-2h51d52011?id_colour=5806','','19,95','','',NULL,NULL,NULL,48,NULL,NULL,NULL,NULL,NULL,44,'gadgets',214,NULL),
+	(73,'Verzorgingsset','','Men\'s Society','MENS_SOCIETY_STOW-AWAY-TRAVEL-KIT_-2015-14.jpg','/men-s-society-gadget-stow-away-travel-kit-2h51d52007?id_colour=294','','29,95','','',NULL,NULL,NULL,51,NULL,NULL,NULL,NULL,NULL,47,'gadgets',217,NULL),
+	(74,'Manicureset','','Men\'s Society','MENS_SOCIETY_HANDSOME-HANDS-MANICURE-SET-2015-9.jpg','/men-s-society-gadget-handsome-hands-manicure-kit-2h51d52008?id_colour=318','','24,95','','',NULL,NULL,NULL,55,NULL,NULL,NULL,NULL,NULL,50,'gadgets',220,NULL),
+	(75,'Fenix 3','GPS-horloge','Garmin','GARMIN_FENIX-3_2452c50001_7272_01.jpg_be.jpg','/garmin-gps-fenix-3-2512c52003?id_colour=4324','','449','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,38,NULL,53,'gadgets',223,NULL),
+	(76,'Tandenborstelset','','Izola','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3778','','19,95','','',NULL,NULL,NULL,57,NULL,NULL,NULL,NULL,NULL,56,'gadgets',226,NULL),
+	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL),
+	(78,'Xtreme 9000','Reisoplader','Xtorm','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-oplader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','','59,95','','Slechts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,62,'gadgets',232,NULL),
+	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','','','199,95','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL),
+	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,38,4,23,12,22,'outdoor',47,1),
+	(81,'lookbook',NULL,NULL,'lookbook1',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,29,NULL,NULL,NULL,'outdoor',106,1),
+	(82,'lookbook',NULL,NULL,'lookbook2',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,37,NULL,NULL,NULL,'bike',186,1),
+	(83,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,370,NULL,NULL,NULL,'gadgets',204,1),
+	(84,'lookbook',NULL,NULL,'lookbook3',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,320,NULL,NULL,NULL,'gadgets',228,1),
+	(85,'Jack Wolfskin',NULL,NULL,'jackwolfskin.jpg','/jack-wolfskin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,190,NULL,NULL,NULL,'O',NULL,1),
+	(86,'Fjallraven',NULL,NULL,'fjallraven.jpg','/fjaellraeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,390,NULL,NULL,NULL,'O',NULL,1);
+
+/*!40000 ALTER TABLE `Products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table Products_en
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Products_en`;
+
+CREATE TABLE `Products_en` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `productnaam` varchar(100) DEFAULT NULL,
+  `productomschrijving` varchar(100) DEFAULT NULL,
+  `img` varchar(200) DEFAULT NULL,
+  `link` varchar(200) DEFAULT NULL,
+  `specialeactie` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `Products_en` WRITE;
+/*!40000 ALTER TABLE `Products_en` DISABLE KEYS */;
+
+INSERT INTO `Products_en` (`id`, `productnaam`, `productomschrijving`, `img`, `link`, `specialeactie`)
+VALUES
+	(1,'Jacquelina','Blazer Women','CKS_JAQUELINEA_4141D52036_5252.jpg','/cks-women-blazer-jaquelinea-4141d52036?id_colour=3154',''),
+	(2,'Jumpsuit','Women','YAYA_JUMPSUIT_4198D52016_7010.jpg','/yaya-jumpsuit-021634-4198d52016?id_colour=4118',''),
+	(3,'Balance','Cross Dress','KING-LOUIE_BALANCE_4162D52032_3911.jpg','/king-louie-dress-balance-cross-4162d52032?id_colour=2117',''),
+	(4,'Nara','Cross Dress','KING-LOUIE_NARA_4162D52033_4465.jpg','/king-louie-dress-nara-cross-4162d52033?id_colour=2548',''),
+	(5,'Flower Lurex','Cardigan Woman','KING-LOUIE_FLOWER-LUREX_4144D52101_4444.jpg','/king-louie-cardigan-flower-lurex-4144d52101?id_colour=2530',''),
+	(6,'Date','Watch','2541d52001_6210_01_be.jpg','/wewood-watch-date-2541d52001?id_colour=3656','In the spotlight'),
+	(7,'Bird is the word','Jewelry Holder','KIKKERLAND_BIRD-IS-THE-WORD_2g31c50007_7070_01_be.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-holder-2h41c52043?id_colour=4168','In the spotlight'),
+	(8,'Timmy','Jas Men','PREMIUM_TIMMY_4355D52026_3939.jpg','/premium-coat-timmy-4355d52026?id_colour=2140','Only'),
+	(9,'Shirt','','DESTREZZED_HEMD_4331D52232_7103.jpg','/dstrezzed-shirt-300001137smu-4331d52232?id_colour=2728',''),
+	(10,'Pullover','Men','BLEND_TRUI_4349D52042_4110.jpg','/blend-pullover-20700314-4349d52042?id_colour=2270',''),
+	(11,'Tri','Coat Women','ICHI_TRI_4153D52055_4151.jpg','/ichi-coat-tri-4153d52055?id_colour=2306',''),
+	(12,'Greenland No 1','Coat Men','FJALLRAVEN_GREENLAND_33A2D40010_4142.jpg','/fjaellraeven-coat-greenland-no-1-down-3352d42051?id_colour=2297',''),
+	(13,'Wallet','','CAMEL-ACTIVE-BAGS_PORTEFEUILLE_2392c52011_6161_02_be.jpg','/camel-active-bags-wallet-165703-2392c52011?id_colour=3622',''),
+	(15,'Borealis Classic ','Daypack','THENORTHFACEborealis2111D500147253.jpg','/the-north-face-daypack-borealis-classic-2111d50014?id_colour=4169',''),
+	(16,'Tilton Mid Leather Gore-Tex','Shoe Women','TIMBERLAND_TILTON-MID-LATHER-GTX-WOMEN_3716D52002_6235.jpg','/timberland-shoe-tilton-mid-leather-gore-tex-women-3716d52002?id_colour=3676',''),
+	(17,'Mount Adams Mid Waterproof','Shoe Men','TIMBERLAND_MOUNT-ADAMS-MID-WATERPROOF_3726D52002_6161.jpg','/timberland-shoe-mount-adams-mid-waterproof-3726d52002?id_colour=3622',''),
+	(18,'Highland','Padded coat Men','AYACUCHO_HIGHLAND-PADDED_3353D52016_4747.jpg','/ayacucho-coat-highland-padded-3353d52016?id_colour=2764','In the spotlight'),
+	(19,'Nordic Wood','Pullover Men','AYACUCHO_NORDIC-WOOD_3325D52007_7171.jpg','/ayacucho-pullover-nordic-wood-3325d52007?id_colour=3544','In the spotlight'),
+	(20,'Inverno 280','Fleece Women','AYACUCHO_INVERNO-280_3124d42016_4949_02_be.jpg','/ayacucho-fleece-inverno-280-3124d42016?id_colour=2920',''),
+	(21,'Porter 46','Travel Bag','OSPREY_PORTER-46_2221d42002_7071_01_be.jpg','/osprey-travel-bag-porter-46-2221d42002?id_colour=4169',''),
+	(22,'Stowaway','Coat Dames','AYACUCHO_STOWAWAY-COAT_3157d52001_7303_01_be.jpg','/ayacucho-coat-stowaway-3157d52001?id_colour=4422','In the spotlight'),
+	(23,'Mojave','Daypack 28l','AYACUCHO_MOJAVE-28-II_1212c10002_7070_02_Ver1.jpg','/ayacucho-daypack-mojave-28-ii-1212c10002?id_colour=4168',''),
+	(24,'Signal','Multitool','LEATHERMAN_SIGNAL_2C41D52001_7015.jpg','/leatherman-multitool-signal-2c41d52001?id_colour=4123',''),
+	(25,'Carina','Fleece Women','SPRAYWAY_CARINA_3124D52019_3030.jpg','/sprayway-fleece-carina-3124d52019?id_colour=1438',''),
+	(26,'Sapphira','3 In 1 Coat Women','SPRAYWAY_SAPPHIRA_3151D42033_4747.jpg','/sprayway-coat-sapphira-3-in-1-3151d42033?id_colour=3154',''),
+	(27,'Limford','Coat Men','VAUDE_LIMFORD_3353D32003_4141.jpg','/vaude-coat-limford-3353d32003?id_colour=2296',''),
+	(28,'Froso','Pullover Men','LUNDHAGS_FROSO_3325D52006_5454.jpg','/lundhags-pullover-froso-3325d52006?id_colour=3310',''),
+	(29,'Nordald Island','3-in-1 Coat Men','MILLET_NORDALD-ISLAND_3351D22017_5656.jpg','/millet-coat-nordald-island-3-in-1-3351d22017?id_colour=3466',''),
+	(30,'Heritage','Fleece Men','SPRAYWAY_HERITAGE_3324D42017_4141.jpg','/sprayway-fleece-heritage-3324d42017?id_colour=2296',''),
+	(31,'Etrex Touch 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-gps-fenix-3-2512c52003?id_colour=4324','With free battery worth Û 26,99'),
+	(32,'Wave Limited','Multitool','LEATHERMAN_WAVE_2841d40002_6464_01_be.jpg','/leatherman-multitool-wave-2c41d42001?id_colour=3856','Slechts'),
+	(33,'Bronia','Fleece Women','VAUDE_BRONIA_3124D52007_7272.jpg','/vaude-fleece-bronia-3124d52007?id_colour=4324',''),
+	(34,'100 Glacier','Fleece Women','THE-NORTH-FACE_GLACIER_3142d30017_7171_10-2.jpg','/the-north-face-fleece-100-glacier-3122d32016?id_colour=4246',''),
+	(35,'Chimborazo Pro FZ','Fleece Men','THE-NORTH-FACE_CHIMBORAZO-PRO_3342d40019_7272_03-2.jpg','/the-north-face-fleece-chimborazo-pro-3324d42009?id_colour=4324',''),
+	(36,'Madison','Coat Women','JACK-WOLFSKIN_MADISON_3153D52011_4141.jpg','/jack-wolfskin-coat-madison-3153d52011?id_colour=2296',''),
+	(37,'Madison','Coat Men','JACK-WOLFSKIN_MADISON_3353D52013_7171.jpg','/jack-wolfskin-coat-madison-3353d52013?id_colour=4246',''),
+	(38,'Peridot','Fleece Women','JACK-WOLFSKIN_PERIDOT_3124D52010_3232.jpg','/jack-wolfskin-fleece-peridot-3124d52010?id_colour=1594',''),
+	(39,'Caribou','Fleece Women','JACK-WOLFSKIN_CARIBOU_3324D52018_4141.jpg','/jack-wolfskin-fleece-caribou-3324d52018?id_colour=2296',''),
+	(40,'Crush\'n ice','Coat Women','JACK-WOLFSKIN_CRUSH-\'N-ICE_31B1D30005_4848.jpg','/jack-wolfskin-coat-crush-n-ice-3151d32005?id_colour=2842',''),
+	(41,'Stenton','Coat Men','JACK-WOLFSKIN_STENTON_3351D52014_7070.jpg','/jack-wolfskin-coat-stenton-3351d52014?id_colour=4168',''),
+	(43,'Upgrade','Hip Bag','JACK-WOLFSKIN_UPGRADE_2361A62004_7070.jpg','/jack-wolfskin-hip-bag-upgrade-2361a62004?id_colour=4168','In the spotlight'),
+	(44,'Palermo GTX','Shoe Gore-tex Men','LOWA_PALERMO-MEN_3722D52001_6060_01.jpg','/lowa-shoe-palermo-gore-tex-3722d52001?id_colour=3544',''),
+	(45,'Palermo GTX','ShoeGore-tex Women','LOWA_PALERMO-WOMEN_3712D52001_6090_01.jpg','/lowa-shoe-palermo-gore-tex-3712d52001?id_colour=3565',''),
+	(46,'Sarek','Wintercoat Women','FJALLRAVEN_SAREK_3153D42049_5454.jpg','/fjaellraeven-coat-sarek-winter-3153d42049?id_colour=3856','In the spotlight'),
+	(47,'Frost','Pullover Women','FJALLRAVEN_FROST_3125D12001_3040.jpg','/fjaellraeven-pullover-frost-3125d12001?id_colour=1448','In the spotlight'),
+	(48,'Lada','Pullover Men','FJALLRAVEN_LADA_3325D22004_7171.jpg','/fjaellraeven-pullover-lada-3325d22004?id_colour=4246','In the spotlight'),
+	(49,'Nils','Trousers Heren','FJALLRAVEN_NILS_3381c20001_3030_01.jpg','/fjaellraeven-trousers-nils-3341c22001?id_colour=1438','In the spotlight'),
+	(50,'Kanken','Daypack','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-daypack-kanken-2111a80038?id_colour=1594','From'),
+	(51,'Checkmate','Shirt','SOMEONE_CHECKMATE_4132.jpg','/someone-shirt-checkmate-5331d52026?id_colour=2287',''),
+	(52,'Funny Bunny','Trui Girls','SOMEONE_FUNNY-BUNNY_1111.jpg','/someone-pullover-funny-bunny-5244d52014?id_colour=346',''),
+	(53,'Antonius Sweat Pant','Trousers Boys','TUMBLE-\'N-DRY_ANTONIUS_7171.jpg','/tumble-n-dry-trousers-antonius-sweat-pant-5374d52016?id_colour=4246',''),
+	(54,'Roja','Trousers Girls','CKS_ROJA_1136.jpg','/cks-kids-trousers-roja-5291d52031?id_colour=366',''),
+	(55,'Mr Lama','Shirt Jongens','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360',''),
+	(56,'Nara','Cross Dress Meisjes','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-dress-nara-cross-5261d52001?id_colour=2805',''),
+	(57,'Kids Zenon','Coat junior','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-coat-zenon-kids-5184d42001?id_colour=1988',''),
+	(58,'Little Joe','Daypack junior','JACK-WOLFSKIN_LITLLE-JOE_2121C22002_3071.jpg','/jack-wolfskin-daypack-little-joe-2121c22002?id_colour=1474','In the spotlight'),
+	(59,'Edge 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-heart-rate-monitor-edge-25-2522c52004?id_colour=4171','In the spotlight'),
+	(60,'Tesoro ','Bike Men','CANNONDALE_TESORO-2_A213C52007_4141-2.jpg','/cannondale-citybike-tesoro-2-a213c52007?id_colour=2296','2 maintenances included'),
+	(61,'Macro 600 Lumen','Fietslicht','LEZYNE_MACRO-DRIVE-600_A372C52002_7070.jpg','','In the spotlight'),
+	(62,'Back Roller Urban','Bike Bag','ORTLIEB_BACK-ROLLER-URBAN_7513c50002_4545_01_be.jpg','/ortlieb-bike-bag-back-back-roller-urban-a513c52002?id_colour=2608',''),
+	(63,'Blowy','Jacket Men','RHBLOWYJACKET9221d42011707001be.jpg','/rh-windstopper-blowy-9221d42011?id_colour=4168',''),
+	(64,'Contest SO','Softshell','GBW_CONTEST-SO_7732B90002_3030.jpg','/gore-bike-wear-softshell-contest-so-9222b92003?id_colour=1438',''),
+	(65,'Fluid II','Trousers','VAUDEFLUIDII7745b80004707001.jpg','/vaude-trousers-fluid-ii-9135b82001?id_colour=4168','In the spotlight'),
+	(66,'Byron','Insulated Bottle','Contigo-packshot.jpg','/contigo-insulated-bottle-byron-1424d52002?id_colour=2397','With free coffee and mug'),
+	(67,'Nested','Shot Glasses','IZOLAShotGlassesIMG18922.jpg','/izola-gadget-nested-shot-glasses-2h21d52008?id_colour=1594',''),
+	(68,'Wiskey Stones','','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806',''),
+	(69,'Money Clip','','IZOLA_RDAW-140522-Izola-Money-Clip-logo-living-well-1.jpg','/izola-gadget-money-clip-2h51d52003?id_colour=3778',''),
+	(70,'Schoenlepel','','IZOLA_RDAW-140526-Izola-Shoehorn-Logo-talk-the-talk-1.jpg','/izola-gadget-shoe-horn-2h51d52004?id_colour=3778',''),
+	(71,'Schoenenzak','','IZOLA_ShoeBag_DifShoes.jpg','/izola-gadget-shoe-bag-2h51d52005?id_colour=2296',''),
+	(72,'Schoenschoonmaakset','','MENS_SOCIETY_SHOE-SHINE-KIT-64-2.jpg','/men-s-society-gadget-shoe-shine-kit-2h51d52011?id_colour=5806',''),
+	(73,'Verzorgingsset','','MENS_SOCIETY_STOW-AWAY-TRAVEL-KIT_-2015-14.jpg','/men-s-society-gadget-stow-away-travel-kit-2h51d52007?id_colour=294',''),
+	(74,'Manicureset','','MENS_SOCIETY_HANDSOME-HANDS-MANICURE-SET-2015-9.jpg','/men-s-society-gadget-handsome-hands-manicure-kit-2h51d52008?id_colour=318',''),
+	(75,'Fenix 3','GPS-watch','GARMIN_FENIX-3_2452c50001_7272_01.jpg_be.jpg','/garmin-gps-fenix-3-2512c52003?id_colour=4324',''),
+	(76,'Tandenborstelset','','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3778',''),
+	(77,'Bekers','','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#',''),
+	(78,'Xtreme 9000','Reisoplader','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-battery-loader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','Only'),
+	(79,'Runner 2 Music','GPS-horloge','TOMTOMRUNNER2CARDIOMUSIC.jpg','',NULL);
+
+/*!40000 ALTER TABLE `Products_en` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table Products_fr
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Products_fr`;
+
+CREATE TABLE `Products_fr` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `productnaam` varchar(100) DEFAULT NULL,
+  `productomschrijving` varchar(100) DEFAULT NULL,
+  `img` varchar(200) DEFAULT NULL,
+  `link` varchar(200) DEFAULT NULL,
+  `specialeactie` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `Products_fr` WRITE;
+/*!40000 ALTER TABLE `Products_fr` DISABLE KEYS */;
+
+INSERT INTO `Products_fr` (`id`, `productnaam`, `productomschrijving`, `img`, `link`, `specialeactie`)
+VALUES
+	(1,'Or Crew','T-shirt Hommes','J&J_OR-CREW-NECK_4312C52207_1010.jpg','/jack-jones-t-shirt-original-crew-4312c52207','Seulement'),
+	(2,'Camo','Short Hommes','J&J_CAMO_4365C52002_5507.jpg','/jack-jones-short-camo-4365c52002','Seulement'),
+	(3,'Binno','Combinaison Femmes','ICHI_BINNO-JUMPSUIT_4185C52005_4106.jpg','/ichi-combinaison-binno-4185C52005',''),
+	(4,'Berot','Short Femmes','ONLY_BEROT_4181C52025_1149.jpg','/only-short-berot-4181c52025','2 pour &euro;25'),
+	(5,'Selfie stick','Kit','4T7A0113.jpg','/azuri-video-accessoire-selfiestick-2e12c52001/azuri-video-accessoire-selfiestick-2e12c52001',''),
+	(6,'Universal 180&deg;','Objectif fish-eye','BLACK-EYE_UNIVERSAL-FISH-EYE_2g52c50007_0101_01_be_Ver1.jpg','/black-eye-e-gadget-the-original-180-fisheye-lens-2h61c52007',''),
+	(7,'Clipper','Objectif grand angle','BLACK-EYE_CLIPPER-WIDE-ANGLE_2g52c50008_0101_02_be_Ver1-copy.jpg','/black-eye-e-gadget-clipper-wide-angle-2h61c52008',''),
+	(8,'Darwin 3','et matelas pneumatique double maxi comfort','COLEMAN_DARWIN_3PLUS_MATRAS.jpg','/index.cfm/fuseaction/products.search/?searchvalue=coleman+darwin+matelas','Prix set'),
+	(9,'Moji','Lanterne de camping','BLACK-DIAMOND_MOJI_2541c50002_4040_01.jpg_be-copy.jpg','/black-diamond-lanterne-moji-light-2931c52002','Utilisez vos Eco-ch&egrave;ques'),
+	(10,'Hero 4 Silver','Cam&eacute;ra d\'action','GOPRO_4.jpg','/gopro-video-hero-4-silver-2E21D42002','Accessoire gratuit (&euro; 59,95)'),
+	(11,'Moore','Shirt Hommes','EIDER_MOORE_3315C52049_6161.jpg','/eider-chemise-moore-3315C52049',''),
+	(12,'Refractor','Duffle Pack','THE-NORTH-FACE_REFRACTOR-DUFFEL-PACK_2146c50001_7070_01_be-copy.jpg','/the-north-face-trolley-refractor-duffle-pack-2261c52001',''),
+	(13,'Flyweight pack','Sac &agrave; dos 17l','THE-NORTH-FACE_FLYWEIGHT-PACK_2111c10013_7071_53.jpg','/the-north-face-sac-a-dos-flyweight-2111c10013',''),
+	(14,'No matter what','Flatbed 20 Trolley','EAGLE-CREEK_FLATBED20_2261D42006_7070.jpg','/eagle-creek-trolley-no-matter-what-flatbed-20-2261d42006',''),
+	(15,'No matter what','Flatbed 28 Trolley','EAGLE-CREEK_FLATBED28_2231D42027_3232.jpg','/eagle-creek-trolley-no-matter-what-flatbed-28-2231d42027',''),
+	(16,'No matter what','Flatbed 32 Trolley','EAGLE-CREEK_FLATBED32_2231D42028_4242.jpg','/eagle-creek-trolley-no-matter-what-flatbed-32-2231d42028?id_colour=4168',''),
+	(17,'No matter what','Flatbed 20/28/32','EAGLE_CREEK_SET_TROLLEYS.jpg','/index.cfm/fuseaction/products.search/?searchvalue=No+matter+what','Prix set'),
+	(18,'Kodiak','Mini chargeur','OUTDOOR-TECH_KODIAK-OPLADER_2G32C52001_Vertical.jpg','/outdoor-tech-chargeur-kodiak-mini-2g32c52001',''),
+	(19,'Totally Royal','Bag','2125c50003_6565_01.jpg','/pieces-shopper-totally-royal-leather-travel-bag-2315c52003',''),
+	(20,'Ginger fiji','Robe','KING-LOUIE_GINGER-DRESS_4163C52076_4904.jpg','/king-louie-robe-ginger-fiji-4163C52076',''),
+	(21,'Esther','Short Femmes','4T7A0172.jpg','/terre-bleue-short-esther-4184C52008',''),
+	(22,'Blouse','','YAYA_BLOUSE_4132C52068_5353.jpg','/yaya-chemise-090957-4132c52068',''),
+	(23,'Smartphone Projector','','LUCKIES_SMARTPHONE-PROJECTOR_2g31c50012_7015_02_be.jpg','/luckies-gadget-smartphone-projector-2h41c52060',''),
+	(24,'Lazy Afternoon','Hamac','Amazonas_Lazy-Afternoon_1311C30001_3040_01.jpg','/amazonas-hamac-lazy-afternoon-1311c50001',''),
+	(25,'Woodstock','Sac de couchage','AYACUCHO_WOODSTOCK_1322c40002_0303_01-copy.jpg','/ayacucho-sac-de-couchage-woodstock-1322c40002',''),
+	(26,'Junior Vario','Sac de couchage junior','AYACUCHO_JUNIOR-VARIO_1321c20001_4040_02.jpg','/ayacucho-sac-de-couchage-junior-vario-1321c20001',''),
+	(27,'Fox 30','Sac &agrave; dos junior','fox-30.jpg','/deuter-sac-a-dos-fox-30-1213c30001','Camlebak Eddy 0,4l gratuit d\'une valeur de &euro;1'),
+	(28,'Travelset','Minispray 8ml','CARE-PLUS_TRAVELSET_262zc30001_0101_02.jpg','/care-plus-divers-travelset-minispray-4x8ml-2a23c32001',''),
+	(29,'Led Day Light','Lampe de poche','VARTA_ZAKLAMP_2921C32017_0101_02.jpg','/varta-lampe-de-poche-led-day-light-2921c32017','Utilisez vos Eco-ch&egrave;ques'),
+	(30,'Darwin 2','Tente','COLEMAN_DARWIN-2_1121c50013_5050_01_be.jpg','/coleman-tente-darwin-2-1121c50013',''),
+	(31,'SEO 3','Lampe frontale','LED-LENSER_SEO3_2511C30006.jpg','/led-lenser-lampe-frontale-seo-3-2911c32005',''),
+	(32,'Flowers','Short de bain gar&ccedil;ons','4T7A0200.jpg','/rumbl-short-de-bain-flowers-8422c52033',''),
+	(33,'Palm tree','Short de bain gar&ccedil;ons','4T7A0198.jpg','/rumbl-short-de-bain-palm-tree-8422c52034',''),
+	(34,'Happy Hippie','Bikini filles','4T7A0204.jpg','/lingadore-bikini-happy-hippie-8331c52055',''),
+	(35,'Flamingo','T-shirt anti-UV filles','4T7A0187.jpg','/molo-kids-lycra-flamingo-8361c52001',''),
+	(36,'Shark','T-shirt anti-UV gar&ccedil;ons','4T7A0186.jpg','/molo-kids-lycra-shark-8441c52002',''),
+	(37,'Vigga','Combinaison filles','4T7A0189.jpg','/name-it-combinaison-vigga-5284c52010',''),
+	(38,'Set de plong&eacute;e','Junior','Speedo_snorkelset.jpg','/speedo-lifestyle-jouets-glide-junior-set-plongee-en-apnee-2i21c42001',''),
+	(39,'Jouets de la plage','Assortiment','Quut_speelgoed.jpg','/quut','&agrave; partir de'),
+	(40,'Niveajulbo','Nivea gratuit &agrave; l\'achat des lunettes de soleil Julbo','niveajulbo_FR.jpg','/index.cfm/fuseaction/products.search/?searchvalue=julbo&flt_type_gender=junior&filters=type_gender|LIST',''),
+	(41,'Assortiment tongs','pour enfants','assortiment_teenslippers_FR.jpg','/junior/maillots-de-bain/sandales-tongs',''),
+	(42,'Cozumel','Chapeau','BARTS_COZUMEL_8634C52008_6464.jpg','/barts-chapeau-cozumel-8634C52008',''),
+	(43,'Ivy Jade','Bikini','ivy-jade-bikini.jpg','/beach-life-bikini-ivy-jade-8131c52032?id_colour=3270',''),
+	(44,'Kachon Tee','T-shirt Hommes','J&J-TECH_KACHON-TEE_8231C52015_7373.jpg','/jack-jones-tech-t-shirt-kachon-8231c52015',''),
+	(45,'Happie Hippie','Bikini','4T7A0170.jpg','/lingadore-bikini-happie-hippie-8131c52020',''),
+	(46,'Mahalo','Robe','4T7A0168.jpg','/lingadore-robe-mahalo-8154c52003?id_colour=4168','Seulement'),
+	(47,'Boltana','Robe','4T7A0164.jpg','/protest-robe-boltana-8154c52004?id_colour=4269',''),
+	(48,'Yolt','Short de bain Hommes','PROTEST_YOLT_8222C52003_4110.jpg','/protest-short-de-bain-yolt-8222c52003',''),
+	(49,'Assortiment teenslippers','-50% de r&eacute;duction sur la 2i&egrave;me paire','reef_FR.jpg','/reef',''),
+	(50,'Assortiment zonnebescherming','-50% de r&eacute;duction sur la 2i&egrave;me produit','assortiment_zonnebescherming_FR.jpg','/index.cfm/fuseaction/products.search/?searchvalue=nivea&flt_verzorging_onderhoud=zonnebescherming&filters=verzorging_onderhoud|LIST',''),
+	(51,'Skomer','T-shirt Femmes','VAUDE_SKOMER_3112C50002_5353.jpg','/vaude-t-shirt-dames-skomer-3112c50002?id_colour=3232',''),
+	(52,'Masai Mara','T-shirt Femmes','AYACUCHO_MASAI-MARA_-3112C50044_3232.jpg','/ayacucho-t-shirt-masai-mara-dames-3112c40021',''),
+	(53,'Zambezi','T-shirt Femmes','AYACUCHO_ZAMBEZI_3114C50024_0450.jpg','/index.cfm/fuseaction/products.search/?searchvalue=zambezi+top',''),
+	(54,'Elena','T-shirt Femmes','AYACUCHO_ELENA_-3112C32001_4030.jpg','/ayacucho-t-shirt-elena-3112c32001',''),
+	(55,'Simona','T-shirt Femmes','AYACUCHO_SIMONA_-3114C30012_3535.jpg','/ayacucho-top-simona-3114c30012',''),
+	(56,'Betty Polo','Polo Femmes','AYACUCHO_BETTY-POLO_3119C42002_7272.jpg','/ayacucho-polo-betty-3119c42002',''),
+	(57,'City','T-shirt Hommes','SPRAYWAY_CITY_3312C50053_2020.jpg','/sprayway-t-shirt-city-3312c50053?id_colour=736',''),
+	(58,'Ridge','T-shirt Hommes','SPRAYWAY_RIDGE_3312C40002_4040.jpg','/sprayway-t-shirt-ridge-3312c52003?id_colour=2218',''),
+	(59,'Zero Rules','T-shirt Hommes','COLUMBIA_ZERO-RULES_3312C40087_7272.jpg','/columbia-t-shirt-zero-rules-3312c40087',''),
+	(60,'Mountain Tech III','T-shirt Hommes','COLUMBIA_MOUNTAIN-TECH_3312C30044_4444.jpg','/columbia-t-shirt-mountain-tech-iii-3312c30044',''),
+	(61,'Dome','T-shirt Hommes','THE-NORTH-FACE_DOME-BIKER_3312C40005_4040.jpg','/the-north-face-t-shirt-dome-biker-3312C40005',''),
+	(62,'Company Car','T-shirt Hommes','THE-NORTH-FACE_COMPANY-CAR_3312C40018_7373.jpg','/the-north-face-t-shirt-company-car-3312c40018',''),
+	(63,'Mountaineering','T-shirt Hommes','THE-NORTH-FACE_MOUNTAINEERING_3312C50037_5656.jpg','/the-north-face-t-shirt-mountaineering-3312c50037',''),
+	(64,'Tumi SS','T-shirt Hommes','AYACUCHO_TUMI_3312C50063_5555.jpg','/ayacucho-t-shirt-tumi-3312c50063',''),
+	(65,'Beat The Mountain','T-shirt Hommes','AYACUCHO_BEATTHEMOUNTAIN_3312C50064_5555.jpg','/ayacucho-t-shirt-beat-the-mountain-3312c50064',''),
+	(66,'Rhino SS','T-shirt Hommes','AYACUCHO_RHINO_3312C50069_3131.jpg','/ayacucho-t-shirt-rhino-3312c40034',''),
+	(67,'Hummingbird QD','T-shirt Hommes','AYACUCHO_HUMMINGBIRD_3312C30023_3232.jpg','/ayacucho-t-shirt-hummingbird-3312c30023',''),
+	(68,'Fish QD','T-shirt Hommes','AYACUCHO_FISH_3312C40036_5353.jpg','/ayacucho-t-shirt-fish-3312c40036',''),
+	(69,'Dots QD','T-shirt Hommes','AYACUCHO_DOTS_3312C40035_4242.jpg','/ayacucho-t-shirt-dots-3312c40035',''),
+	(70,'Owl QD','T-shirt Hommes','AYACUCHO_OWL_3312C50065_3232.jpg','/ayacucho-t-shirt-owl-3312c50065',''),
+	(71,'Mud Racer QD','T-shirt Hommes','AYACUCHO_MUD-RACER_3312C50066_7272.jpg','/ayacucho-t-shirt-mud-racer-3312C50066',''),
+	(72,'Benny','Polo Hommes','AYACUCHO_BENNY-POLO_3318C42011_5555.jpg','/ayacucho-polo-benny-3318c42011',''),
+	(73,'Bikerace','T-shirt Hommes','UAX_BIKERACE_3312A90032_5757.jpg','/uax-t-shirt-bikerace-3312a90032',''),
+	(74,'Recycle','T-shirt Hommes','UAX_RECYCLE_3312C40043_7171.jpg','/uax-t-shirt-recycle-3312c40043',''),
+	(75,'You Decide','T-shirt Hommes','UAX_YOU-DECIDE_3312C50073_5555.jpg','/uax-t-shirt-you-decide-3312c50073',''),
+	(76,'Deer','T-shirt Hommes','UAX_DEER-SHIRT_3312C40047_4141.jpg','/uax-t-shirt-deer-3312c40047',''),
+	(77,'Scubahuba','T-shirt Hommes','UAX_SCUBAHUBA_3312C00023_4040.jpg','/uax-t-shirt-scubahuba-3312c00023',''),
+	(78,'Ecologica','T-shirt Hommes','UAX_ECOLOGICA_3312C50074_7575.jpg','/uax-t-shirt-ecologica-3312c50074',''),
+	(79,'Re-cycle','T-shirt Hommes','UAX_RE-CYCLE_3312C50075_3131.jpg','/uax-t-shirt-re-cycle-3312c50075',''),
+	(80,'Fast Bike','T-shirt Hommes','UAX_FAST-BIKE_3318C52008_7171.jpg','/uax-polo-fast-bike-3318c52008',''),
+	(81,'Margot','Robe','PATAGONIA_MARGOT_3136C32002_9003.jpg','/patagonia-robe-margot-3136c32002?id_colour=283',''),
+	(82,'Wahia','Robe','JACK-WOLFSKIN_WAHIA_3136C52021_5252.jpg','/jack-wolfskin-robe-wahia-3136c52021',''),
+	(83,'Sookie','Robe','ROYAL-ROBBINS_SOOKIE_3193c50013_4141_01_be.jpg','/royal-robbins-robe-sookie-3136c52003',''),
+	(84,'Flora','Robe','AYACUCHO_FLORA_3136C52012_0412.jpg','/ayacucho-robe-flora-3136c52012',''),
+	(85,'Teva','Assortiment Teva Originals','teva_FR.jpg','/teva',''),
+	(87,'Prime','Lunettes de soleil','SINNER_PRIME_2212a80013_1571_01.jpg','/sinner-lunettes-prime-2412a82003?id_colour=704',''),
+	(88,'Rotorua','Short Femmes','JACK-WOLFSKIN_ROTORUA-SHORT_3133C12003_4747.jpg','/jack-wolfskin-short-rotorua-3133c12003',''),
+	(89,'Rotorua','Short Hommes','JACK-WOLFSKIN_ROTORUA_3372c10008_7272_01_Ver1.jpg','/jack-wolfskin-short-rotorua-3332c12004?id_colour=4324',''),
+	(90,'Bridgeton Low WP','Chaussures Hommes','TIMBERLAND_BRIDGETON-LOW-WP_3d12c50016_6060_01_be.jpg','/timberland-shoe-bridgeton-low-waterproof-3722c52015?id_colour=3544',''),
+	(91,'Corliss Gore-Tex&copy;','Chaussures Femmes','TIMBERLAND-CORLISS-GORETEX_3b12c50015_6040_01_be.jpg','/timberland-shoe-corliss-gore-tex-3712C52013',''),
+	(92,'Caucasus','Sac de couchage','MILLET_CAUCASUS_1325C40002.jpg','/millet-sac-de-couchage-caucasus-regular-1325c40002?id_colour=4284',''),
+	(93,'Caucasus long','Sac de couchage','Caucasus_long.jpg','/millet-sac-de-couchage-caucasus-long-1325c40003?id_colour=4284',''),
+	(94,'Futura 22','Sac &agrave; dos','DEUTER_FUTURA-22_1212c50015_5071_01_be.jpg','/deuter-sac-a-dos-futura-22-1212c50015',''),
+	(95,'Gel 3-pack','Produits nutritionnel','OVERSTIMS_VOEDING_2913c40009_0101_01.jpg','/overstim-s-gels-nutrition-sport-3-pack-2d13c42009',''),
+	(96,'Tek Towel','Wash Kit','SEA-TO-SUMMIT_TECH-TOWEL-WASH_261zc50001_5252_01_be.jpg','/sea-to-summit-divers-tek-towel-wash-kit-large-2a1bc52001',''),
+	(97,'Compact 8x25','Jumelles','KITE-OPTICS_COMPACT-8X25_2713d30044_0070_01.jpg','/kite-optics-jumelles-compact-8x25-2b13d32044',''),
+	(98,'Poco Plus','Porte-b&eacute;b&eacute;','OSPREY_POCO-PLUS_1251c20002_7272_01.jpg','/osprey-porte-bebe-poco-plus-1261c22002','Seulement'),
+	(99,'2+1','Action t-shirt 2+1 gratuit','2plus1_FR.jpg','/content/fr/depliantdete2015-2plus1 ',''),
+	(100,'Ambit 2S Graphite','Altim&egrave;tre','SUUNTO_AMBIT-25-GRAPHIT_2421c30008_7015_02.jpg','/suunto-hoogtemeter-ambit-2s-grapphite-hartslagmeter-2545C32007','Cardiofr&eacute;quencem&egrave;tre inclus'),
+	(101,'Ugrip Chain 585-5','Antivol ugrip chain','ABUS_UGRIP-CHAIN_7272c50008_7070_01_be.jpg','/abus-anti-vol-ugrip-chain-a381c52008',''),
+	(102,'Vybe D7','V&eacute;lo pliant','DAHON_VYBE_7116c30001_1010_02_be.jpg','/dahon-velo-pliant-vybe-d7-a216c32001?id_colour=4168',''),
+	(103,'Cluster 10+3','Sac &agrave; dos','VAUDE_CLUSTER_7511c20015_7070_51.jpg','/vaude-sac-a-dos-velo-cluster-10-3l-a511c22016?id_colour=4168',''),
+	(104,'Activ TC','Casque','Casco_Activ-TC_Black_left_0802.jpg','/casco-casque-velo-activ-tc-a122c22004?id_colour=4168',''),
+	(105,'Dinsdag comfort 7V','V&eacute;lo de ville','BATAVUS_DINSDAG_7113c50060_7070_01_be.jpg','/batavus-velo-de-ville-dinsdag-comfort-7v-hommes-a213c52060',''),
+	(106,'Ichi','Sacoche v&eacute;lo arri&egrave;re','CLARIJS_FIETSTAS_A513C52013_5203_01.jpg','/clarijs-covers-sacoche-velo-arriere-ichi-krikke-a513c52013',''),
+	(107,'Vintage','Sonette de v&eacute;lo','LIIX_VINTAGE-FIETSBAL_721ac50008_2424_01_be_Ver1.jpg','/liix-sonnette-de-velo-vintage-a391c52008','Seulement'),
+	(108,'Transport U4 Jeans','V&eacute;lo de ville','CORTINA_TRANSPORT-U4_7119c50050_4545_01_be.jpg','/cortina-velo-de-ville-transport-u4-jeans-femmes-a223c52049',''),
+	(109,'Ride','T-shirt Femmes','ODLO_RIDE_7612c50005_3210_01_be.jpg','/odlo-t-shirt-ride-9112c52003',''),
+	(110,'Aircontact Pro 60+15','Sac &agrave; dos Hommes','Aircontact_Pro.jpg','/deuter-sac-a-dos-aircontact-pro-60-15-1232C50010','Housse de pluie inclus'),
+	(111,'Aircontact Pro 55+15 SL','Sac &agrave; dos Femmes','Aircontact_Pro_55.jpg','/deuter-sac-a-dos-aircontact-pro-55-15-sl-1231C50006','Housse de pluie inclus'),
+	(112,'Vespucci 4','Tente','COLEMAN_VESP_4_PARTY_GRILL_FR.jpg','/coleman-tente-vespucci-4-1142c52001','Campingaz Party Grill gratuit'),
+	(113,'Vespucci 6','Tente','COLEMAN_VESP_6_PARTY_GRILL_FR.jpg','/coleman-tente-vespucci-6-1152c52001','Campingaz Party Grill gratuit '),
+	(114,'Bandit','Cam&eacute;ra d\'action','TOMTOM_BANDIT_.jpg','/tomtom-video-bandit-2e21c52003',''),
+	(115,'Sac de voyage','','CAMEL-ACTIVE_DUFFEL_2141c50010_5555_01_be.jpg','/camel-active-bags-sac-de-voyage-19644-2211c52009',''),
+	(116,'Trousse de toilette ','','CAMEL-ACTIVE_TOILETTAS_2171c50007_5555_01_be.jpg','/camel-active-bags-trousse-de-toilette-19743-2351c52007',''),
+	(117,'Couverture pique-nique','','LALAY_PICNIC_1475C52004_3737.jpg','/lalay-divers-couverture-pique-nique-1475c52004',''),
+	(118,'Smoozip +3&deg;C','Sac de couchage','JACK-WOLFSKIN_SMOOZIP_1324c50006_4040_01_be.jpg','/jack-wolfskin-sac-de-couchage-smoozip-3-1324c50006',''),
+	(119,'Avantage prix vert','Achetez un sac r&eacute;utilisable de &euro; 1 et profitez d\'une belle r&eacute;duction sur tous les','groeneprijs_FR.jpg','/content/fr/prix-avantageux-vert',''),
+	(120,'Avantage prix vert','Achetez un sac r&eacute;utilisable de &euro; 1 et profitez d\'une belle r&eacute;duction sur tous les','groeneprijs_FR.jpg','/content/fr/prix-avantageux-vert',''),
+	(121,'Hero 4 Black','Cam&eacute;ra d\'action','GOPRO_4.jpg','/gopro-video-hero-4-black-2e21c52001?id_colour=4168','Accessoire gratuit (&euro; 59,95)'),
+	(122,'Avantage prix vert','Achetez un sac r&eacute;utilisable de &euro; 1 et profitez d\'une belle r&eacute;duction sur tous les','groeneprijs_FR.jpg','/content/fr/prix-avantageux-vert',NULL),
+	(123,'lookbook',NULL,'lookbook1.jpg','/lookbook/follow-the-sun',NULL),
+	(124,'lookbook',NULL,'lookbook2.jpg','/lookbook/follow-the-sun',NULL),
+	(127,'lookbook',NULL,'lookbook3.jpg','/lookbook/follow-the-sun',NULL),
+	(129,'lookbook',NULL,'lookbook4.jpg','/lookbook/follow-the-sun',NULL),
+	(130,'lookbook',NULL,'lookbook5.jpg','/lookbook/follow-the-sun',NULL),
+	(131,'lookbook',NULL,'lookbook6.jpg','/lookbook/follow-the-sun',NULL),
+	(132,'lookbook',NULL,'lookbook7.jpg','/lookbook/follow-the-sun',NULL),
+	(133,'lookbook',NULL,'lookbook8.jpg','/lookbook/follow-the-sun',NULL),
+	(134,'lookbook',NULL,'lookbook9.jpg','/lookbook/follow-the-sun',NULL),
+	(135,'lookbook',NULL,'lookbook11.jpg','/lookbook/follow-the-sun',NULL),
+	(136,'lookbook',NULL,'lookbook10.jpg','/lookbook/follow-the-sun',NULL),
+	(137,'lookbook',NULL,'lookbook12.jpg','/lookbook/follow-the-sun',NULL),
+	(138,'lookbook',NULL,'lookbook4.jpg','/lookbook/follow-the-sun',NULL),
+	(165,'lookbook',NULL,'lookbook5.jpg','/lookbook/follow-the-sun',NULL);
+
+/*!40000 ALTER TABLE `Products_fr` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table Products_test
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Products_test`;
+
+CREATE TABLE `Products_test` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `productnaam` varchar(100) DEFAULT NULL,
+  `productomschrijving` varchar(100) DEFAULT NULL,
+  `merk` varchar(50) DEFAULT NULL,
+  `img` varchar(200) DEFAULT NULL,
+  `link` varchar(200) DEFAULT NULL,
+  `oudeprijs` varchar(7) DEFAULT NULL,
+  `nieuweprijs` varchar(7) DEFAULT NULL,
+  `kleur` varchar(300) DEFAULT NULL,
+  `specialeactie` varchar(50) DEFAULT NULL,
+  `exclusief` int(1) DEFAULT NULL,
+  `uitverkocht` int(1) DEFAULT NULL,
+  `groeneprijs` int(1) DEFAULT NULL,
+  `2plus1` int(1) DEFAULT NULL,
+  `dames` int(1) DEFAULT NULL,
+  `heren` int(1) DEFAULT NULL,
+  `junior` int(1) DEFAULT NULL,
+  `fashion` int(1) DEFAULT NULL,
+  `outdoor` int(1) DEFAULT NULL,
+  `uitrusting` int(1) DEFAULT NULL,
+  `camping` int(1) DEFAULT NULL,
+  `badmode` int(1) DEFAULT NULL,
+  `fietsen` int(1) DEFAULT NULL,
+  `categorie` varchar(25) NOT NULL DEFAULT 'O',
+  `volgorde` int(11) NOT NULL DEFAULT '10',
+  `actie` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `Products_test` WRITE;
+/*!40000 ALTER TABLE `Products_test` DISABLE KEYS */;
+
+INSERT INTO `Products_test` (`id`, `productnaam`, `productomschrijving`, `merk`, `img`, `link`, `oudeprijs`, `nieuweprijs`, `kleur`, `specialeactie`, `exclusief`, `uitverkocht`, `groeneprijs`, `2plus1`, `dames`, `heren`, `junior`, `fashion`, `outdoor`, `uitrusting`, `camping`, `badmode`, `fietsen`, `categorie`, `volgorde`, `actie`)
+VALUES
+	(1,'Or Crew','Neck T-shirt Heren','Jack & Jones','J&J_OR-CREW-NECK_4312C52207_1010.jpg','/jack-jones-t-shirt-original-crew-4312c52207','','17,95','#CCCCCC #4A6786','Slechts',NULL,NULL,NULL,NULL,NULL,1,NULL,1,NULL,NULL,NULL,NULL,NULL,'camping',1,NULL),
+	(2,'Camo','Herenshort','Jack & Jones','J&J_CAMO_4365C52002_5507.jpg','/jack-jones-short-camo-4365c52002','','39,95','camo1.jpg camo2.jpg','Slechts',NULL,NULL,NULL,NULL,NULL,4,NULL,4,NULL,NULL,NULL,NULL,NULL,'camping',4,NULL),
+	(3,'Binno','Playsuit dames','Ichi','ICHI_BINNO-JUMPSUIT_4185C52005_4106.jpg','','59,95','39','binno1.jpg binno2.jpg','',1,NULL,1,NULL,7,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,'camping',7,NULL),
+	(4,'Berot','Damesshort','Only','ONLY_BEROT_4181C52025_1149.jpg','/only-short-berot-4181c52025','','16,95','berot1.jpg berot2.jpg berot3.jpg','2 voor &euro;25',1,NULL,NULL,NULL,10,NULL,NULL,10,NULL,NULL,NULL,NULL,NULL,'camping',10,NULL),
+	(5,'Selfiestick','Kit','Azuri','4T7A0113.jpg','','24,95','19','','',NULL,NULL,NULL,NULL,13,13,NULL,NULL,NULL,13,NULL,NULL,NULL,'camping',13,NULL),
+	(6,'Universal 180¡','Fish Eye lens','Black Eye','BLACK-EYE_UNIVERSAL-FISH-EYE_2g52c50007_0101_01_be_Ver1.jpg','/black-eye-e-gadget-the-original-180-fisheye-lens-2h61c52007','','29,95','','',NULL,NULL,NULL,NULL,16,16,NULL,NULL,NULL,16,NULL,NULL,NULL,'camping',16,NULL),
+	(7,'Clipper','Wide angle lens','Black Eye','BLACK-EYE_CLIPPER-WIDE-ANGLE_2g52c50008_0101_02_be_Ver1-copy.jpg','/black-eye-e-gadget-clipper-wide-angle-2h61c52008','','44,95','','',NULL,NULL,NULL,NULL,19,19,NULL,NULL,NULL,19,NULL,NULL,NULL,'camping',19,NULL),
+	(8,'Darwin 3','en Maxi Comfort Luchtmatras','Coleman','COLEMAN_DARWIN_3PLUS_MATRAS.jpg','','159,9','99','','Setprijs',NULL,NULL,NULL,NULL,22,22,NULL,NULL,NULL,22,22,NULL,NULL,'camping',22,NULL),
+	(9,'Moji','Campinglamp','Black Diamond','BLACK-DIAMOND_MOJI_2541c50002_4040_01.jpg_be-copy.jpg','/black-diamond-lantaarn-moji-light-2931c52002','','19,95','#E6E546 #1A74B4','Gebruik je ecocheques',NULL,NULL,NULL,NULL,25,25,NULL,NULL,NULL,25,25,NULL,NULL,'camping',25,NULL),
+	(10,'Hero 4 Silver','Camera','GoPro','GOPRO_4.jpg','/gopro-video-hero-4-silver-2e21c52002','','429','','Gratis bundle t.w.v. &euro;59,95',NULL,NULL,NULL,NULL,28,28,NULL,NULL,NULL,NULL,NULL,NULL,28,'camping',28,NULL),
+	(11,'Moore','Shirt Heren','Eider','EIDER_MOORE_3315C52049_6161.jpg','/eider-hemd-moore-3315c52049','64,95','39','#BAB2AF moore.jpg','',NULL,NULL,1,NULL,NULL,56,NULL,NULL,56,NULL,NULL,NULL,NULL,'travel',56,NULL),
+	(12,'Refractor','Duffle Pack','The North Face','THE-NORTH-FACE_REFRACTOR-DUFFEL-PACK_2146c50001_7070_01_be-copy.jpg','/the-north-face-trolley-refractor-duffle-pack-2261c52001','164,95','99','#323036','',NULL,NULL,NULL,NULL,34,34,NULL,NULL,NULL,34,NULL,NULL,NULL,'travel',34,NULL),
+	(13,'Flyweight pack','Dagrugzak 17l','The North Face','THE-NORTH-FACE_FLYWEIGHT-PACK_2111c10013_7071_53.jpg','/the-north-face-dagrugzak-flyweight-2111C10013','44,95','29','#302F33','',NULL,NULL,NULL,NULL,37,37,NULL,NULL,NULL,37,NULL,NULL,NULL,'travel',37,NULL),
+	(14,'No matter what','Flatbed 20 Trolley','Eagle Creek','EAGLE-CREEK_FLATBED20_2261D42006_7070.jpg','/eagle-creek-trolley-no-matter-what-flatbed-20-2261d42006','135','85','#302E34 #B83249 #165FAF','',NULL,NULL,NULL,NULL,40,40,NULL,NULL,NULL,1,NULL,NULL,NULL,'travel',40,NULL),
+	(15,'No matter what','Flatbed 28 Trolley','Eagle Creek','EAGLE-CREEK_FLATBED28_2231D42027_3232.jpg','/eagle-creek-trolley-no-matter-what-flatbed-28-2231d42027','165','105','#302E34 #B83249 #165FAF','',NULL,NULL,NULL,NULL,43,43,NULL,NULL,NULL,2,NULL,NULL,NULL,'travel',43,NULL),
+	(16,'No matter what','Flatbed 32 Trolley','Eagle Creek','EAGLE-CREEK_FLATBED32_2231D42028_4242.jpg','/eagle-creek-trolley-no-matter-what-flatbed-32-2231d42028','185','115','#302E34 #B83249 #165FAF','',NULL,NULL,NULL,NULL,46,46,NULL,NULL,NULL,3,NULL,NULL,NULL,'travel',46,NULL),
+	(17,'No matter what','Flatbed 20/28/32','Eagle Creek','EAGLE_CREEK_SET_TROLLEYS.jpg','','485','229','#302E34 #B83249 #165FAF','Setprijs',NULL,NULL,NULL,NULL,49,49,NULL,NULL,NULL,4,NULL,NULL,NULL,'travel',49,NULL),
+	(18,'Kodiak','Mini oplader','Outdoor Tech','OUTDOOR-TECH_KODIAK-OPLADER_2G32C52001_Vertical.jpg','/outdoor-tech-oplader-kodiak-mini-2g32c52001','24,95','15','','',NULL,NULL,NULL,NULL,52,52,NULL,NULL,NULL,52,52,NULL,NULL,'travel',52,NULL),
+	(19,'Totally Royal','Bag','Pieces','2125c50003_6565_01.jpg','/pieces-shopper-totally-royal-leather-travel-bag-2315c52003','134,95','85','','',NULL,NULL,1,NULL,53,NULL,NULL,53,NULL,NULL,NULL,NULL,NULL,'travel',53,NULL),
+	(20,'Ginger fiji','Jurk','King Louie','KING-LOUIE_GINGER-DRESS_4163C52076_4904.jpg','','79,95','55','king1.jpg king2.jpg','',1,NULL,1,NULL,55,NULL,NULL,55,NULL,NULL,NULL,55,NULL,'travel',55,NULL),
+	(21,'Esther','Damesshort','Terre Bleue','4T7A0172.jpg','','79','55','#959286 #E5C9C9','',1,NULL,1,NULL,58,NULL,NULL,58,NULL,NULL,NULL,58,NULL,'travel',58,NULL),
+	(22,'Blouse','','Yaya','YAYA_BLOUSE_4132C52068_5353.jpg','','39,95','25','yaya1.jpg yaya2.jpg','',1,NULL,1,NULL,61,NULL,NULL,61,NULL,NULL,NULL,NULL,NULL,'travel',61,NULL),
+	(23,'Smartphone Projector','','Luckies','LUCKIES_SMARTPHONE-PROJECTOR_2g31c50012_7015_02_be.jpg','/luckies-gadget-smartphone-projector-2h41c52060','','19,95','','',NULL,NULL,NULL,NULL,64,64,NULL,NULL,NULL,64,NULL,NULL,NULL,'travel',64,NULL),
+	(24,'Lazy Afternoon','Hangmat','Amazonas','Amazonas_Lazy-Afternoon_1311C30001_3040_01.jpg','/amazonas-hangmat-lazy-afternoon-1311c30001','29,95','19','hang1.jpg hang2.jpg hang3.jpg hang4.jpg','',NULL,NULL,NULL,NULL,67,67,67,NULL,NULL,67,67,67,NULL,'camping',67,NULL),
+	(25,'Woodstock','Slaapzak','Ayacucho','AYACUCHO_WOODSTOCK_1322c40002_0303_01-copy.jpg','/ayacucho-slaapzak-woodstock-1322c40002','','29,95','wood1.jpg wood2.jpg','',NULL,NULL,NULL,NULL,70,70,NULL,NULL,NULL,70,70,NULL,NULL,'camping',70,NULL),
+	(26,'Junior Vario','Slaapzak kids','Ayacucho','AYACUCHO_JUNIOR-VARIO_1321c20001_4040_02.jpg','/ayacucho-slaapzak-junior-vario-1321c20001','','49,95','','',NULL,NULL,NULL,NULL,NULL,NULL,73,NULL,NULL,73,73,NULL,NULL,'camping',73,NULL),
+	(27,'Fox 30','Trekkingrugzak junior','Deuter','fox-30.jpg','/deuter-rugzak-fox-30-1213c30001','','94,95','#E2302F','Gratis Camlebak Eddy 0,4l t.w.v. &euro;15,95',NULL,NULL,NULL,NULL,NULL,NULL,76,NULL,NULL,76,76,NULL,NULL,'camping',76,NULL),
+	(28,'Travelset','Minispray 8ml','Care Plus','CARE-PLUS_TRAVELSET_262zc30001_0101_02.jpg','/care-plus-diverse-travelset-minispray-4x8ml-2a23c32001','','9,95','','',NULL,NULL,NULL,NULL,79,79,79,NULL,NULL,79,79,79,NULL,'camping',79,NULL),
+	(29,'Led Day Light','Zaklamp','Varta','VARTA_ZAKLAMP_2921C32017_0101_02.jpg','/varta-zaklamp-led-day-light-2921c32017','9,95','6','','Gebruik je ecocheques',NULL,NULL,NULL,NULL,82,82,82,NULL,NULL,82,82,NULL,NULL,'camping',82,NULL),
+	(30,'Darwin 2','Tent','Coleman','COLEMAN_DARWIN-2_1121c50013_5050_01_be.jpg','/coleman-tent-darwin-2-1121c50013','74,95','49','','',NULL,NULL,NULL,NULL,85,85,85,NULL,NULL,85,20,NULL,NULL,'camping',85,NULL),
+	(31,'SEO 3','Hoofdlamp','Led Lenser','LED-LENSER_SEO3_2511C30006.jpg','/led-lenser-hoofdlamp-seo-3-2911c32005','39,95','25','','',NULL,NULL,NULL,NULL,88,88,NULL,NULL,NULL,88,88,NULL,NULL,'camping',88,NULL),
+	(32,'Flowers','Zwemshort jongens','Rumbl','4T7A0200.jpg','/rumbl-zwemshort-flowers-8422c52033','34,95','25','','',NULL,NULL,1,NULL,NULL,NULL,91,NULL,NULL,NULL,NULL,91,NULL,'beach',91,NULL),
+	(33,'Palm tree','Zwemshort jongens','Rumbl','4T7A0198.jpg','/rumbl-zwemshort-palm-tree-8422c52034','34,95','25','','',NULL,NULL,1,NULL,NULL,NULL,94,NULL,NULL,NULL,NULL,94,NULL,'beach',94,NULL),
+	(34,'Happy Hippie','Bikini meisjes','Lingadore','4T7A0204.jpg','/lingadore-bikini-happy-hippie-8331c52055','24,95','19','','',NULL,NULL,1,NULL,NULL,NULL,97,NULL,NULL,NULL,NULL,97,NULL,'beach',97,NULL),
+	(35,'Flamingo','UV-shirt meisjes','Molo kids','4T7A0187.jpg','','27,95','19','','',NULL,NULL,1,NULL,NULL,NULL,100,NULL,NULL,NULL,NULL,100,NULL,'beach',100,NULL),
+	(36,'Shark','UV-shirt jongens','Molo kids','4T7A0186.jpg','/molo-kids-lycra-shark-8441c52002','27,95','19','','',NULL,NULL,1,NULL,NULL,NULL,103,NULL,NULL,NULL,NULL,103,NULL,'beach',103,NULL),
+	(37,'Vigga','Jumpsuit meisjes','Name it','4T7A0189.jpg','/name-it-jumpsuit-vigga-5284c52010','','10,95','js1.jpg js2.jpg js3.jpg js4.jpg','',NULL,NULL,NULL,NULL,NULL,NULL,106,106,NULL,NULL,NULL,106,NULL,'beach',106,NULL),
+	(38,'Snorkelset','Junior','Speedo','Speedo_snorkelset.jpg','/speedo-lifestyle-speelgoed-glide-junior-snorkel-set-2i21c42001','21','15','','',NULL,NULL,NULL,NULL,NULL,NULL,112,NULL,NULL,NULL,NULL,112,NULL,'beach',109,NULL),
+	(39,'Strandspeelgoed','Assortiment','Quut','Quut_speelgoed.jpg','/quut','','7,5','','Vanaf',NULL,NULL,NULL,NULL,NULL,NULL,115,NULL,NULL,NULL,NULL,115,NULL,'beach',112,NULL),
+	(40,'Niveajulbo','Gratis Nivea bij aankoop van Julbo zonnebril','','niveajulbo.jpg','/index.cfm/fuseaction/products.search/?searchvalue=julbo&flt_type_gender=junior&filters=type_gender|LIST','','','','',NULL,NULL,NULL,NULL,NULL,NULL,117,NULL,NULL,NULL,NULL,117,NULL,'beach',115,1),
+	(41,'Assortiment slippers','','','','','','','','',NULL,NULL,NULL,NULL,NULL,NULL,118,118,NULL,NULL,NULL,118,NULL,'beach',118,NULL),
+	(42,'Cozumel','Hoed','Barts','BARTS_COZUMEL_8634C52008_6464.jpg','','34,99','25','','',NULL,NULL,1,NULL,121,121,NULL,121,121,NULL,NULL,121,NULL,'beach',121,NULL),
+	(43,'Ivy Jade','Bikini','Beachlife','ivy-jade-bikini.jpg','','74,9','49','','',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,124,NULL,'beach',124,NULL),
+	(44,'Kachon Tee','T-shirt Heren','J&J Tech','J&J-TECH_KACHON-TEE_8231C52015_7373.jpg','/jack-jones-tech-t-shirt-kachon-8231c52015','19,95','14','#C6CCCA #408DD6 #575E6E','',NULL,NULL,1,NULL,NULL,127,NULL,127,NULL,NULL,NULL,127,NULL,'beach',127,NULL),
+	(45,'Happie Hippie','Halterneck Bikini','Lingadore','4T7A0170.jpg','/lingadore-bikini-happie-hippie-8131c52020','69,95','49','','',NULL,NULL,1,NULL,130,NULL,NULL,NULL,NULL,NULL,NULL,130,NULL,'beach',130,NULL),
+	(46,'Mahalo','Halterneck strandjurks','Lingadore','4T7A0168.jpg','/lingadore-jurk-mahalo-8154c52003','','39,95','#F24A95 #282325','Slechts',NULL,NULL,NULL,NULL,133,NULL,NULL,NULL,NULL,NULL,NULL,133,NULL,'beach',133,NULL),
+	(47,'Boltana','Strandjurk','Protest','4T7A0164.jpg','','49,95','35','','',NULL,NULL,1,NULL,136,NULL,NULL,136,NULL,NULL,NULL,136,NULL,'beach',136,NULL),
+	(48,'Yolt','Zwemshort Heren','Protest','PROTEST_YOLT_8222C52003_4110.jpg','','49,95','35','','',NULL,NULL,1,NULL,NULL,139,NULL,NULL,NULL,NULL,NULL,139,NULL,'beach',139,NULL),
+	(49,'Assortiment teenslippers Kids','','','assortiment_teenslippers_NL.jpg','','','','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,142,NULL,'beach',142,1),
+	(50,'Assortiment zonnebescherming','','','assortiment_zonnebescherming.jpg','','','','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100,NULL,'beach',145,1),
+	(51,'Skomer','T-shirt Dames','Vaude','VAUDE_SKOMER_3112C50002_5353.jpg','/vaude-t-shirt-dames-skomer-3112c50002?id_colour=3232','','36,95','','',NULL,NULL,NULL,1,148,NULL,NULL,NULL,148,NULL,NULL,NULL,NULL,'2plus1',148,NULL),
+	(52,'Masai Mara','T-shirt Dames','Ayacucho','AYACUCHO_MASAI-MARA_-3112C50044_3232.jpg','/ayacucho-t-shirt-masai-mara-dames-3112c40021','','34,95','','',NULL,NULL,NULL,1,151,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',151,NULL),
+	(53,'Zambezi','T-shirt Dames','Ayacucho','AYACUCHO_ZAMBEZI_3114C50024_0450.jpg','/ayacucho-top-zambesi-dames-3114c40006','','29,95','#1CB3A0 zamb1.jpg zamb2.jpg','',NULL,NULL,NULL,1,154,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',154,NULL),
+	(54,'Elena','T-shirt Dames','Ayacucho','AYACUCHO_ELENA_-3112C32001_4030.jpg','/ayacucho-t-shirt-elena-3112c32001','','24,95','#DC6A8B polo2.jpg polo3.jpg','',NULL,NULL,NULL,1,157,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',157,NULL),
+	(55,'Simona','T-shirt Dames','Ayacucho','AYACUCHO_SIMONA_-3114C30012_3535.jpg','/ayacucho-top-simona-3114c30012','','29,95','#DC6A8B polo2.jpg polo3.jpg','',NULL,NULL,NULL,1,160,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',160,NULL),
+	(56,'Betty Polo','Polo Dames','Ayacucho','AYACUCHO_BETTY-POLO_3119C42002_7272.jpg','/ayacucho-polo-betty-3119c42002','','29,95','polo1.jpg polo2.jpg polo3.jpg','',NULL,NULL,NULL,1,163,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',163,NULL),
+	(57,'City','T-shirt Heren','Sprayway','SPRAYWAY_CITY_3312C50053_2020.jpg','','','44,95','','',NULL,NULL,NULL,1,NULL,166,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',166,NULL),
+	(58,'Ridge','T-shirt Heren','Sprayway','SPRAYWAY_RIDGE_3312C40002_4040.jpg','/sprayway-t-shirt-ridge-3313c50001','','44,95','','',NULL,NULL,NULL,1,NULL,169,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',169,NULL),
+	(59,'Zero Rules','T-shirt Heren','Columbia','COLUMBIA_ZERO-RULES_3312C40087_7272.jpg','/columbia-t-shirt-zero-rules-3312c40087','','34,95','#524F56 #0F61A4','',NULL,NULL,NULL,1,NULL,172,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',172,NULL),
+	(60,'Mountain Tech III','T-shirt Heren','Columbia','COLUMBIA_MOUNTAIN-TECH_3312C30044_4444.jpg','/columbia-t-shirt-mountain-tech-iii-3312c30044','','30','#425374 #6F9CBD','',NULL,NULL,NULL,1,NULL,175,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',175,NULL),
+	(61,'Dome','T-shirt Heren','The North Face','THE-NORTH-FACE_DOME-BIKER_3312C40005_4040.jpg','','','29,95','','',NULL,NULL,NULL,1,NULL,178,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',178,NULL),
+	(62,'Company Car','T-shirt Heren','The North Face','THE-NORTH-FACE_COMPANY-CAR_3312C40018_7373.jpg','/the-north-face-t-shirt-company-car-3312c40018','','29,95','','',NULL,NULL,NULL,1,NULL,181,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',181,NULL),
+	(63,'Mountaineering','T-shirt Heren','The North Face','THE-NORTH-FACE_MOUNTAINEERING_3312C50037_5656.jpg','/the-north-face-t-shirt-mountaineering-3312C50037','','29,95','','',NULL,NULL,NULL,1,NULL,184,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',184,NULL),
+	(64,'Tumi SS','T-shirt Heren','Ayacucho','AYACUCHO_TUMI_3312C50063_5555.jpg','/ayacucho-t-shirt-tumi-3312c50063','','34,95','','',NULL,NULL,NULL,1,NULL,187,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',187,NULL),
+	(65,'Beat The Mountain','T-shirt Heren','Ayacucho','AYACUCHO_BEATTHEMOUNTAIN_3312C50064_5555.jpg','/ayacucho-t-shirt-beat-the-mountain-3312c50064','','34,95','#7B8755 #565D6C #A8403D','',NULL,NULL,NULL,1,NULL,190,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',190,NULL),
+	(66,'Rhino SS','T-shirt Heren','Ayacucho','AYACUCHO_RHINO_3312C50069_3131.jpg','/ayacucho-t-shirt-rhino-3312c40034','','34,95','','',NULL,NULL,NULL,1,NULL,193,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',193,NULL),
+	(67,'Hummingbird QD','T-shirt Heren','Ayacucho','AYACUCHO_HUMMINGBIRD_3312C30023_3232.jpg','/ayacucho-t-shirt-hummingbird-3312c30023','','29,95','','',NULL,NULL,NULL,1,NULL,196,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',196,NULL),
+	(68,'Fish QD','T-shirt Heren','Ayacucho','AYACUCHO_FISH_3312C40036_5353.jpg','/ayacucho-t-shirt-fish-3312c40036','','29,95','','',NULL,NULL,NULL,1,NULL,199,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',199,NULL),
+	(69,'Dots QD','T-shirt Heren','Ayacucho','AYACUCHO_DOTS_3312C40035_4242.jpg','/ayacucho-t-shirt-dots-3312c40035','','29,95','','',NULL,NULL,NULL,1,NULL,202,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',202,NULL),
+	(70,'Owl QD','T-shirt Heren','Ayacucho','AYACUCHO_OWL_3312C50065_3232.jpg','/ayacucho-t-shirt-owl-3312c50065','','29,95','#D84845 #6F7C4D','',NULL,NULL,NULL,1,NULL,205,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',205,NULL),
+	(71,'Mud Racer QD','T-shirt Heren','Ayacucho','AYACUCHO_MUD-RACER_3312C50066_7272.jpg','/ayacucho-t-shirt-mud-racer-3312C50066','','29,95','#7C8759 #4D4E58','',NULL,NULL,NULL,1,NULL,208,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',208,NULL),
+	(72,'Benny','Polo Heren','Ayacucho','AYACUCHO_BENNY-POLO_3318C42011_5555.jpg','/ayacucho-polo-benny-3318c42011','','29,95','','',NULL,NULL,NULL,1,NULL,211,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',211,NULL),
+	(73,'Bikerace','T-shirt Heren','UAX','UAX_BIKERACE_3312A90032_5757.jpg','/uax-t-shirt-bikerace-3312a90032','','29,95','','',NULL,NULL,NULL,1,NULL,214,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',214,NULL),
+	(74,'Recycle','T-shirt Heren','UAX','UAX_RECYCLE_3312C40043_7171.jpg','/uax-t-shirt-recycle-3312c40043','','29,95','','',NULL,NULL,NULL,1,NULL,217,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',217,NULL),
+	(75,'You Decide','T-shirt Heren','UAX','UAX_YOU-DECIDE_3312C50073_5555.jpg','/uax-t-shirt-you-decide-3312c50073','','29,95','','',NULL,NULL,NULL,1,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',220,NULL),
+	(76,'Deer','T-shirt Heren','UAX','UAX_DEER-SHIRT_3312C40047_4141.jpg','/uax-t-shirt-deer-3312c40047','','29,95','','',NULL,NULL,NULL,1,NULL,223,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',223,NULL),
+	(77,'Scubahuba','T-shirt Heren','UAX','UAX_SCUBAHUBA_3312C00023_4040.jpg','/uax-t-shirt-scubahuba-3312c00023','','29,95','','',NULL,NULL,NULL,1,NULL,226,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',226,NULL),
+	(78,'Ecologica','T-shirt Heren','UAX','UAX_ECOLOGICA_3312C50074_7575.jpg','/uax-t-shirt-ecologica-3312c50074','','29,95','','',NULL,NULL,NULL,1,NULL,229,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',229,NULL),
+	(79,'Re-cycle','T-shirt Heren','UAX','UAX_RE-CYCLE_3312C50075_3131.jpg','/uax-t-shirt-re-cycle-3312c50075','','29,95','','',NULL,NULL,NULL,1,NULL,232,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',232,NULL),
+	(80,'Fast Bike','T-shirt Heren','UAX','UAX_FAST-BIKE_3318C52008_7171.jpg','/uax-polo-fast-bike-3318c52008','','29,95','','',NULL,NULL,NULL,1,NULL,235,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2plus1',235,NULL),
+	(81,'Margot','Jurk','Patagonia','PATAGONIA_MARGOT_3136C32002_9003.jpg','/patagonia-jurk-margot-3136c32002?id_colour=283','54,95','39','','',NULL,NULL,1,NULL,238,NULL,NULL,238,238,NULL,NULL,238,NULL,'travel',238,NULL),
+	(82,'Wahia','Jurk','Jack Wolfskin','JACK-WOLFSKIN_WAHIA_3136C52021_5252.jpg','/jack-wolfskin-jurk-wahia-3136c52021?id_colour=3154','65,95','45','','',NULL,NULL,1,NULL,244,NULL,NULL,241,241,NULL,NULL,244,NULL,'travel',244,NULL),
+	(83,'Sookie','Jurk','Royal Robbins','ROYAL-ROBBINS_SOOKIE_3193c50013_4141_01_be.jpg','/royal-robbins-jurk-sookie-3136c52003','59,95','39','','',NULL,NULL,1,NULL,241,NULL,NULL,244,244,NULL,NULL,244,NULL,'travel',240,NULL),
+	(84,'Flora','Jurk','Ayacucho','AYACUCHO_FLORA_3136C52012_0412.jpg','/ayacucho-jurk-flora-3136c52012','','49,95','flora1.jpg flora2.jpg','',NULL,NULL,NULL,NULL,247,NULL,NULL,247,247,NULL,NULL,247,NULL,'travel',247,NULL),
+	(85,'Teva','Assortiment Teva originals','','teva.jpg','/teva','','','','',NULL,NULL,NULL,NULL,242,NULL,NULL,242,242,NULL,NULL,242,NULL,'travel',242,1),
+	(87,'Prime','Zonnebril','Sinner','SINNER_PRIME_2212a80013_1571_01.jpg','/sinner-bril-prime-2412a82003?id_colour=704','34,95','25','','',NULL,NULL,NULL,NULL,256,256,NULL,256,256,NULL,NULL,256,NULL,'travel',256,NULL),
+	(88,'Rotorua','Damesshort','Jack Wolfskin','JACK-WOLFSKIN_ROTORUA-SHORT_3133C12003_4747.jpg','/jack-wolfskin-short-rotorua-3133c12003','55','39','','',NULL,NULL,1,NULL,259,NULL,NULL,NULL,259,NULL,NULL,NULL,NULL,'trekking',259,NULL),
+	(89,'Rotorua','Herenshort','Jack Wolfskin','JACK-WOLFSKIN_ROTORUA_3372c10008_7272_01_Ver1.jpg','/jack-wolfskin-short-rotorua-3332c12004?id_colour=4324','55','39','','',NULL,NULL,1,NULL,NULL,262,NULL,NULL,262,NULL,NULL,NULL,NULL,'trekking',262,NULL),
+	(90,'Bridgeton Low WP','Herenschoen','Timberland','TIMBERLAND_BRIDGETON-LOW-WP_3d12c50016_6060_01_be.jpg','/timberland-schoen-bridgeton-low-waterproof-3722c52015','109,95','79','','',NULL,NULL,1,NULL,NULL,265,NULL,NULL,265,NULL,NULL,NULL,NULL,'trekking',265,NULL),
+	(91,'Corliss Gore-Tex¨','Damesschoen','Timberland','TIMBERLAND-CORLISS-GORETEX_3b12c50015_6040_01_be.jpg','timberland-schoen-corliss-gore-tex-3712c52013','119,95','79','','',NULL,NULL,1,NULL,NULL,268,NULL,NULL,268,NULL,NULL,NULL,NULL,'trekking',268,NULL),
+	(92,'Caucasus','Slaapzak','Millet','MILLET_CAUCASUS_1325C40002.jpg','/millet-slaapzak-caucasus-regular-1325c40002?id_colour=4284','124,95','85','','',NULL,NULL,NULL,NULL,271,271,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'trekking',271,NULL),
+	(93,'Caucasus long','Slaapzak','Millet','Caucasus_long.jpg','/millet-slaapzak-caucasus-long-1325c40003?id_colour=4284','129,95','89','','',NULL,NULL,NULL,NULL,274,274,NULL,NULL,NULL,274,274,NULL,NULL,'trekking',274,NULL),
+	(94,'Futura 22','Dagrugzak','Deuter','DEUTER_FUTURA-22_1212c50015_5071_01_be.jpg','/deuter-dagrugzak-futura-22-1212c50015','99,95','69','','',NULL,NULL,NULL,NULL,277,277,NULL,NULL,NULL,277,NULL,NULL,NULL,'trekking',277,NULL),
+	(95,'Gel 3-pack','Voeding','Overstims','OVERSTIMS_VOEDING_2913c40009_0101_01.jpg','/overstim-s-gels-sportvoeding-3-pack-2d13c42009','6,9','5','','',NULL,NULL,NULL,NULL,280,280,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'trekking',280,NULL),
+	(96,'Tek Towel','Wash Kit','Sea to Summit','SEA-TO-SUMMIT_TECH-TOWEL-WASH_261zc50001_5252_01_be.jpg','/sea-to-summit-diverse-tek-towel-wash-kit-large-2a1bc52001','34,95','25','','',NULL,NULL,NULL,NULL,283,283,NULL,NULL,NULL,283,283,NULL,NULL,'trekking',283,NULL),
+	(97,'Compact 8x25','Verrekijker','Kite Optics','KITE-OPTICS_COMPACT-8X25_2713d30044_0070_01.jpg','/kite-optics-verrekijker-compact-8x25-2b13d32044','173','119','','',NULL,NULL,NULL,NULL,286,286,NULL,NULL,NULL,286,NULL,NULL,NULL,'trekking',286,NULL),
+	(98,'Poco Plus','Babydrager','Osprey','OSPREY_POCO-PLUS_1251c20002_7272_01.jpg','/suunto-hoogtemeter-ambit-2s-grapphite-2545c32008?id_colour=4123','','199','','Slechts',NULL,NULL,NULL,NULL,289,289,289,NULL,NULL,289,NULL,NULL,NULL,'trekking',289,NULL),
+	(99,'2+1','Outdoor t-shirts: 2 kopen, 1 gratis','','2plus1.jpg','','','','','',NULL,NULL,NULL,NULL,290,290,NULL,NULL,NULL,290,NULL,NULL,NULL,'trekking',292,1),
+	(100,'Ambit 2S Graphite','Hoogtemeter','Suunto','SUUNTO_AMBIT-25-GRAPHIT_2421c30008_7015_02.jpg','/suunto-hoogtemeter-ambit-2s-grapphite-2545c32008','399','249','','Inclusief hartslagmeter',NULL,NULL,NULL,NULL,292,292,NULL,NULL,NULL,292,NULL,NULL,NULL,'trekking',295,NULL),
+	(101,'Ugrip Chain 585-5','Kabelslot','Abus','ABUS_UGRIP-CHAIN_7272c50008_7070_01_be.jpg','/abus-slot-ugrip-chain-a381c52008','27,95','19','','',NULL,NULL,NULL,NULL,295,295,295,NULL,NULL,295,NULL,NULL,295,'fietsen',298,NULL),
+	(102,'Vybe D7','Vouwfiets','Dahon','DAHON_VYBE_7116c30001_1010_02_be.jpg','/dahon-vouwfiets-vybe-d7-a216c32001?id_colour=4168','499','349','','',NULL,NULL,NULL,NULL,298,298,NULL,NULL,NULL,298,NULL,NULL,298,'fietsen',301,NULL),
+	(103,'Cluster 10+3','Rugzak','Vaude','VAUDE_CLUSTER_7511c20015_7070_51.jpg','/vaude-fietsrugzak-cluster-10-3l-a511c52002','59,95','39','','',NULL,NULL,NULL,NULL,301,301,NULL,NULL,NULL,301,NULL,NULL,301,'fietsen',304,NULL),
+	(104,'Activ TC','Helm','Casco','Casco_Activ-TC_Black_left_0802.jpg','/casco-fietshelm-activ-tc-a122c22004?id_colour=4168','','69,95','','',NULL,NULL,NULL,NULL,304,304,NULL,NULL,NULL,304,NULL,NULL,304,'fietsen',307,NULL),
+	(105,'Dinsdag comfort 7V','Stadsfiets','Batavus','BATAVUS_DINSDAG_7113c50060_7070_01_be.jpg','/batavus-citybike-dinsdag-comfort-7v-heren-a213c52060','','799','','',NULL,NULL,NULL,NULL,NULL,307,NULL,NULL,NULL,307,NULL,NULL,307,'fietsen',310,NULL),
+	(106,'Ichi','Fietstas','Clarijs','CLARIJS_FIETSTAS_A513C52013_5203_01.jpg','/clarijs-covers-fietstas-achter-ichi-krikke-a513c52013','','69,95','','',NULL,NULL,NULL,NULL,310,NULL,NULL,NULL,NULL,310,NULL,NULL,310,'fietsen',313,NULL),
+	(107,'Vintage','Fietsbel','Liix','LIIX_VINTAGE-FIETSBAL_721ac50008_2424_01_be_Ver1.jpg','/liix-fietsbel-vintage-a391c52008','','6,95','','Vanaf',NULL,NULL,NULL,NULL,313,313,313,NULL,NULL,313,NULL,NULL,313,'fietsen',316,NULL),
+	(108,'Transport U4 Jeans','Citybike','Cortina','CORTINA_TRANSPORT-U4_7119c50050_4545_01_be.jpg','/cortina-citybike-transport-u4-jeans-dames-a223c52049','','599','','',NULL,NULL,NULL,NULL,316,NULL,NULL,NULL,NULL,316,NULL,NULL,316,'fietsen',319,NULL),
+	(109,'Ride','T-shirt Dames','Odlo','ODLO_RIDE_7612c50005_3210_01_be.jpg','/odlo-t-shirt-ride-9112c52003','','69,95','','',NULL,NULL,NULL,NULL,319,NULL,NULL,NULL,NULL,NULL,NULL,NULL,319,'fietsen',322,NULL),
+	(110,'Aircontact Pro 60+15','Rugzak Heren','Deuter','Aircontact_Pro.jpg','/deuter-rugzak-aircontact-pro-60-15-1232c30014','259,95','179','','',NULL,NULL,NULL,NULL,322,NULL,NULL,NULL,NULL,322,NULL,NULL,NULL,'camping',325,NULL),
+	(111,'Aircontact Pro 55+15 SL','Rugzak Dames','Deuter','Aircontact_Pro_55.jpg','/deuter-rugzak-act-pro-55-15sl-dames-1231c30006','249,95','175','','',NULL,NULL,NULL,NULL,325,NULL,NULL,NULL,NULL,325,NULL,NULL,NULL,'camping',328,NULL),
+	(112,'Vespucci 4','Tent','Coleman','COLEMAN_VESP_4_PARTY_GRILL.jpg','/coleman-tent-vespucci-4-1142c52001','349,95','249','','Gratis Campingaz Party Grill twv &euro; 54,95',NULL,NULL,NULL,NULL,328,328,328,NULL,NULL,328,17,NULL,NULL,'camping',331,NULL),
+	(113,'Vespucci 6','Tent','Coleman','COLEMAN_VESP_6_PARTY_GRILL.jpg','/coleman-tent-vespucci-6-1152c52001','449,95','299','','Gratis Campingaz Party Grill twv &euro; 54,96',NULL,NULL,NULL,NULL,331,331,331,NULL,NULL,331,18,NULL,NULL,'camping',334,NULL),
+	(114,'Bandit','Actiecamera','TomTom','TOMTOM_BANDIT_.jpg','/tomtom-video-bandit-2e21c52003','','399','','',1,NULL,NULL,NULL,334,NULL,NULL,NULL,NULL,334,NULL,334,NULL,'camping',337,NULL),
+	(115,'Duffel','19644','Camel','CAMEL-ACTIVE_DUFFEL_2141c50010_5555_01_be.jpg','/camel-active-bags-reistas-19644-2211c52009','59,95','45','','',NULL,NULL,NULL,NULL,337,337,NULL,337,NULL,337,NULL,NULL,NULL,'camping',340,NULL),
+	(116,'Toilettas','19743','Camel','CAMEL-ACTIVE_TOILETTAS_2171c50007_5555_01_be.jpg','/camel-active-bags-toilettas-19743-2351c52007','24,95','19','','',NULL,NULL,NULL,NULL,340,340,NULL,340,NULL,340,NULL,NULL,NULL,'camping',343,NULL),
+	(117,'Picknickdeken','','Lalay','LALAY_PICNIC_1475C52004_3737.jpg','/lalay-diverse-picknick-deken-1475c52004','','19,95','','',NULL,NULL,NULL,NULL,343,343,343,NULL,NULL,343,343,NULL,NULL,'camping',346,NULL),
+	(118,'Smoozip +3¡C','Slaapzak','Jack Wolfskin','JACK-WOLFSKIN_SMOOZIP_1324c50006_4040_01_be.jpg','/jack-wolfskin-slaapzak-smoozip-3-1324c50006','99,95','69','','',NULL,NULL,NULL,NULL,346,346,NULL,NULL,NULL,346,346,NULL,NULL,'camping',349,NULL),
+	(119,'Groeneprijs','Koop een cadeaucheque t.w.v. €1 en geniet van de voordeelprijs','','groeneprijs.jpg','/content/nl/groene-voordeelprijzen','24,95','15','','',NULL,NULL,NULL,NULL,NULL,60,60,60,NULL,NULL,NULL,60,NULL,'travel',54,1),
+	(120,'Groeneprijs','Koop een cadeaucheque t.w.v. €1 en geniet van de voordeelprijs','','groeneprijs.jpg','/content/nl/groene-voordeelprijzen','24,95','15','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'trekking',266,1),
+	(121,'Hero 4 Black','Camera','GoPro','GOPRO_4.jpg','/gopro-video-hero-4-black-2e21c52001','','529','','Gratis bundle t.w.v. &euro;59,95',NULL,NULL,NULL,NULL,29,29,NULL,NULL,NULL,NULL,NULL,NULL,29,'camping',29,NULL),
+	(123,'lookbook/vrouw','','','lookbook8.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(124,'lookbook/vrouw','','','lookbook7.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(125,'lookbook/vrouw','','','lookbook6.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(126,'lookbook/vrouw','','','lookbook5.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(127,'lookbook/man','','','lookbook4.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(128,'lookbook/vrouw','','','lookbook3.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'dames',1,1),
+	(129,'lookbook/vrouw','','','lookbook2.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(130,'lookbook/vrouw','','','lookbook1.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1),
+	(131,'lookbook/man','','','lookbook9.jpg','/lookbook/follow-the-sun','','','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',1,1);
+
+/*!40000 ALTER TABLE `Products_test` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
