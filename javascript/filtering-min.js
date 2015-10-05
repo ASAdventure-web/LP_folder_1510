@@ -1,1 +1,1 @@
-$(document).ready(function(){var n=window.location.href;if(n.match("#camping$")){var a=$("#camping").offset();$("body, html").animate({scrollTop:a.top-170})}$(".main-menu-select").change(function(){var n=$(this).val();window.location.href=n})});
+$(document).ready(function(){var o=window.location.href;if(o.match(/.*#.*/)){var n=o.split("#")[1],t=$("#"+n).offset();$("body, html").animate({scrollTop:t.top-150})}$(".main-menu-select").change(function(){var o=$(this).val();window.location.href=o})});
