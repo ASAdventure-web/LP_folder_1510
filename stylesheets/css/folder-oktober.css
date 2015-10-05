@@ -201,14 +201,8 @@ body {
   color: #454545 !important; }
 
 .main-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-weight: bold;
   margin: 0;
   padding: 0.5em 0;
@@ -243,8 +237,7 @@ body {
     font-weight: 400;
     height: 100%;
     text-decoration: none;
-    -webkit-transition: .1s color linear;
-            transition: .1s color linear; }
+    transition: .1s color linear; }
   @media only screen and (max-width: 767px) {
     .main-menu {
       display: none; } }
@@ -260,9 +253,7 @@ body {
   outline: none;
   padding: 1em;
   width: 80%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+  appearance: none; }
   @media only screen and (max-width: 767px) {
     .main-menu-select {
       display: block; } }
@@ -305,8 +296,7 @@ form.mobile-nav {
     background: none;
     height: 100%;
     text-decoration: none;
-    -webkit-transition: background .1s linear;
-            transition: background .1s linear; }
+    transition: background .1s linear; }
     .content-row .product-container.lookbook a:hover, .content-block .product-container.lookbook a:hover {
       background: rgba(255, 255, 255, 0.2); }
       @media only screen and (max-width: 1199px) {
@@ -344,8 +334,7 @@ form.mobile-nav {
     padding: .7em 1em;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
-    -webkit-transition: background .2s linear;
-            transition: background .2s linear;
+    transition: background .2s linear;
     position: relative;
     top: 80%; }
     .content-row .product-container.lookbook button:active, .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:active, .content-block .product-container.lookbook button:hover {
@@ -413,7 +402,7 @@ img {
       width: 100%; } }
 
 .video-wrapper {
-  padding-bottom: 41.7%;
+  padding-bottom: 56.2%;
   position: relative;
   width: 100%; }
   .video-wrapper iframe {
