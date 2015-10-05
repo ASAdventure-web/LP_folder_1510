@@ -2,10 +2,10 @@ $(document).ready(function(){
 	//scroll to #camping
 	var url = window.location.href;
 	if (url.match(/.*#.*/)) {
-		var element = url.split('#')[1]
+		var element = url.split('#')[1];
 		var theOffset = $('#'+element).offset();
         $('body, html').animate({
-            scrollTop: theOffset.top - 170
+            scrollTop: theOffset.top - 150
         });
 	}
 
