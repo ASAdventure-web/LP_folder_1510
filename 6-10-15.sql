@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-10-06 11:49:35 +0000
+# Generation Time: 2015-10-06 15:01:19 +0000
 # ************************************************************
 
 
@@ -48,7 +48,7 @@ LOCK TABLES `Fotos` WRITE;
 INSERT INTO `Fotos` (`id`, `beeld`, `link`, `alt`, `dames`, `heren`, `junior`, `fashion`, `outdoor`, `uitrusting`, `fietsenlopen`, `gadgets`, `hoofdcategorie`)
 VALUES
 	(149,'VROUW_DEKEN.jpg',NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
-	(150,'VROUW_ACHTER.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(150,'VROUW_ACHTER.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,80),
 	(151,'MAN_VAAG_VAARN.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(152,'BERG.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(153,'MAN_ROTSEN.jpg','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,50),
@@ -117,9 +117,9 @@ VALUES
 	(12,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-hommes','Hommes','fr','heren'),
 	(13,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-junior','Junior','fr','junior'),
 	(14,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-equipement','&Eacute;quipement','fr','uitrusting'),
-	(15,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-pret-a-porter','Pr&ecirc;t-&agrave;-porter','fr','Fashion'),
+	(15,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-pret-a-porter','Pr&ecirc;t-&agrave;-porter','fr','fashion'),
 	(16,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-outdoor','Outdoor','fr','outdoor'),
-	(17,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-cyclisme','Cyclisme','fr','fitsenlopen'),
+	(17,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-cyclisme','Cyclisme','fr','fietsenlopen'),
 	(18,'http://www.asadventure.com/befr/content/fr/depliantdautomne2015-gadgets','Les must have','fr','gadgets'),
 	(19,'http://www.asadventure.com/en/content/en/autumnbrochure2015','All','en','alles'),
 	(20,'http://www.asadventure.com/en/content/en/autumnbrochure2015-women','Women','en','dames'),
@@ -369,12 +369,12 @@ VALUES
 	(47,'Frost','Trui Dames','Fjallraven','FJALLRAVEN_FROST_3125D12001_3040.jpg','/fjaellraeven-trui-frost-3125d12001?id_colour=1448','','159,95','#825166','In de kijker',NULL,NULL,166,NULL,NULL,NULL,369,NULL,NULL,NULL,'outdoor',139,NULL,NULL),
 	(48,'Lada','Sweater Heren','Fjallraven','FJALLRAVEN_LADA_3325D22004_7171.jpg','/fjaellraeven-trui-lada-3325d22004?id_colour=4246','','149,95','lada-grijs.jpg lada-beige.jpg','In de kijker',NULL,NULL,NULL,146,NULL,NULL,372,NULL,NULL,NULL,'outdoor',51,NULL,NULL),
 	(49,'Nils','Broek Heren','Fjallraven','FJALLRAVEN_NILS_3381c20001_3030_01.jpg','/fjaellraeven-broek-nils-3341c22001?id_colour=1438','','129,95','more-colors.jpg #B4562B #5E5441 #B08921 #385973','In de kijker',NULL,NULL,NULL,149,NULL,NULL,375,NULL,NULL,NULL,'outdoor',99,NULL,NULL),
-	(50,'Kanken','Rugzak','Fjallraven','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-dagrugzak-kanken-2111a80038?id_colour=1594','','79,95','more-colors.jpg #534030 #1F323F kanken-geel.jpg #3A423D','Vanaf',NULL,NULL,164,152,NULL,22,NULL,25,NULL,NULL,'fashion',30,NULL,NULL),
+	(50,'Kanken','Rugzak','Fjallraven','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-dagrugzak-kanken-2111a80038?id_colour=3001','','79,95','more-colors.jpg #534030 #1F323F kanken-geel.jpg #3A423D','Vanaf',NULL,NULL,164,152,NULL,22,NULL,25,NULL,NULL,'fashion',30,NULL,NULL),
 	(51,'Checkmate','Hemd','Someone','SOMEONE_CHECKMATE_4132.jpg','/someone-hemd-checkmate-5331d52026?id_colour=2287','34,95','25','ruit_someone.jpg','',1,NULL,NULL,NULL,1,43,NULL,NULL,NULL,NULL,'fashion kids',151,NULL,NULL),
 	(52,'Funny Bunny','Trui Meisjes','Someone','SOMEONE_FUNNY-BUNNY_1111.jpg','/index.cfm/fuseaction/products.search/?searchvalue=funny+bunny','39,95','25','#CEC3BE #DDAFB9 konijn1.jpg konijn2.jpg','',NULL,NULL,NULL,NULL,1,46,NULL,NULL,NULL,NULL,'fashion kids',154,NULL,NULL),
 	(53,'Antonius Sweat Pant','Broek Jongens','Tumble \'n Dry','TUMBLE-\'N-DRY_ANTONIUS_7171.jpg','/tumble-n-dry-broek-antonius-sweat-pant-5374d52016?id_colour=4246','49,95','35','#5F5B60','',NULL,NULL,NULL,NULL,1,49,NULL,NULL,NULL,NULL,'fashion kids',157,NULL,NULL),
 	(54,'Roja','Broek Meisjes','CKS','CKS_ROJA_1136.jpg','/cks-kids-broek-roja-5291d52031?id_colour=366','49,99','35','ruit_roja.jpg ruit_donker_roja.jpg','Vanaf',1,NULL,NULL,NULL,1,52,NULL,NULL,NULL,NULL,'fashion kids',160,NULL,NULL),
-	(55,'Mr Lama','Shirt Jongens','Stones & Bones','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360','24,95','17','#373425','',1,NULL,NULL,NULL,1,55,NULL,NULL,NULL,NULL,'fashion kids',163,NULL,NULL),
+	(55,'Mr Lama','Shirt Jongens','Stones & Bones','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360','24,95','17','#373425 #211F41','',1,NULL,NULL,NULL,1,55,NULL,NULL,NULL,NULL,'fashion kids',163,NULL,NULL),
 	(56,'Nara','Cross Dress Meisjes','Petit Louie','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-jurk-nara-cross-5261d52001?id_colour=2805','39,95','29','nara.jpg','',1,NULL,NULL,NULL,1,58,NULL,NULL,NULL,NULL,'fashion kids',166,NULL,NULL),
 	(57,'Kids Zenon','Jacket junior','Jack Wolfskin','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-jas-zenon-kids-5184d42001?id_colour=1988','99,95','69','zenon-paars-zwart.jpg zenon-blauw.jpg zenon-geel-zwart.jpg','',NULL,NULL,NULL,NULL,1,61,180,NULL,NULL,NULL,'fashion kids',169,NULL,NULL),
 	(58,'Little Joe','Dagrugzak junior','Jack Wolfskin','JACK-WOLFSKIN_LITLLE-JOE_2121C22002_3071.jpg','/jack-wolfskin-dagrugzak-little-joe-2121c22002?id_colour=1474','','29,95','more-colors.jpg #C9233A #1B5490 harten_jack.jpg #25A458','In de kijker',NULL,NULL,NULL,NULL,1,NULL,NULL,27,NULL,NULL,'fashion kids',172,NULL,NULL),
@@ -384,7 +384,7 @@ VALUES
 	(62,'Back Roller Urban','Fietstas','Ortlieb','ORTLIEB_BACK-ROLLER-URBAN_7513c50002_4545_01_be.jpg','/ortlieb-fietstas-achter-back-roller-urban-a513c52002?id_colour=2608','74,95','59','#60676C #8A7D75','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,7,NULL,'bike',184,NULL,NULL),
 	(63,'Blowy','Jacket Heren','RH+','RHBLOWYJACKET9221d42011707001be.jpg','/rh-windstopper-blowy-9221d42011?id_colour=4168','149,95','99','#252525','',NULL,NULL,NULL,205,NULL,NULL,NULL,NULL,9,NULL,'bike',187,NULL,NULL),
 	(64,'Contest SO','Softshell','Gore Bike Wear','GBW_CONTEST-SO_7732B90002_3030.jpg','/gore-bike-wear-softshell-contest-so-9222b92003?id_colour=1438','149,95','99','gore-geel-zwart.jpg gore-rood-zwart.jpg','',NULL,NULL,NULL,207,NULL,NULL,NULL,NULL,11,NULL,'bike',177,NULL,NULL),
-	(65,'Fluid II','Broek','Vaude','VAUDEFLUIDII7745b80004707001.jpg','/vaude-broek-fluid-ii-9235b82003?id_colour=4168','','74,95','#272B2E','In de kijker',NULL,NULL,172,210,NULL,NULL,NULL,NULL,13,NULL,'bike',193,NULL,NULL),
+	(65,'Fluid II','Broek','Vaude','VAUDEFLUIDII7745b80004707001.jpg','/index.cfm/fuseaction/products.search/?searchvalue=broek+fluid+ii','','74,95','#272B2E','In de kijker',NULL,NULL,172,210,NULL,NULL,NULL,NULL,13,NULL,'bike',193,NULL,NULL),
 	(66,'Byron','Drinkfles','Contigo','Contigo-packshot.jpg','/contigo-isolatiefles-byron-1424d52002?id_colour=2397','','24,95','','Met gratis koffie en kop ',NULL,NULL,NULL,30,NULL,NULL,NULL,NULL,NULL,26,'gadgets',196,NULL,NULL),
 	(67,'Nested','Shotglazen','Izola','IZOLAShotGlassesIMG18922.jpg','/izola-gadget-nested-shot-glasses-2h21d52008?id_colour=268','','29,95','#D82B46 #F2F1F0','',NULL,NULL,NULL,33,NULL,NULL,NULL,NULL,NULL,29,'gadgets',199,NULL,NULL),
 	(68,'Wiskey Stones','','Men\'s Society','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806','','19,95','','',NULL,NULL,NULL,36,NULL,NULL,NULL,NULL,NULL,32,'gadgets',202,NULL,NULL),
@@ -396,7 +396,7 @@ VALUES
 	(74,'Manicureset','','Men\'s Society','MENS_SOCIETY_HANDSOME-HANDS-MANICURE-SET-2015-9.jpg','/men-s-society-gadget-handsome-hands-manicure-kit-2h51d52008?id_colour=318','','24,95','','',NULL,NULL,NULL,55,NULL,NULL,NULL,NULL,NULL,50,'gadgets',220,NULL,NULL),
 	(75,'Fenix 3','GPS-horloge','Garmin','GARMIN_FENIX-3_2452c50001_7272_01.jpg_be.jpg','/garmin-gps-fenix-3-2512c52003?id_colour=4324','','449','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,38,NULL,53,'gadgets',223,NULL,NULL),
 	(76,'Tandenborstelset','','Izola','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3778','','19,95','','',NULL,NULL,NULL,57,NULL,NULL,NULL,NULL,NULL,56,'gadgets',226,NULL,NULL),
-	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,NULL),
+	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,1),
 	(78,'Xtreme 9000','Reisoplader','Xtorm','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-oplader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','','59,95','','Slechts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,62,'gadgets',232,NULL,NULL),
 	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,1),
 	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,NULL,NULL,37,4,22,12,22,'outdoor',71,1,NULL),
@@ -464,7 +464,7 @@ VALUES
 	(28,'Froso','Pullover Men','LUNDHAGS_FROSO_3325D52006_5454.jpg','/lundhags-pullover-froso-3325d52006?id_colour=3310',''),
 	(29,'Nordald Island','3-in-1 Coat Men','MILLET_NORDALD-ISLAND_3351D22017_5656.jpg','/millet-coat-nordald-island-3-in-1-3351d22017?id_colour=3466',''),
 	(30,'Heritage','Fleece Men','SPRAYWAY_HERITAGE_3324D42017_4141.jpg','/sprayway-fleece-heritage-3324d42017?id_colour=2296',''),
-	(31,'Etrex Touch 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-gps-fenix-3-2512c52003?id_colour=4324','With free battery worth &euro; 26,99'),
+	(31,'Etrex Touch 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-gps-etrex-touch-25-2512c52007?id_colour=2397','With free battery worth &euro; 26,99'),
 	(32,'Wave Limited','Multitool','LEATHERMAN_WAVE_2841d40002_6464_01_be.jpg','/leatherman-multitool-wave-2c41d42001?id_colour=3856','Only'),
 	(33,'Bronia','Fleece Women','VAUDE_BRONIA_3124D52007_7272.jpg','/vaude-fleece-bronia-3124d52007?id_colour=4324',''),
 	(34,'100 Glacier','Fleece Women','THE-NORTH-FACE_GLACIER_3142d30017_7171_10-2.jpg','/the-north-face-fleece-100-glacier-3122d32016?id_colour=4246',''),
@@ -491,7 +491,7 @@ VALUES
 	(56,'Nara','Cross Dress Girls','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-dress-nara-cross-5261d52001?id_colour=2805',''),
 	(57,'Kids Zenon','Coat Junior','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-coat-zenon-kids-5184d42001?id_colour=1988',''),
 	(58,'Little Joe','Daypack Junior','JACK-WOLFSKIN_LITLLE-JOE_2121C22002_3071.jpg','/jack-wolfskin-daypack-little-joe-2121c22002?id_colour=1474','In the spotlight'),
-	(59,'Edge 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-heart-rate-monitor-edge-25-2522c52004?id_colour=4171','In the spotlight'),
+	(59,'Edge 25','GPS','GARMIN_EDGE-20_2522c52003_7073_03_be_Ver1.jpg','/garmin-heart-rate-monitor-edge-25-2522c52004?id_colour=4171','In the spotlight'),
 	(60,'Tesoro ','Bike Men','CANNONDALE_TESORO-2_A213C52007_4141-2.jpg','/cannondale-citybike-tesoro-2-a213c52007?id_colour=2296','2 maintenances included'),
 	(61,'Macro 600 Lumen','Bike Lighting','LEZYNE_MACRO-DRIVE-600_A372C52002_7070.jpg','','In the spotlight'),
 	(62,'Back Roller Urban','Bike Bag','ORTLIEB_BACK-ROLLER-URBAN_7513c50002_4545_01_be.jpg','/ortlieb-bike-bag-back-back-roller-urban-a513c52002?id_colour=2608',''),
@@ -517,11 +517,11 @@ VALUES
 	(82,'lookbook',NULL,'lookbook2.jpg','http://www.asadventure.com/en/discover-more/-into-the-wild/fashion',NULL),
 	(83,'Free delivery',NULL,'gratis_verzending_en.jpg',NULL,NULL),
 	(84,'lookbook',NULL,'lookbook3.jpg','http://www.asadventure.com/en/discover-more/-into-the-wild/fashion',NULL),
-	(85,'Jack Wolfskin',NULL,'jackwolfskin.jpg','/jack-wolfskin',NULL),
-	(86,'Fjallraven',NULL,'fjallraven.jpg','/fjaellraeven',NULL),
+	(85,'Jack Wolfskin',NULL,'jackwolfskin_en.jpg','/jack-wolfskin',NULL),
+	(86,'Fjallraven',NULL,'fjallraven_en.jpg','/fjaellraeven',NULL),
 	(87,'Free delivery',NULL,'gratis_verzending_en.jpg',NULL,NULL),
 	(88,'lookbook',NULL,'lookbook4.jpg','http://www.asadventure.com/en/discover-more/-into-the-wild/fashion',NULL),
-	(89,'Ovik Knit','Pull Women','3151d40009_6565_01.jpg',NULL,NULL),
+	(89,'Ovik Knit','Pull Women','3151d40009_6565_01.jpg','/fjaellraeven-pullover-ovik-knit-women-3125d42022?id_colour=3934',NULL),
 	(90,'Sport Hiker','Hip Bag','2361d12001_7071_03_be.jpg','/the-north-face-hip-bag-sport-hiker-2361d12001?id_colour=4169',NULL);
 
 /*!40000 ALTER TABLE `Products_en` ENABLE KEYS */;
@@ -577,7 +577,7 @@ VALUES
 	(28,'Froso','Pull Hommes','LUNDHAGS_FROSO_3325D52006_5454.jpg','/lundhags-pull-froso-3325d52006?id_colour=3310',''),
 	(29,'Nordald Island','Manteau 3 en 1 Hommes','MILLET_NORDALD-ISLAND_3351D22017_5656.jpg','/millet-manteau-nordald-island-3-en-1-3351d22017?id_colour=3466',''),
 	(30,'Heritage','Polaire Hommes','SPRAYWAY_HERITAGE_3324D42017_4141.jpg','/sprayway-polaire-heritage-3324d42017?id_colour=2296',''),
-	(31,'Etrex Touch 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-gps-etrex-touch-25-2512c52007?id_colour=2397','Avec une batterie rechargeable d\'une valeur &euro;'),
+	(31,'Etrex Touch 25','GPS','GARMIN_eTrexTouch25_HR_2512C52007.jpg','/garmin-gps-etrex-touch-25-2512c52007?id_colour=2397','+ batterie rechargeable d\'une valeur &euro; 26,99'),
 	(32,'Wave Limited','Outil Multifonctions','LEATHERMAN_WAVE_2841d40002_6464_01_be.jpg','/leatherman-outil-multifonctions-wave-2c41d42001?id_colour=3856','Seulement'),
 	(33,'Bronia','Polaire Femmes','VAUDE_BRONIA_3124D52007_7272.jpg','/vaude-polaire-bronia-3124d52007?id_colour=4324',''),
 	(34,'100 Glacier','Polaire Femmes','THE-NORTH-FACE_GLACIER_3142d30017_7171_10-2.jpg','/the-north-face-polaire-100-glacier-3122d32016?id_colour=4246',''),
