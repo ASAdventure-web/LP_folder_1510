@@ -347,6 +347,21 @@ form.mobile-nav {
     @media only screen and (max-width: 979px) {
       .content-row .product-container.lookbook button, .content-block .product-container.lookbook button {
         font-size: .8em; } }
+.content-row .product-container.soon-nl::before, .content-row .product-container.soon-fr::before, .content-row .product-container.soon-en::before, .content-block .product-container.soon-nl::before, .content-block .product-container.soon-fr::before, .content-block .product-container.soon-en::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 4em 0; }
+.content-row .product-container.soon-nl::before, .content-block .product-container.soon-nl::before {
+  content: "Binnenkort beschikbaar"; }
+.content-row .product-container.soon-fr::before, .content-block .product-container.soon-fr::before {
+  content: "Bientôt disponible"; }
+.content-row .product-container.soon-en::before, .content-block .product-container.soon-en::before {
+  content: "Available soon"; }
 .content-row .product-container.sold-out-nl::before, .content-row .product-container.sold-out-fr::before, .content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-nl::before, .content-block .product-container.sold-out-fr::before, .content-block .product-container.sold-out-en::before {
   position: absolute;
   top: 0;
@@ -522,6 +537,39 @@ img {
 .content-row .product-container.sold-out-en::before,
 .content-block .product-container.sold-out-en::before {
   content: "Sold Out"; }
+.content-row .product-container.soon-nl::before, .content-row .product-container.soon-fr::before, .content-row .product-container.soon-en::before,
+.content-block .product-container.soon-nl::before,
+.content-block .product-container.soon-fr::before,
+.content-block .product-container.soon-en::before {
+  background: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans";
+  font-size: 2.5em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 1199px) {
+    .content-row .product-container.soon-nl::before, .content-row .product-container.soon-fr::before, .content-row .product-container.soon-en::before,
+    .content-block .product-container.soon-nl::before,
+    .content-block .product-container.soon-fr::before,
+    .content-block .product-container.soon-en::before {
+      font-size: 2em; } }
+  @media only screen and (max-width: 979px) {
+    .content-row .product-container.soon-nl::before, .content-row .product-container.soon-fr::before, .content-row .product-container.soon-en::before,
+    .content-block .product-container.soon-nl::before,
+    .content-block .product-container.soon-fr::before,
+    .content-block .product-container.soon-en::before {
+      font-size: 1.5em; } }
+.content-row .product-container.soon-nl::before,
+.content-block .product-container.soon-nl::before {
+  content: "Binnenkort beschikbaar"; }
+.content-row .product-container.soon-fr::before,
+.content-block .product-container.soon-fr::before {
+  content: "Bientôt disponible"; }
+.content-row .product-container.soon-en::before,
+.content-block .product-container.soon-en::before {
+  content: "Available soon"; }
 .content-row .product-container.exclusive-nl::after, .content-row .product-container.exclusive-fr::after, .content-row .product-container.exclusive-en::after,
 .content-block .product-container.exclusive-nl::after,
 .content-block .product-container.exclusive-fr::after,

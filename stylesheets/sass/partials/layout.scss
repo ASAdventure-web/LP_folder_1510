@@ -236,6 +236,25 @@ form.mobile-nav{
 				}
 			}
 		}
+		&.soon-nl::before, &.soon-fr::before, &.soon-en::before{
+			position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 2;
+			margin: 0;
+			padding: 4em 0;
+		}
+		&.soon-nl::before{
+			content: "Binnenkort beschikbaar";
+		}
+		&.soon-fr::before{
+			content: "Bientôt disponible";
+		}
+		&.soon-en::before{
+			content: "Available soon";
+		}
 
 		&.sold-out-nl::before, &.sold-out-fr::before, &.sold-out-en::before{
 			position: absolute;
