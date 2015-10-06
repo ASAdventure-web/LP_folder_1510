@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-10-06 08:14:55 +0000
+# Generation Time: 2015-10-06 08:47:43 +0000
 # ************************************************************
 
 
@@ -370,9 +370,9 @@ VALUES
 	(49,'Nils','Broek Heren','Fjallraven','FJALLRAVEN_NILS_3381c20001_3030_01.jpg','/fjaellraeven-broek-nils-3341c22001?id_colour=1438','','129,95','#B4562B #5E5441','In de kijker',NULL,NULL,NULL,149,NULL,NULL,375,NULL,NULL,NULL,'outdoor',99,NULL),
 	(50,'Kanken','Rugzak','Fjallraven','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-dagrugzak-kanken-2111a80038?id_colour=1594','','79,95','more-colors.jpg #534030 #1F323F kanken-geel.jpg #3A423D','Vanaf',NULL,NULL,164,152,NULL,22,NULL,25,NULL,NULL,'fashion',30,NULL),
 	(51,'Checkmate','Hemd','Someone','SOMEONE_CHECKMATE_4132.jpg','/someone-hemd-checkmate-5331d52026?id_colour=2287','34,95','25','ruit_someone.jpg','',1,NULL,NULL,NULL,1,43,NULL,NULL,NULL,NULL,'fashion kids',151,NULL),
-	(52,'Funny Bunny','Trui Meisjes','Someone','SOMEONE_FUNNY-BUNNY_1111.jpg','/someone-trui-funny-bunny-5244d52014?id_colour=346','34,95','25','someone-checkmate.jpg','',NULL,NULL,NULL,NULL,1,46,NULL,NULL,NULL,NULL,'fashion kids',154,NULL),
+	(52,'Funny Bunny','Trui Meisjes','Someone','SOMEONE_FUNNY-BUNNY_1111.jpg','/index.cfm/fuseaction/products.search/?searchvalue=funny+bunny','39,95','25','#CEC3BE #DDAFB9 konijn1.jpg konijn2.jpg','',NULL,NULL,NULL,NULL,1,46,NULL,NULL,NULL,NULL,'fashion kids',154,NULL),
 	(53,'Antonius Sweat Pant','Broek Jongens','Tumble \'n Dry','TUMBLE-\'N-DRY_ANTONIUS_7171.jpg','/tumble-n-dry-broek-antonius-sweat-pant-5374d52016?id_colour=4246','49,95','35','#5F5B60','',NULL,NULL,NULL,NULL,1,49,NULL,NULL,NULL,NULL,'fashion kids',157,NULL),
-	(54,'Roja','Broek Meisjes','CKS','CKS_ROJA_1136.jpg','/cks-kids-broek-roja-5291d52031?id_colour=366','49,95','35','ruit_roja.jpg ruit_donker_roja.jpg','',1,NULL,NULL,NULL,1,52,NULL,NULL,NULL,NULL,'fashion kids',160,NULL),
+	(54,'Roja','Broek Meisjes','CKS','CKS_ROJA_1136.jpg','/cks-kids-broek-roja-5291d52031?id_colour=366','49,99','35','ruit_roja.jpg ruit_donker_roja.jpg','Vanaf',1,NULL,NULL,NULL,1,52,NULL,NULL,NULL,NULL,'fashion kids',160,NULL),
 	(55,'Mr Lama','Shirt Jongens','Stones & Bones','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360','24,95','17','#373425','',1,NULL,NULL,NULL,1,55,NULL,NULL,NULL,NULL,'fashion kids',163,NULL),
 	(56,'Nara','Cross Dress Meisjes','Petit Louie','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-jurk-nara-cross-5261d52001?id_colour=2805','39,95','29','nara.jpg','',1,NULL,NULL,NULL,1,58,NULL,NULL,NULL,NULL,'fashion kids',166,NULL),
 	(57,'Kids Zenon','Jacket junior','Jack Wolfskin','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-jas-zenon-kids-5184d42001?id_colour=1988','99,95','69','zenon-paars-zwart.jpg zenon-blauw.jpg zenon-geel-zwart.jpg','',NULL,NULL,NULL,NULL,1,61,180,NULL,NULL,NULL,'fashion kids',169,NULL),
@@ -483,10 +483,10 @@ VALUES
 	(49,'Nils','Trousers Men','FJALLRAVEN_NILS_3381c20001_3030_01.jpg','/fjaellraeven-trousers-nils-3341c22001?id_colour=1438','In the spotlight'),
 	(50,'Kanken','Daypack','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-daypack-kanken-2111a80038?id_colour=1594','From'),
 	(51,'Checkmate','Shirt','SOMEONE_CHECKMATE_4132.jpg','/someone-shirt-checkmate-5331d52026?id_colour=2287',''),
-	(52,'Funny Bunny','Sweater Girls','SOMEONE_FUNNY-BUNNY_1111.jpg','/someone-pullover-funny-bunny-5244d52014?id_colour=346',''),
+	(52,'Funny Bunny','Sweater Girls','SOMEONE_FUNNY-BUNNY_1111.jpg','/index.cfm/fuseaction/products.search/?searchvalue=funny+bunny',''),
 	(53,'Antonius Sweat Pant','Trousers Boys','TUMBLE-\'N-DRY_ANTONIUS_7171.jpg','/tumble-n-dry-trousers-antonius-sweat-pant-5374d52016?id_colour=4246',''),
 	(54,'Roja','Trousers Girls','CKS_ROJA_1136.jpg','/cks-kids-trousers-roja-5291d52031?id_colour=366',''),
-	(55,'Mr Lama','Shirt Boys','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360',''),
+	(55,'Mr Lama','Shirt Boys','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360','From'),
 	(56,'Nara','Cross Dress Girls','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-dress-nara-cross-5261d52001?id_colour=2805',''),
 	(57,'Kids Zenon','Coat junior','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-coat-zenon-kids-5184d42001?id_colour=1988',''),
 	(58,'Little Joe','Daypack junior','JACK-WOLFSKIN_LITLLE-JOE_2121C22002_3071.jpg','/jack-wolfskin-daypack-little-joe-2121c22002?id_colour=1474','In the spotlight'),
@@ -596,10 +596,10 @@ VALUES
 	(49,'Nils','Pantalon Hommes','FJALLRAVEN_NILS_3381c20001_3030_01.jpg','/fjaellraeven-pantalon-nils-3341c22001?id_colour=1438',''),
 	(50,'Kanken','Sac &agrave; Dos','FJALLRAVEN_KANKEN_2111A80038_4020.jpg','/fjaellraeven-sac-a-dos-kanken-2111a80038?id_colour=1594','&Agrave; partir de'),
 	(51,'Checkmate','Chemise Gar&ccedil;ons','SOMEONE_CHECKMATE_4132.jpg','/someone-chemise-checkmate-5331d52026?id_colour=2287',''),
-	(52,'Funny Bunny','Pull Filles','SOMEONE_FUNNY-BUNNY_1111.jpg','/someone-pull-funny-bunny-5244d52014?id_colour=346',''),
+	(52,'Funny Bunny','Pull Filles','SOMEONE_FUNNY-BUNNY_1111.jpg','/index.cfm/fuseaction/products.search/?searchvalue=funny+bunny',''),
 	(53,'Antonius Sweat Pant','Pantalon Gar&ccedil;ons','TUMBLE-\'N-DRY_ANTONIUS_7171.jpg','/tumble-n-dry-pantalon-antonius-sweat-pant-5374d52016?id_colour=4246',''),
 	(54,'Roja','Pantalon Filles','CKS_ROJA_1136.jpg','/cks-kids-pantalon-roja-5291d52031?id_colour=366',''),
-	(55,'Mr Lama','T-Shirt  Gar&ccedil;ons','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360',''),
+	(55,'Mr Lama','T-Shirt  Gar&ccedil;ons','STONESBONES_LAMA_5311D52122_5526.jpg','/stones-bones-t-shirt-mr-lama-5311d52122?id_colour=3360','&Agrave; partir de'),
 	(56,'Nara','Robe Filles','PETIT-LOUIE_NARA_4703.jpg','/petit-louie-robe-nara-cross-5261d52001?id_colour=2805',''),
 	(57,'Kids Zenon','Manteau Junior','JACK-WOLFSKIN_KIDS-ZENON_3741.jpg','/jack-wolfskin-manteau-zenon-kids-5184d42001?id_colour=1988',''),
 	(58,'Little Joe','Sac &agrave; Dos Junior','JACK-WOLFSKIN_LITLLE-JOE_2121C22002_3071.jpg','/jack-wolfskin-sac-a-dos-little-joe-2121c22002?id_colour=1474',''),
