@@ -19,7 +19,7 @@
 		<?php } ?>
 <?php	}  else {?>
 <!-- print product -->
-<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive-'.$lang.''); } if (isset($product['uitverkocht'])) { print(' sold-out-'.$lang.''); } if (isset($product['groeneprijs'])) { print(' groeneprijs-'.$lang.''); } if (isset($product['2plus1'])) { print(' t-shirts'); }?>">
+<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive-'.$lang.''); } if (isset($product['binnenkort'])) {print(' soon-'.$lang.''); } if (isset($product['uitverkocht'])) { print(' sold-out-'.$lang.''); } if (isset($product['groeneprijs'])) { print(' groeneprijs-'.$lang.''); } if (isset($product['2plus1'])) { print(' t-shirts'); }?>">
 			<?php if(isset($product['link'])) { ?><a href="<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink"> <?php } ?>
 		<img class="product-image" data-src="http://static.asadventure.com/includes/landingpage/2015_herfstfolder/images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 		<div class="bottom-container">
