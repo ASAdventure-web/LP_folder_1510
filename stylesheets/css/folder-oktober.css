@@ -479,6 +479,9 @@ img {
       max-height: 100%;
       max-width: 40%; }
 
+.content_detail_campaign {
+  padding: 4px 0 !important; }
+
 .campaign_menu_bottom .container .campaign_image {
   height: 30px;
   border-bottom: 1px solid #ddd; }
