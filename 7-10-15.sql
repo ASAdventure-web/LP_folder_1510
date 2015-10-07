@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-10-07 12:10:04 +0000
+# Generation Time: 2015-10-07 12:25:14 +0000
 # ************************************************************
 
 
@@ -398,7 +398,7 @@ VALUES
 	(76,'Tandenborstelset','','Izola','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3778','','19,95','','',NULL,NULL,NULL,57,NULL,NULL,NULL,NULL,NULL,56,'gadgets',226,NULL,NULL),
 	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,NULL),
 	(78,'Xtreme 9000','Reisoplader','Xtorm','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-oplader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','','59,95','','Slechts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,62,'gadgets',232,NULL,NULL),
-	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,NULL),
+	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','/tomtom-hartslagmeter-runner-2-music-2523d52001?id_colour=4169','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,NULL),
 	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,NULL,NULL,37,4,22,12,22,'outdoor',71,1,NULL),
 	(81,'lookbook',NULL,NULL,'lookbook1.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-haar',NULL,NULL,NULL,NULL,NULL,NULL,130,NULL,NULL,NULL,29,NULL,NULL,NULL,'outdoor',101,1,NULL),
 	(82,'lookbook',NULL,NULL,'lookbook2.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-hem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,37,NULL,NULL,NULL,'bike',186,1,NULL),
@@ -511,7 +511,7 @@ VALUES
 	(76,'Toothbrushes','Bamboo','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3778',''),
 	(77,'Cups','','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#',''),
 	(78,'Xtreme 9000','Battery Loader','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-battery-loader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','Only'),
-	(79,'Runner 2 Music','GPS-Watch','TOMTOMRUNNER2CARDIOMUSIC.jpg','',NULL),
+	(79,'Runner 2 Music','GPS-Watch','TOMTOMRUNNER2CARDIOMUSIC.jpg','/tomtom-heart-rate-monitor-runner-2-music-2523d52001?id_colour=4169',NULL),
 	(80,'Free delivery',NULL,'gratis_verzending_en.jpg',NULL,NULL),
 	(81,'lookbook',NULL,'lookbook1.jpg','http://www.asadventure.com/en/discover-more/-into-the-wild/fashion',NULL),
 	(82,'lookbook',NULL,'lookbook2.jpg','http://www.asadventure.com/en/discover-more/-into-the-wild/fashion',NULL),
@@ -624,7 +624,7 @@ VALUES
 	(76,'Brosses &agrave; dents en bambou','','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3700',''),
 	(77,'Coupes Voyage','','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658',''),
 	(78,'Xtreme 9000','Chargeur','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-chargeur-waterproof-xtreme-9000-2g31d42013?id_colour=5806','Seulement'),
-	(79,'Runner 2 Music','GPS-horloge','TOMTOMRUNNER2CARDIOMUSIC.jpg','',''),
+	(79,'Runner 2 Music','GPS-horloge','TOMTOMRUNNER2CARDIOMUSIC.jpg','/tomtom-cardiofrequencemetre-runner-2-music-2523d52001?id_colour=4169',''),
 	(80,'Livraison gratuite',NULL,'gratis_verzending_fr.jpg',NULL,NULL),
 	(81,'lookbook',NULL,'lookbook1.jpg','http://www.asadventure.com/befr/decouvrez-plus/-into-the-wild/pret-a-porter',NULL),
 	(82,'lookbook',NULL,'lookbook2.jpg','http://www.asadventure.com/befr/decouvrez-plus/-into-the-wild/pret-a-porter',NULL),
