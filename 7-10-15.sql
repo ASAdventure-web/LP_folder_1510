@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-10-07 12:25:14 +0000
+# Generation Time: 2015-10-07 15:22:26 +0000
 # ************************************************************
 
 
@@ -359,12 +359,12 @@ VALUES
 	(36,'Madison','Jas Dames','Jack Wolfskin','JACK-WOLFSKIN_MADISON_3153D52011_4141.jpg','/jack-wolfskin-jas-madison-3153d52011?id_colour=2296','119,95','69','#414C66','',NULL,NULL,142,NULL,NULL,NULL,141,NULL,NULL,NULL,'outdoor',140,NULL,NULL),
 	(37,'Madison','Jas Heren','Jack Wolfskin','JACK-WOLFSKIN_MADISON_3353D52013_7171.jpg','/jack-wolfskin-jas-madison-3353d52013?id_colour=4246','119,95','69','#5E555A','',NULL,NULL,NULL,135,NULL,NULL,144,NULL,NULL,NULL,'outdoor',109,NULL,NULL),
 	(38,'Peridot','Fleece Dames','Jack Wolfskin','JACK-WOLFSKIN_PERIDOT_3124D52010_3232.jpg','/jack-wolfskin-fleece-peridot-3124d52010?id_colour=1594','99,95','59','#BD283F #A0A8AB','',NULL,NULL,146,NULL,NULL,NULL,147,NULL,NULL,NULL,'outdoor',112,NULL,NULL),
-	(39,'Caribou','Fleece Heren','Jack Wolfskin','JACK-WOLFSKIN_CARIBOU_3324D52018_4141.jpg','/jack-wolfskin-fleece-caribou-3324d52018?id_colour=2296','99,95','59','#979CA0 #515172','',NULL,NULL,150,NULL,NULL,NULL,150,NULL,NULL,NULL,'outdoor',115,NULL,NULL),
+	(39,'Caribou','Fleece Heren','Jack Wolfskin','JACK-WOLFSKIN_CARIBOU_3324D52018_4141.jpg','/jack-wolfskin-fleece-caribou-3324d52018?id_colour=2296','99,95','59','#979CA0 #515172','',NULL,NULL,NULL,150,NULL,NULL,150,NULL,NULL,NULL,'outdoor',115,NULL,NULL),
 	(40,'Crush\'n ice','Jas Dames','Jack Wolfskin','JACK-WOLFSKIN_CRUSH-\'N-ICE_31B1D30005_4848.jpg','/jack-wolfskin-jas-crush-n-ice-3151d32005?id_colour=2842','199,95','124','#2E4F82','',NULL,NULL,152,NULL,NULL,NULL,153,NULL,NULL,NULL,'outdoor',118,NULL,NULL),
 	(41,'Stenton','Jas Heren','Jack Wolfskin','JACK-WOLFSKIN_STENTON_3351D52014_7070.jpg','/jack-wolfskin-jas-stenton-3351d52014?id_colour=4168','279,95','199','#525254','',NULL,NULL,NULL,137,NULL,NULL,156,NULL,NULL,NULL,'outdoor',121,NULL,NULL),
 	(43,'Upgrade','Heuptas','Jack Wolfskin','JACK-WOLFSKIN_UPGRADE_2361A62004_7070.jpg','/jack-wolfskin-heuptas-upgrade-2361a62004?id_colour=4168','','29,95','#3B3B3B','In de kijker',NULL,NULL,157,140,NULL,NULL,NULL,21,NULL,NULL,'outdoor',127,NULL,NULL),
-	(44,'Palermo GTX','Gore-tex Schoen Heren','Lowa','LOWA_PALERMO-MEN_3722D52001_6060_01.jpg','/lowa-schoen-palermo-gore-tex-3722d52001?id_colour=3544','129,95','99','#523E35','',NULL,NULL,160,NULL,NULL,NULL,60,NULL,NULL,NULL,'outdoor',130,NULL,NULL),
-	(45,'Palermo GTX','Gore-tex Schoen Dames','Lowa','LOWA_PALERMO-WOMEN_3712D52001_6090_01.jpg','/lowa-schoen-palermo-gore-tex-3712d52001?id_colour=3565','129,95','99','#4E433F','',NULL,NULL,NULL,143,NULL,NULL,63,NULL,NULL,NULL,'outdoor',133,NULL,NULL),
+	(44,'Palermo GTX','Gore-tex Schoen Heren','Lowa','LOWA_PALERMO-MEN_3722D52001_6060_01.jpg','/lowa-schoen-palermo-gore-tex-3722d52001?id_colour=3544','129,95','99','#523E35','',NULL,NULL,NULL,143,NULL,NULL,60,NULL,NULL,NULL,'outdoor',130,NULL,NULL),
+	(45,'Palermo GTX','Gore-tex Schoen Dames','Lowa','LOWA_PALERMO-WOMEN_3712D52001_6090_01.jpg','/lowa-schoen-palermo-gore-tex-3712d52001?id_colour=3565','129,95','99','#4E433F','',NULL,NULL,160,NULL,NULL,NULL,63,NULL,NULL,NULL,'outdoor',133,NULL,NULL),
 	(46,'Sarek','Winterjas Dames','Fjallraven','FJALLRAVEN_SAREK_3153D42049_5454.jpg','/fjaellraeven-jas-sarek-winter-3153d42049?id_colour=3856','','399,95','#625249','In de kijker',NULL,NULL,163,NULL,NULL,NULL,366,NULL,NULL,NULL,'outdoor',52,NULL,NULL),
 	(47,'Frost','Trui Dames','Fjallraven','FJALLRAVEN_FROST_3125D12001_3040.jpg','/fjaellraeven-trui-frost-3125d12001?id_colour=1448','','159,95','#825166','In de kijker',NULL,NULL,166,NULL,NULL,NULL,369,NULL,NULL,NULL,'outdoor',139,NULL,NULL),
 	(48,'Lada','Sweater Heren','Fjallraven','FJALLRAVEN_LADA_3325D22004_7171.jpg','/fjaellraeven-trui-lada-3325d22004?id_colour=4246','','149,95','lada-grijs.jpg lada-beige.jpg','In de kijker',NULL,NULL,NULL,146,NULL,NULL,372,NULL,NULL,NULL,'outdoor',51,NULL,NULL),
@@ -399,13 +399,13 @@ VALUES
 	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,NULL),
 	(78,'Xtreme 9000','Reisoplader','Xtorm','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-oplader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','','59,95','','Slechts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,62,'gadgets',232,NULL,NULL),
 	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','/tomtom-hartslagmeter-runner-2-music-2523d52001?id_colour=4169','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,NULL),
-	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,NULL,NULL,37,4,22,12,22,'outdoor',71,1,NULL),
+	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,101,NULL,37,4,22,12,22,'outdoor',71,1,NULL),
 	(81,'lookbook',NULL,NULL,'lookbook1.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-haar',NULL,NULL,NULL,NULL,NULL,NULL,130,NULL,NULL,NULL,29,NULL,NULL,NULL,'outdoor',101,1,NULL),
-	(82,'lookbook',NULL,NULL,'lookbook2.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-hem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,37,NULL,NULL,NULL,'bike',186,1,NULL),
+	(82,'lookbook',NULL,NULL,'lookbook2.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-hem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,115,NULL,NULL,37,NULL,NULL,NULL,'bike',186,1,NULL),
 	(83,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,370,NULL,NULL,NULL,'gadgets',204,1,NULL),
 	(84,'lookbook',NULL,NULL,'lookbook3.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/junior',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60,'gadgets',228,1,NULL),
-	(85,'Jack Wolfskin',NULL,NULL,'jackwolfskin.jpg','/jack-wolfskin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,190,NULL,NULL,NULL,'outdoor',117,1,NULL),
-	(86,'Fjallraven',NULL,NULL,'fjallraven.jpg','/fjaellraeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,390,NULL,NULL,NULL,'outdoor',54,1,NULL),
+	(85,'Jack Wolfskin',NULL,NULL,'jackwolfskin.jpg','/jack-wolfskin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,141,NULL,NULL,190,NULL,NULL,NULL,'outdoor',117,1,NULL),
+	(86,'Fjallraven',NULL,NULL,'fjallraven.jpg','/fjaellraeven',NULL,NULL,NULL,NULL,NULL,NULL,170,NULL,NULL,NULL,390,NULL,NULL,NULL,'outdoor',54,1,NULL),
 	(87,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'fashion',2,1,NULL),
 	(88,'lookbook',NULL,NULL,'lookbook4.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/fashion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,NULL,NULL,NULL,NULL,'fashion',15,1,NULL),
 	(89,'Ovik Knit','Trui Dames','Fjallraven','3151d40009_6565_01.jpg','/fjaellraeven-trui-ovik-knit-dames-3125d42022?id_colour=3934',NULL,'149,95','ovik.png',NULL,NULL,NULL,161,NULL,NULL,NULL,320,NULL,NULL,NULL,'outdoor',52,NULL,NULL),
