@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-10-06 15:01:19 +0000
+# Generation Time: 2015-10-07 12:10:04 +0000
 # ************************************************************
 
 
@@ -387,7 +387,7 @@ VALUES
 	(65,'Fluid II','Broek','Vaude','VAUDEFLUIDII7745b80004707001.jpg','/index.cfm/fuseaction/products.search/?searchvalue=broek+fluid+ii','','74,95','#272B2E','In de kijker',NULL,NULL,172,210,NULL,NULL,NULL,NULL,13,NULL,'bike',193,NULL,NULL),
 	(66,'Byron','Drinkfles','Contigo','Contigo-packshot.jpg','/contigo-isolatiefles-byron-1424d52002?id_colour=2397','','24,95','','Met gratis koffie en kop ',NULL,NULL,NULL,30,NULL,NULL,NULL,NULL,NULL,26,'gadgets',196,NULL,NULL),
 	(67,'Nested','Shotglazen','Izola','IZOLAShotGlassesIMG18922.jpg','/izola-gadget-nested-shot-glasses-2h21d52008?id_colour=268','','29,95','#D82B46 #F2F1F0','',NULL,NULL,NULL,33,NULL,NULL,NULL,NULL,NULL,29,'gadgets',199,NULL,NULL),
-	(68,'Wiskey Stones','','Men\'s Society','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806','','19,95','','',NULL,NULL,NULL,36,NULL,NULL,NULL,NULL,NULL,32,'gadgets',202,NULL,NULL),
+	(68,'Whisky Stones','','Men\'s Society','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806','','19,95','','',NULL,NULL,NULL,36,NULL,NULL,NULL,NULL,NULL,32,'gadgets',202,NULL,NULL),
 	(69,'Money Clip','','Izola','IZOLA_RDAW-140522-Izola-Money-Clip-logo-living-well-1.jpg','/izola-gadget-money-clip-2h51d52003?id_colour=3778','','24,95','','',NULL,NULL,NULL,39,NULL,NULL,NULL,NULL,NULL,35,'gadgets',205,NULL,NULL),
 	(70,'Schoenlepel','','Izola','IZOLA_RDAW-140526-Izola-Shoehorn-Logo-talk-the-talk-1.jpg','/izola-gadget-shoe-horn-2h51d52004?id_colour=3778','','24,95','','',NULL,NULL,NULL,42,NULL,NULL,NULL,NULL,NULL,38,'gadgets',208,NULL,NULL),
 	(71,'Schoenenzak','','Izola','IZOLA_ShoeBag_DifShoes.jpg','/izola-gadget-shoe-bag-2h51d52005?id_colour=2296','','24,95','','',NULL,NULL,NULL,45,NULL,NULL,NULL,NULL,NULL,41,'gadgets',211,NULL,NULL),
@@ -396,9 +396,9 @@ VALUES
 	(74,'Manicureset','','Men\'s Society','MENS_SOCIETY_HANDSOME-HANDS-MANICURE-SET-2015-9.jpg','/men-s-society-gadget-handsome-hands-manicure-kit-2h51d52008?id_colour=318','','24,95','','',NULL,NULL,NULL,55,NULL,NULL,NULL,NULL,NULL,50,'gadgets',220,NULL,NULL),
 	(75,'Fenix 3','GPS-horloge','Garmin','GARMIN_FENIX-3_2452c50001_7272_01.jpg_be.jpg','/garmin-gps-fenix-3-2512c52003?id_colour=4324','','449','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,38,NULL,53,'gadgets',223,NULL,NULL),
 	(76,'Tandenborstelset','','Izola','IZOLA_Brusches_BFA_2908.jpg','/izola-gadget-bamboo-toothbrushes-2h51d52009?id_colour=3778','','19,95','','',NULL,NULL,NULL,57,NULL,NULL,NULL,NULL,NULL,56,'gadgets',226,NULL,NULL),
-	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,1),
+	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,NULL),
 	(78,'Xtreme 9000','Reisoplader','Xtorm','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-oplader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','','59,95','','Slechts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,62,'gadgets',232,NULL,NULL),
-	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,1),
+	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,NULL),
 	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,NULL,NULL,37,4,22,12,22,'outdoor',71,1,NULL),
 	(81,'lookbook',NULL,NULL,'lookbook1.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-haar',NULL,NULL,NULL,NULL,NULL,NULL,130,NULL,NULL,NULL,29,NULL,NULL,NULL,'outdoor',101,1,NULL),
 	(82,'lookbook',NULL,NULL,'lookbook2.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-hem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,37,NULL,NULL,NULL,'bike',186,1,NULL),
@@ -500,7 +500,7 @@ VALUES
 	(65,'Fluid II','Trousers Women - Men','VAUDEFLUIDII7745b80004707001.jpg','/index.cfm/fuseaction/products.search/?searchvalue=trousers+fluid+II','In the spotlight'),
 	(66,'Byron','Insulated Bottle','Contigo-packshot.jpg','/contigo-insulated-bottle-byron-1424d52002?id_colour=2397','With free coffee and mug'),
 	(67,'Nested','Shot Glasses','IZOLAShotGlassesIMG18922.jpg','/izola-gadget-nested-shot-glasses-2h21d52008?id_colour=268',''),
-	(68,'Wiskey Stones','','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806',''),
+	(68,'Whisky Stones','','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806',''),
 	(69,'Money Clip','','IZOLA_RDAW-140522-Izola-Money-Clip-logo-living-well-1.jpg','/izola-gadget-money-clip-2h51d52003?id_colour=3778',''),
 	(70,'Shoe Horn','','IZOLA_RDAW-140526-Izola-Shoehorn-Logo-talk-the-talk-1.jpg','/izola-gadget-shoe-horn-2h51d52004?id_colour=3778',''),
 	(71,'Shoe Bag','','IZOLA_ShoeBag_DifShoes.jpg','/izola-gadget-shoe-bag-2h51d52005?id_colour=2296',''),
@@ -613,7 +613,7 @@ VALUES
 	(65,'Fluid II','Pantalon Femmes - Hommes','VAUDEFLUIDII7745b80004707001.jpg','/index.cfm/fuseaction/products.search/?searchvalue=pantalon+fluid+II',''),
 	(66,'Byron','Bouteille Isotherme','Contigo-packshot.jpg','/contigo-bouteille-isotherme-byron-1424d52002?id_colour=2397','Avec caf&eacute; et tasse'),
 	(67,'Nested','Verres &agrave; liqueur','IZOLAShotGlassesIMG18922.jpg','/izola-gadget-nested-shot-glasses-2h21d52008?id_colour=268',''),
-	(68,'Wiskey Stones','','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806',''),
+	(68,'Whisky Stones','','MENS_SOCIETY_WISKEY_CUBES-2015-120-2.jpg','/men-s-society-gadget-whiskey-stones-2h21d52009?id_colour=5806',''),
 	(69,'Pince &agrave; Billets','','IZOLA_RDAW-140522-Izola-Money-Clip-logo-living-well-1.jpg','/izola-gadget-money-clip-2h51d52003?id_colour=3778',''),
 	(70,'Chausse-pied','','IZOLA_RDAW-140526-Izola-Shoehorn-Logo-talk-the-talk-1.jpg','/izola-gadget-shoe-horn-2h51d52004?id_colour=3778',''),
 	(71,'Sac &agrave; Chaussures','','IZOLA_ShoeBag_DifShoes.jpg','/izola-gadget-shoe-bag-2h51d52005?id_colour=2296',''),
