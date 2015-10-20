@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.42)
 # Database: folder
-# Generation Time: 2015-10-09 13:38:41 +0000
+# Generation Time: 2015-10-20 09:01:07 +0000
 # ************************************************************
 
 
@@ -54,18 +54,18 @@ VALUES
 	(153,'MAN_ROTSEN.jpg','','',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,50),
 	(154,'VISNETTEN.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(155,'STENEN.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
-	(156,'MAN_TREKKING.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(156,'MAN_TREKKING.jpg','','',NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(157,'MAN_FOTO.jpg','','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
-	(158,'VROUW_TREKKING.jpg',NULL,NULL,2,NULL,NULL,NULL,2,NULL,NULL,NULL,100),
+	(158,'VROUW_TREKKING.jpg',NULL,NULL,3,NULL,NULL,NULL,2,NULL,NULL,NULL,100),
 	(159,'MAN_BIJL.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,100),
-	(160,'VROUW_FASHION.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(160,'VROUW_FASHION.jpg',NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(161,'MAN_AYA.jpg',NULL,NULL,NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,40),
-	(162,'BIKE.jpg',NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,1,NULL,100),
+	(162,'BIKE.jpg',NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,1,NULL,100),
 	(163,'UITRUSTING.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(164,'UITRUSTING_BOOT.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,100),
 	(165,'MAN_FASHION.jpg',NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,20),
 	(166,'GADGETS.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,100),
-	(167,'KIND_SCHAAP.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,60),
+	(167,'KIND_SCHAAP.jpg',NULL,NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,60),
 	(168,'MANNEN_FASHION.jpg',NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,100),
 	(169,'VROUWEN_FASHION.jpg',NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,10),
 	(170,'FJALL_RAVEN.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,30),
@@ -75,9 +75,9 @@ VALUES
 	(174,'VROUW_BINNEN_FASHION.jpg',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(175,'KINDEREN.jpg',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,100),
 	(176,'MEER_BERG.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,100),
-	(177,'HUIS.jpg',NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(177,'HUIS.jpg',NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
 	(178,'LANDSCHAP.jpg',NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL,100),
-	(179,'LANDSCHAP_AUTO.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100),
+	(179,'LANDSCHAP_AUTO.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3,100),
 	(180,'MAN_HOUT.jpg',NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,100);
 
 /*!40000 ALTER TABLE `Fotos` ENABLE KEYS */;
@@ -327,20 +327,20 @@ VALUES
 	(3,'Balance','Cross Dress','King Louie','KING-LOUIE_BALANCE_4162D52032_3911.jpg','/king-louie-jurk-balance-cross-4162d52032?id_colour=2117','79,95','55','balance.jpg','',1,NULL,6,NULL,NULL,7,NULL,NULL,NULL,NULL,'fashion',7,NULL,NULL),
 	(4,'Nara','Cross Dress','King Louie','KING-LOUIE_NARA_4162D52033_4465.jpg','/king-louie-jurk-nara-cross-4162d52033?id_colour=2548','79,95','55','nara.jpg','',1,NULL,9,NULL,NULL,10,NULL,NULL,NULL,NULL,'fashion',10,NULL,NULL),
 	(5,'Flower Lurex','Cardigan Dames','King Louie','KING-LOUIE_FLOWER-LUREX_4144D52101_4444.jpg','/king-louie-cardigan-flower-lurex-4144d52101?id_colour=2530','69,95','49','#404F7F #CD1F62','',1,NULL,12,NULL,NULL,13,NULL,NULL,NULL,NULL,'fashion',13,NULL,NULL),
-	(6,'Date','Horloge','Wewood','2541d52001_6210_01_be.jpg','/wewood-horloge-date-2541d52001?id_colour=3656','','99,95','#B68A6E','In de kijker',NULL,NULL,15,1,NULL,16,NULL,NULL,NULL,1,'fashion',16,NULL,NULL),
+	(6,'Date','Horloge','Wewood','2541d52001_6210_01_be.jpg','/wewood-horloge-date-2541d52001?id_colour=3656','','99,95','#B68A6E','In de kijker',NULL,NULL,15,1,NULL,16,NULL,NULL,NULL,40,'fashion',16,NULL,NULL),
 	(7,'Bird is the word','Juwelenrekje','Kikkerland','KIKKERLAND_BIRD-IS-THE-WORD_2g31c50007_7070_01_be.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-holder-2h41c52043?id_colour=4168','','9,95',NULL,'In de kijker',NULL,NULL,17,NULL,NULL,NULL,NULL,NULL,NULL,3,'fashion',14,NULL,NULL),
 	(8,'Timmy','Jas Heren','Premium','PREMIUM_TIMMY_4355D52026_3939.jpg','/premium-jas-timmy-4355d52026?id_colour=2140','','49,99','#4B4858 #D26F6F #1E1E20','Slechts',NULL,NULL,NULL,5,NULL,30,NULL,NULL,NULL,NULL,'fashion',40,NULL,NULL),
 	(9,'Hemd','','Dstrezzed','DESTREZZED_HEMD_4331D52232_7103.jpg','/dstrezzed-hemd-300001137smu-4331d52232?id_colour=4268','79,95','49','hemd1.jpg hemd2.jpg','',NULL,NULL,NULL,7,NULL,23,NULL,NULL,NULL,NULL,'fashion',25,NULL,NULL),
 	(10,'Trui','Heren','Blend','BLEND_TRUI_4349D52042_4110.jpg','/blend-trui-20700314-4349d52042?id_colour=2270','69,95','49','sneeuw.jpg','',NULL,NULL,NULL,10,NULL,25,NULL,NULL,NULL,NULL,'fashion',28,NULL,NULL),
 	(11,'Tri','Jacket Dames','Ichi','ICHI_TRI_4153D52055_4151.jpg','/ichi-jas-tri-4153d52055?id_colour=2306','149','99','ichiruit1.jpg ichiruit2.jpg','',1,NULL,20,NULL,NULL,5,NULL,NULL,NULL,NULL,'fashion',5,NULL,NULL),
-	(12,'Greenland No 1','Donsjas Heren','Fjallraven','FJALLRAVEN_GREENLAND_33A2D40010_4142.jpg','/fjaellraeven-jas-greenland-no-1-down-3352d42051?id_colour=2297','','499,95','more-colors.jpg greenland.jpg greenland2.jpg greenland3.jpg greenland4.jpg','',NULL,NULL,NULL,100,NULL,29,301,NULL,NULL,NULL,'outdoor',34,NULL,NULL),
-	(13,'Portefeuille','','Camel Active','CAMEL-ACTIVE-BAGS_PORTEFEUILLE_2392c52011_6161_02_be.jpg','/camel-active-bags-portefeuille-165703-2392c52011?id_colour=3622','49,95','25','#50423F #845139','',NULL,NULL,NULL,15,NULL,32,NULL,NULL,NULL,5,'fashion',37,NULL,NULL),
+	(12,'Greenland No 1','Donsjas Heren','Fjallraven','FJALLRAVEN_GREENLAND_33A2D40010_4142.jpg','/fjaellraeven-jas-greenland-no-1-down-3352d42051?id_colour=2297','','499,95','more-colors.jpg greenland.jpg greenland2.jpg greenland3.jpg greenland4.jpg','',NULL,NULL,NULL,160,NULL,29,301,NULL,NULL,NULL,'outdoor',34,NULL,NULL),
+	(13,'Portefeuille','','Camel Active','CAMEL-ACTIVE-BAGS_PORTEFEUILLE_2392c52011_6161_02_be.jpg','/camel-active-bags-portefeuille-165703-2392c52011?id_colour=3622','49,95','25','#50423F #845139','',NULL,NULL,1,15,NULL,32,NULL,NULL,NULL,5,'fashion',37,NULL,NULL),
 	(15,'Borealis Classic ','Dagrugzak','The North Face','THENORTHFACEborealis2111D500147253.jpg','/the-north-face-dagrugzak-borealis-classic-2111d50014?id_colour=4310','79,95','59','#322B32 borblauw.jpg','',NULL,NULL,102,120,NULL,NULL,NULL,1,NULL,NULL,'fashion',43,NULL,NULL),
 	(16,'Tilton Mid Leather Gore-Tex','Schoen Dames','Timberland','TIMBERLAND_TILTON-MID-LATHER-GTX-WOMEN_3716D52002_6235.jpg','/timberland-schoen-tilton-mid-leather-gore-tex-dames-3716d52002?id_colour=3676','119,95','85','timberdames.jpg','',NULL,NULL,105,NULL,NULL,NULL,3,NULL,NULL,NULL,'outdoor',55,NULL,NULL),
 	(17,'Mount Adams Mid Waterproof','Schoen Heren','Timberland','TIMBERLAND_MOUNT-ADAMS-MID-WATERPROOF_3726D52002_6161.jpg','/timberland-schoen-mount-adams-mid-waterproof-3726d52002?id_colour=3622','124,95','89','timberheren.jpg','',NULL,NULL,NULL,103,NULL,NULL,6,NULL,NULL,NULL,'outdoor',57,NULL,NULL),
 	(18,'Highland','Padded jas Heren','Ayacucho','AYACUCHO_HIGHLAND-PADDED_3353D52016_4747.jpg','/ayacucho-jas-highland-padded-3353d52016?id_colour=3154','','169,95','#26657E #CA4B3A #4B4F50','In de kijker',NULL,NULL,NULL,106,NULL,NULL,209,NULL,NULL,NULL,'outdoor',56,NULL,NULL),
 	(19,'Nordic Wood','Sweater Heren','Ayacucho','AYACUCHO_NORDIC-WOOD_3325D52007_7171.jpg','/ayacucho-trui-nordic-wood-3325d52007?id_colour=4246','','69,95','ayacucho-sneeuw.jpg nordic-bruin.jpg','In de kijker',NULL,NULL,NULL,107,NULL,36,212,NULL,NULL,NULL,'outdoor',98,NULL,NULL),
-	(20,'Inverno 280','Fleece Dames','Ayacucho','AYACUCHO_INVERNO-280_3124d42016_4949_02_be.jpg','/ayacucho-fleece-inverno-280-3124d42016?id_colour=2920','59,95','39','inverno.jpg','',NULL,NULL,108,NULL,NULL,NULL,215,NULL,NULL,NULL,'outdoor',48,NULL,NULL),
+	(20,'Inverno 280','Fleece Dames','Ayacucho','AYACUCHO_INVERNO-280_3124d42016_4949_02_be.jpg','/ayacucho-fleece-inverno-280-3124d42016?id_colour=2920','59,95','39','inverno.jpg invernoblauw.jpg invernozalm.jpg invernodonker.jpg','',NULL,NULL,108,NULL,NULL,NULL,215,NULL,NULL,NULL,'outdoor',48,NULL,NULL),
 	(21,'Porter 46','Travelpack','Osprey','OSPREY_PORTER-46_2221d42002_7071_01_be.jpg','/osprey-reistas-porter-46-2221d42002?id_colour=4169','109,95','75','#3A3635','',NULL,NULL,111,110,NULL,NULL,NULL,3,NULL,NULL,'outdoor',50,NULL,NULL),
 	(22,'Stowaway','Coat Dames','Ayacucho','AYACUCHO_STOWAWAY-COAT_3157d52001_7303_01_be.jpg','/index.cfm/fuseaction/products.search/?searchvalue=ayacucho+jas+stowaway','','74,95','stow1.jpg stow2.jpg','In de kijker',NULL,NULL,115,NULL,NULL,21,221,NULL,NULL,NULL,'outdoor',49,NULL,NULL),
 	(23,'Mojave','Rugzak 28l','Ayacucho','AYACUCHO_MOJAVE-28-II_1212c10002_7070_02_Ver1.jpg','/ayacucho-dagrugzak-mojave-28-ii-1212c10002?id_colour=4168','64,95','39','moj.jpg','',NULL,NULL,118,113,NULL,NULL,NULL,6,NULL,NULL,'outdoor',141,NULL,NULL),
@@ -359,7 +359,7 @@ VALUES
 	(36,'Madison','Jas Dames','Jack Wolfskin','JACK-WOLFSKIN_MADISON_3153D52011_4141.jpg','/jack-wolfskin-jas-madison-3153d52011?id_colour=2296','119,95','69','#414C66','',NULL,NULL,142,NULL,NULL,NULL,141,NULL,NULL,NULL,'outdoor',140,NULL,NULL),
 	(37,'Madison','Jas Heren','Jack Wolfskin','JACK-WOLFSKIN_MADISON_3353D52013_7171.jpg','/jack-wolfskin-jas-madison-3353d52013?id_colour=4246','119,95','69','#5E555A','',NULL,NULL,NULL,135,NULL,NULL,144,NULL,NULL,NULL,'outdoor',109,NULL,NULL),
 	(38,'Peridot','Fleece Dames','Jack Wolfskin','JACK-WOLFSKIN_PERIDOT_3124D52010_3232.jpg','/jack-wolfskin-fleece-peridot-3124d52010?id_colour=1594','99,95','59','#BD283F #A0A8AB','',NULL,NULL,146,NULL,NULL,NULL,147,NULL,NULL,NULL,'outdoor',112,NULL,NULL),
-	(39,'Caribou','Fleece Heren','Jack Wolfskin','JACK-WOLFSKIN_CARIBOU_3324D52018_4141.jpg','/jack-wolfskin-fleece-caribou-3324d52018?id_colour=2296','99,95','59','#979CA0 #515172','',NULL,NULL,NULL,150,NULL,NULL,150,NULL,NULL,NULL,'outdoor',115,NULL,NULL),
+	(39,'Caribou','Fleece Heren','Jack Wolfskin','JACK-WOLFSKIN_CARIBOU_3324D52018_4141.jpg','/jack-wolfskin-fleece-caribou-3324d52018?id_colour=2296','99,95','59','#979CA0 #515172','',NULL,NULL,NULL,170,NULL,NULL,150,NULL,NULL,NULL,'outdoor',115,NULL,NULL),
 	(40,'Crush\'n ice','Jas Dames','Jack Wolfskin','JACK-WOLFSKIN_CRUSH-\'N-ICE_31B1D30005_4848.jpg','/jack-wolfskin-jas-crush-n-ice-3151d32005?id_colour=2842','199,95','124','#2E4F82','',NULL,NULL,152,NULL,NULL,NULL,153,NULL,NULL,NULL,'outdoor',118,NULL,NULL),
 	(41,'Stenton','Jas Heren','Jack Wolfskin','JACK-WOLFSKIN_STENTON_3351D52014_7070.jpg','/jack-wolfskin-jas-stenton-3351d52014?id_colour=4168','279,95','199','#525254','',NULL,NULL,NULL,137,NULL,NULL,156,NULL,NULL,NULL,'outdoor',121,NULL,NULL),
 	(43,'Upgrade','Heuptas','Jack Wolfskin','JACK-WOLFSKIN_UPGRADE_2361A62004_7070.jpg','/jack-wolfskin-heuptas-upgrade-2361a62004?id_colour=4168','','29,95','#3B3B3B','In de kijker',NULL,NULL,157,140,NULL,NULL,NULL,21,NULL,NULL,'outdoor',127,NULL,NULL),
@@ -399,18 +399,25 @@ VALUES
 	(77,'Bekers','','Izola','IZOLA_3203_TravelCup_Canoe.jpg','/izola-gadget-travel-cups-2h51d52010?id_colour=658#','','19,95','','',NULL,NULL,NULL,60,NULL,NULL,NULL,NULL,NULL,59,'gadgets',229,NULL,NULL),
 	(78,'Xtreme 9000','Reisoplader','Xtorm','XTORM_XTREME-9000_2b31d40016_0101_03_be.jpg','/xtorm-oplader-waterproof-xtreme-9000-2g31d42013?id_colour=5806','','59,95','','Slechts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,62,'gadgets',232,NULL,NULL),
 	(79,'Runner 2 Music','GPS-horloge','TomTom','TOMTOMRUNNER2CARDIOMUSIC.jpg','/tomtom-hartslagmeter-runner-2-music-2523d52001?id_colour=4169','','199,95','','',1,NULL,NULL,NULL,NULL,NULL,NULL,40,NULL,65,'gadgets',235,NULL,NULL),
-	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,101,NULL,37,4,22,12,22,'outdoor',72,1,NULL),
+	(80,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,101,107,NULL,37,4,22,12,22,'outdoor',72,1,NULL),
 	(81,'lookbook',NULL,NULL,'lookbook1.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-haar',NULL,NULL,NULL,NULL,NULL,NULL,130,NULL,NULL,NULL,29,NULL,NULL,NULL,'outdoor',101,1,NULL),
-	(82,'lookbook',NULL,NULL,'lookbook2.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-hem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,115,NULL,NULL,37,NULL,NULL,NULL,'bike',186,1,NULL),
+	(82,'lookbook',NULL,NULL,'lookbook2.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/outdoor-voor-hem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,118,NULL,NULL,37,NULL,NULL,100,'bike',186,1,NULL),
 	(83,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,370,NULL,NULL,NULL,'gadgets',204,1,NULL),
-	(84,'lookbook',NULL,NULL,'lookbook3.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/junior',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'gadgets',228,1,NULL),
+	(84,'lookbook',NULL,NULL,'lookbook3.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/junior',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,100,NULL,NULL,NULL,NULL,'gadgets',228,1,NULL),
 	(85,'Jack Wolfskin',NULL,NULL,'jackwolfskin.jpg','/jack-wolfskin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,141,NULL,NULL,190,NULL,NULL,NULL,'outdoor',117,1,NULL),
 	(86,'Fjallraven',NULL,NULL,'fjallraven.jpg','/fjaellraeven',NULL,NULL,NULL,NULL,NULL,NULL,170,NULL,NULL,NULL,390,NULL,NULL,NULL,'outdoor',52,1,NULL),
-	(87,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'fashion',NULL,1,NULL),
-	(88,'lookbook',NULL,NULL,'lookbook4.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/fashion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,NULL,NULL,NULL,NULL,'fashion',15,1,NULL),
+	(87,'Gratis verzending',NULL,NULL,'gratis_verzending_nl.jpg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'fashion',9,1,NULL),
+	(88,'lookbook',NULL,NULL,'lookbook4.jpg','http://www.asadventure.com/benl/ontdek-meer/-into-the-wild/fashion',NULL,NULL,NULL,NULL,NULL,NULL,25,NULL,NULL,9,NULL,NULL,NULL,NULL,'fashion',30,1,NULL),
 	(89,'Ovik Knit','Trui Dames','Fjallraven','3151d40009_6565_01.jpg','/fjaellraeven-trui-ovik-knit-dames-3125d42022?id_colour=3934',NULL,'149,95','ovik.png',NULL,NULL,NULL,161,NULL,NULL,NULL,320,NULL,NULL,NULL,'outdoor',52,NULL,NULL),
 	(90,'Sport Hiker','Heuptas','The North Face','2361d12001_7071_03_be.jpg','/the-north-face-heuptas-sport-hiker-2361d12001?id_colour=4169','74,95','49','#3E3838',NULL,NULL,NULL,117,199,NULL,NULL,NULL,1,NULL,NULL,'outdoor',10,NULL,NULL),
-	(91,'Bird is the word','Juwelenstaander','Kikkerland','s-l1600.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-stand-2H41D52010',NULL,'9,95',NULL,'In de kijker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,'fashion',13,NULL,NULL);
+	(91,'Bird is the word','Juwelenstaander','Kikkerland','s-l1600.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-stand-2H41D52010',NULL,'9,95',NULL,'In de kijker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4,'fashion',13,NULL,NULL),
+	(92,'Trui','Heren','Blend','4349D52015_7010_01.jpg','/blend-trui-703204-4349d52015','69,95','49','blend.jpg',NULL,NULL,NULL,NULL,12,NULL,26,NULL,NULL,NULL,NULL,'fashion',29,NULL,NULL),
+	(93,'Jaqeline','Blazer Dames','CKS','5414792300173_01.jpg','/cks-dames-blazer-jaqeline-4141d52011?id_colour=4131','79,99','55','jaqueline.jpg',NULL,NULL,NULL,2,NULL,NULL,2,NULL,NULL,NULL,NULL,'fashion',2,NULL,NULL),
+	(94,'Tinju','Jas Dames','Ichi','5712431905506_01.jpg','/ichi-jas-tinju-4153d52024?id_colour=346','119,95','89','#FFF',NULL,NULL,NULL,21,NULL,NULL,6,NULL,NULL,NULL,NULL,'fashion',6,NULL,NULL),
+	(95,'Tulip','Cross Dress','King Louie','2009005881339_01.jpg','/king-louie-jurk-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731','89,95','65','tullip.jpg',NULL,NULL,NULL,8,NULL,NULL,8,NULL,NULL,NULL,NULL,'fashion',8,NULL,NULL),
+	(96,'Trifold','Portefeuille','Camel Active','2392d52010_7070_04_be.jpg','/camel-active-bags-portefeuille-trifold-2392d52010?id_colour=4168','49,95','25','#3C3A3D',NULL,NULL,NULL,20,1,NULL,10,NULL,NULL,NULL,10,'fashion',10,NULL,NULL),
+	(97,'Safino','Portefeuille','Camel Active','2392d52012.jpg','/camel-active-bags-portefeuille-safino-2392d52012?id_colour=3622','49,95','25','#43291B',NULL,NULL,NULL,15,7,NULL,20,NULL,NULL,NULL,20,'fashion',10,NULL,NULL),
+	(98,'194703','Portefeuille','Camel Active','2392d52010.jpg','/camel-active-bags-portefeuille-194703-2392d52011?id_colour=4168','55,95','25','#362E2B',NULL,NULL,NULL,50,18,NULL,29,NULL,NULL,NULL,30,'fashion',10,NULL,NULL);
 
 /*!40000 ALTER TABLE `Products` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -524,7 +531,11 @@ VALUES
 	(88,'lookbook',NULL,'lookbook4.jpg','http://www.asadventure.com/en/discover-more/-into-the-wild/fashion',NULL),
 	(89,'Ovik Knit','Pull Women','3151d40009_6565_01.jpg','/fjaellraeven-pullover-ovik-knit-women-3125d42022?id_colour=3934',NULL),
 	(90,'Sport Hiker','Hip Bag','2361d12001_7071_03_be.jpg','/the-north-face-hip-bag-sport-hiker-2361d12001?id_colour=4169',NULL),
-	(91,'Bird is the word','Jewelry Stand','s-l1600.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-stand-2H41D52010',NULL);
+	(91,'Bird is the word','Jewelry Stand','s-l1600.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-stand-2H41D52010',NULL),
+	(92,'Pullover','Men','4349D52015_7010_01.jpg','/blend-pullover-703204-4349d52015?id_colour=4118',NULL),
+	(93,'Jaqeline','Blazer Women','5414792300173_01.jpg','/cks-women-blazer-jaqeline-4141d52011?id_colour=4131',NULL),
+	(94,'Tinju','Coat Women','5712431905506_01.jpg','/ichi-coat-tinju-4153D52024',NULL),
+	(95,'Tulip','Dress Cross','2009005881339_01.jpg','/king-louie-dress-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731',NULL);
 
 /*!40000 ALTER TABLE `Products_en` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -638,7 +649,11 @@ VALUES
 	(88,'lookbook',NULL,'lookbook4.jpg','http://www.asadventure.com/befr/decouvrez-plus/-into-the-wild/pret-a-porter',NULL),
 	(89,'Ovik Knit','Pull Femmes','3151d40009_6565_01.jpg','/fjaellraeven-pull-ovik-knit-femmes-3125d42022?id_colour=3934',NULL),
 	(90,'Sport Hiker','Sac Banane','2361d12001_7071_03_be.jpg','/the-north-face-sac-banane-sport-hiker-2361d12001?id_colour=4169',NULL),
-	(91,'Bird is the word','Jewelry Stand','s-l1600.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-stand-2h41d52010?id_colour=4168',NULL);
+	(91,'Bird is the word','Jewelry Stand','s-l1600.jpg','/kikkerland-gadget-bird-is-the-word-jewelry-stand-2h41d52010?id_colour=4168',NULL),
+	(92,'Pull','Hommes','4349D52015_7010_01.jpg','/blend-pull-703204-4349d52015?id_colour=4118',NULL),
+	(93,'Jaqeline','Blazer Femmes','5414792300173_01.jpg','/cks-femmes-blazer-jaqeline-4141d52011?id_colour=4131',NULL),
+	(94,'Tinju','Manteau Femmes','5712431905506_01.jpg','/ichi-manteau-tinju-4153d52024?id_colour=346',NULL),
+	(95,'Tulip','Robe Cross','2009005881339_01.jpg','/king-louie-robe-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731',NULL);
 
 /*!40000 ALTER TABLE `Products_fr` ENABLE KEYS */;
 UNLOCK TABLES;
