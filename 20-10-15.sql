@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.42)
 # Database: folder
-# Generation Time: 2015-10-20 09:01:07 +0000
+# Generation Time: 2015-10-20 09:46:18 +0000
 # ************************************************************
 
 
@@ -535,7 +535,10 @@ VALUES
 	(92,'Pullover','Men','4349D52015_7010_01.jpg','/blend-pullover-703204-4349d52015?id_colour=4118',NULL),
 	(93,'Jaqeline','Blazer Women','5414792300173_01.jpg','/cks-women-blazer-jaqeline-4141d52011?id_colour=4131',NULL),
 	(94,'Tinju','Coat Women','5712431905506_01.jpg','/ichi-coat-tinju-4153D52024',NULL),
-	(95,'Tulip','Dress Cross','2009005881339_01.jpg','/king-louie-dress-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731',NULL);
+	(95,'Tulip','Dress Cross','2009005881339_01.jpg','/king-louie-dress-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731',NULL),
+	(96,'Trifold','Wallet','2392d52010_7070_04_be.jpg','/camel-active-bags-wallet-trifold-2392d52010?id_colour=4168',NULL),
+	(97,'Safino','Wallet','2392d52012.jpg','/camel-active-bags-wallet-safino-2392d52012?id_colour=3622',NULL),
+	(98,'194703','Wallet','2392d52010.jpg','/camel-active-bags-wallet-194703-2392d52011?id_colour=4168',NULL);
 
 /*!40000 ALTER TABLE `Products_en` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -653,7 +656,10 @@ VALUES
 	(92,'Pull','Hommes','4349D52015_7010_01.jpg','/blend-pull-703204-4349d52015?id_colour=4118',NULL),
 	(93,'Jaqeline','Blazer Femmes','5414792300173_01.jpg','/cks-femmes-blazer-jaqeline-4141d52011?id_colour=4131',NULL),
 	(94,'Tinju','Manteau Femmes','5712431905506_01.jpg','/ichi-manteau-tinju-4153d52024?id_colour=346',NULL),
-	(95,'Tulip','Robe Cross','2009005881339_01.jpg','/king-louie-robe-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731',NULL);
+	(95,'Tulip','Robe Cross','2009005881339_01.jpg','/king-louie-robe-cross-tulip-long-sleeves-yoru-4161d52033?id_colour=2731',NULL),
+	(96,'Trifold','Portefeuille','2392d52010_7070_04_be.jpg','/camel-active-bags-portefeuille-trifold-2392d52010?id_colour=4168',NULL),
+	(97,'Safino','Portefeuille','2392d52012.jpg','/camel-active-bags-portefeuille-safino-2392d52012?id_colour=3622',NULL),
+	(98,'194703','Portefeuille','2392d52010.jpg','/camel-active-bags-portefeuille-194703-2392d52011?id_colour=4168',NULL);
 
 /*!40000 ALTER TABLE `Products_fr` ENABLE KEYS */;
 UNLOCK TABLES;
