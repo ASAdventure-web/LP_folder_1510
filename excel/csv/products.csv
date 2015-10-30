@@ -1,0 +1,178 @@
+id;"productnaam";"productomschrijving";"merk";"img";"link";"oudeprijs";"nieuweprijs";"kleur";"specialeactie";exclusief;uitverkocht;dames;heren;junior;fashion;outdoor;uitrusting;fietsenlopen;gadgets;"categorie";volgorde;actie;binnenkort
+1;"Merino Hiker";"Kousen";"BRIDGEDALE";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+2;"Merino Hiker";"Kousen";"BRIDGEDALE";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+3;"Merino Hiker";"Kousen";"BRIDGEDALE";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+4;"Trailrider Texapore";"Dames schoen";"JACK WOLFSKIN";"test";"test";"89";"124,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+5;"Trailrider Texapore";"Heren schoen";"JACK WOLFSKIN";"test";"test";"89";"124,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+6;"Arco";"Fleece";"JACK WOLFSKIN";"test";"test";"39";"69,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+7;"Nordfjord";"Jas";"JACK WOLFSKIN";"test";"test";"119";"159,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+8;"Nordfjord";"Jas";"JACK WOLFSKIN";"test";"test";"119";"159,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+9;"5TH Avenue";"Jas";"JACK WOLFSKIN";"test";"test";"179";"259,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+10;"Greta";"Parka";"DIDRIKSONS";"test";"test";"199";"329,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+11;"Roverg";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+12;"Roverg";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+13;"Tevorg";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+14;"Tevorg";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+15;"Lanar";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+16;"Lanar";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+17;"Lanar";"Fleece";"REGATTA";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+18;"";"OUTDOOR GPS";"GARMIN";"test";"test";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+19;"Knitted Nordic";"Pull";"CMP";"test";"test";"79";"109,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+20;"Knitted Nordic";"Pull";"CMP";"test";"test";"79";"109,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+21;"Knitted Nordic";"Pull";"CMP";"test";"test";"79";"109,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+22;"Janna";"Sjaal";"BARTS";"test";"test";"";"34,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+23;"Janna";"Muts";"BARTS";"test";"test";"";"29,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+24;"Mike";"Muts";"BARTS";"test";"test";"";"24,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+25;"Mike";"Sjaal";"BARTS";"test";"test";"";"34,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+26;"Wine";"Cup Set";"MIZU";"test";"test";"25";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+27;"Wine";"Cup Set";"MIZU";"test";"test";"25";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+28;"Wine";"Cup Set";"MIZU";"test";"test";"25";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+29;"Wine";"Cup Set";"MIZU";"test";"test";"25";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+30;"Vuurkorf";"";"ESSCHERT";"test";"test";"";"35";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+31;"Muts";"";"CABAìA";"test";"test";"";"35";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+32;"Nordic";"Fleece print";"CMP";"test";"test";"69";"99,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+33;"Knitted Nordic";"Knitted pull FZ";"CMP";"test";"test";"99";"129,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+34;"Lurex";"Gift set girls";"BREKKA";"test";"test";"39";"64,9";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+35;"Lurex";"Gift set woman";"BREKKA";"test";"test";"49";"74,9";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+36;"Party classes XMAS";"";"DOIY";"test";"test";"";"8,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+37;"Kerstballen";"";"AYACUCHO";"test";"test";"";"14,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+38;"Kerstballen";"";"AYACUCHO";"test";"test";"";"14,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+39;"Kerstballen";"";"AYACUCHO";"test";"test";"";"14,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+40;"Kerstballen";"";"AYACUCHO";"test";"test";"";"14,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+41;"Kerstballen";"";"AYACUCHO";"test";"test";"";"14,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+42;"Kerstballen";"";"AYACUCHO";"test";"test";"";"24,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+43;"Kerstballen";"";"AYACUCHO";"test";"test";"";"24,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+44;"Fur Oorverwarmer";"";"BARTS";"test";"test";"";"19,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+45;"Chalkboard maskers";"";"DOIY";"test";"test";"";"12,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+46;"Smartphone speaker 2.0";"";"LUCKIES";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+47;"HERO4";"Silver actiecamera";"GOPRO";"test";"test";"299";"369";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+48;"HERO4";"Session actiecamera";"GOPRO";"test";"test";"";"329";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+49;"Compact 8x25 Verrekijker";"";"KITE OPTICS";"test";"test";"119";"173";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+50;"Kodiak";"Mini oplader";"OUTDOOR TECH";"test";"test";"15";"24,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+51;"Companion";"Mes";"MORA KNIVES";"test";"test";"";"12,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+52;"Companion";"Mes";"MORA KNIVES";"test";"test";"";"12,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+53;"Companion";"Mes";"MORA KNIVES";"test";"test";"";"12,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+54;"T2 ";"Zaklamp";"LED LENSER";"test";"test";"35";"49,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+55;"Shot flask";"";"KIKKERLAND";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+56;"Rev";"Multitool";"LEATHERMAN";"test";"test";"39";"49,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+57;"Tikka = hoofdlamp";"";"PETZL";"test";"test";"29";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+58;"Ambit 3 peak Nepal";"Limited edition sporthorloge";"SUUNTO";"test";"test";"";"349";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+59;"Sokken";"";"BEN SHERMAN";"test";"test";"";"25";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+60;"Sokken";"";"BEN SHERMAN";"test";"test";"";"25";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+61;"Hemd";"";"DSTREZZED";"test";"test";"49";"79,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+62;"Hemd";"";"DSTREZZED";"test";"test";"49";"79,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+63;"Handschoenen";"";"PME LEGEND";"test";"test";"49";"69,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+64;"Pet";"";"STETSON";"test";"test";"";"59";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+65;"";"ACTIE MINI WIN FOR LIFE";"BONGO";"test";"test";"";"49,9";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+66;"Toilettas";"";"CAMEL ACTIVE BAGS";"test";"test";"19";"27,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+67;"Portefeuille";"";"CAMEL ACTIVE BAGS";"test";"test";"29";"35,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+68;"Portefeuille";"";"CAMEL ACTIVE BAGS";"test";"test";"29";"35,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+69;"Sneaker lab";"Premium shoe care";"GRAM SHOES";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+70;"Metal Retro Box";"";"NIVEA";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+71;"Scratchmap";"";"CRAENEN";"test";"test";"19";"28,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+72;"Scratchmap";"";"CRAENEN";"test";"test";"19";"28,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+73;"Thermosfles + Lipton";"(nieuwe versie)";"CONTIGO";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+74;"Steely Dan Copper";"Fotokoord";"TRENDFORM";"test";"test";"";"7,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+75;"Fixie";"Pizzasnijder";"DOIY";"test";"test";"";"17,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+76;"4 Seasons double wall";"0.3L Beker";"PRIMUS";"test";"test";"";"9,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"camping";0;NULL;NULL
+77;"Spork kit";"";"LIGHT MY FIRE";"test";"test";"15";"22,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"camping";0;NULL;NULL
+78;"Clipper";"Tele 3X lens";"BLACKEYE";"test";"test";"";"99,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+79;"Clipper";"Wide angle lens";"BLACKEYE";"test";"test";"";"44,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+80;"Fisheye 180¡ smartphone lens";"";"BLACKEYE";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+81;"Full-frame fisheye lens";"";"BLACKEYE";"test";"test";"";"54,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+82;"Macro 20x smartphone lens";"";"BLACKEYE";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+83;"Wide angle + Macro 20x lens";"";"BLACKEYE";"test";"test";"";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+84;"Transloetje";"";"FATBOY";"test";"test";"";"89,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+85;"Transloetje";"";"FATBOY";"test";"test";"";"89,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+86;"Transloetje";"";"FATBOY";"test";"test";"";"89,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+87;"Transloetje";"";"FATBOY";"test";"test";"";"89,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+88;"The ultimate storage Bag";"";"PLAY&GO";"test";"test";"";"34,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+89;"The ultimate storage Bag";"";"PLAY&GO";"test";"test";"";"34,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+90;"Geschenkdoos keurkaarsen en geurstokjes";"";"LINDETREE";"test";"test";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+91;"Geschenkdoos keurkaarsen en geurstokjes";"";"LINDETREE";"test";"test";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+92;"Onesie";"";"ESKIMO";"test";"test";"59";"79,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+93;"Onesie";"";"ESKIMO";"test";"test";"39";"59";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+94;"Onesie";"";"ESKIMO";"test";"test";"39";"59";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+95;"Onesie";"";"ESKIMO";"test";"test";"29";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+96;"Pyjama";"";"CKS PYJAMA";"test";"test";"35";"49,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+97;"Pyjama";"";"CKS PYJAMA";"test";"test";"35";"49,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+98;"Star map";"(glow in the dark)";"LUCKIES";"test";"test";"";"22,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+99;"Car pyjama";"";"CLAESENS";"test";"test";"29";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+100;"Robot pyjama";"";"CLAESENS";"test";"test";"29";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"fashion";0;NULL;NULL
+101;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+102;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+103;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+104;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+105;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+106;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+107;"Assortiment Pantoffels";"";"AYACUCHO";"test";"test";"";"14,95";"";"Vanaf";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+108;"Edge 1000 Explore";"(pending name)";"GARMIN";"test";"test";"TBC";"TBC";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+109;"Escape";"Rain jacket";"CRAFT";"test";"test";"89";"139,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+110;"Kid 200";"Street fiets";"CUBE";"test";"test";"299";"385";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+111;"Kid 240";"Street fiets";"CUBE";"test";"test";"299";"429";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+112;"Kid 200";"Street fiets";"CUBE";"test";"test";"299";"385";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+113;"Kid 240";"Allroad fiets";"CUBE";"test";"test";"299";"419";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+114;"Multitool";"MT10";"BROOKS";"test";"test";"";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+115;"3 Pack sokken";"";"DE MARCHI";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+116;"Podium Big Chill";"25 Drinkfles";"CAMELBAK";"test";"test";"";"17,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+117;"Podium Big Chill";"26 Drinkfles";"CAMELBAK";"test";"test";"";"17,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+118;"Podium Big Chill";"27 Drinkfles";"CAMELBAK";"test";"test";"";"17,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+119;"Podium Chill";"21 Drinkfles";"CAMELBAK";"test";"test";"";"15,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+120;"Podium Chill";"22 Drinkfles";"CAMELBAK";"test";"test";"";"15,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+121;"Podium Chill";"23 Drinkfles";"CAMELBAK";"test";"test";"";"15,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+122;"Pop i";"Fietslicht";"KNOG";"test";"test";"";"17,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+123;"Pop i";"Fietslicht";"KNOG";"test";"test";"";"17,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+124;"Pop i";"Fietslicht";"KNOG";"test";"test";"";"17,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+125;"Pop i";"Fietslicht";"KNOG";"test";"test";"";"17,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+126;"Pop i";"Fietslicht";"KNOG";"test";"test";"";"17,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+127;"Pop i";"Fietslicht";"KNOG";"test";"test";"";"17,5";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"bike";0;NULL;NULL
+128;"Nello";"Fietsbel";"PALOMAR";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+129;"Lucetta";"Fietslicht";"PALOMAR";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+130;"Pulsar strobe";"Led lamp";"NATHAN ";"test";"test";"7";"9,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"run ";0;NULL;NULL
+131;"Pulsar strobe";"Led lamp";"NATHAN ";"test";"test";"7";"9,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"run ";0;NULL;NULL
+132;"Reflective R-Black sjaal";"";"BUFF";"test";"test";"";"21,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"run";0;NULL;NULL
+133;"Lightbender RX reflectie";"";"NATHAN";"test";"test";"";"34,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"run";0;NULL;NULL
+134;"Flag";"Kousen";"SPYDER";"test";"test";"9";"17";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+135;"Technical junior";"724 Handschoenen";"ZIENER";"test";"test";"17";"24,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+136;"Skibroek";"";"CMP";"test";"test";"";"49,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+137;"Fleece";"";"CMP";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+138;"Fleece";"";"CMP";"test";"test";"";"19,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+139;"Strudel";"Oorwarmers";"BARTS";"test";"test";"";"29,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+140;"Super Beanie";"";"BARTS";"test";"test";"";"22,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+141;"Sweet beanie";"";"BARTS";"test";"test";"";"24,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+142;"Polsberscherming";"";"SINNER";"test";"test";"";"24,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"uitrusting";0;NULL;NULL
+143;"Hooded wintertrekker";"Softshell";"SUPERDRY";"test";"test";"99,95";"99,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+144;"Windtrekker";"Softshell";"SUPERDRY";"test";"test";"99,95";"99,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+145;"Discover";"Kousen";"SPYDER";"test";"test";"12";"18";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+146;"sneeuw trail";"Gore-tex handschoenen";"REUSCH";"test";"test";"39";"59,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+147;"Gallix";"Helm";"SINNER";"test";"test";"79";"119,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+148;"Express Pocket";"100ML Onderhoud";"TOKO";"test";"test";"";"9,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+149;"3 Feet";"Low zool";"SIDAS";"test";"test";"";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+150;"4 Feet";"Mid zool";"SIDAS";"test";"test";"";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+151;"5 Feet";"High zool";"SIDAS";"test";"test";"";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"sneeuw";0;NULL;NULL
+152;"Radius";"Skimasker";"SINNER";"test";"test";"35";"59,99";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+153;"Everyday";"Scoop top";"ICEBREAKER";"test";"test";"45";"69,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+154;"Everyday";"Scoop top";"ICEBREAKER";"test";"test";"45";"69,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+155;"Everyday";"Crew";"ICEBREAKER";"test";"test";"45";"69,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+156;"Everyday";"Crew";"ICEBREAKER";"test";"test";"45";"69,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"outdoor";0;NULL;NULL
+157;"Penguin";"Slaapzak";"AYACUCHO";"test";"test";"";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"camping";0;NULL;NULL
+158;"Rolling thunder";"30\" Trolley";"THE NORTH FACE";"test";"test";"199";"259,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+159;"Heli PRO";"20L RUGZAK";"DAKINE";"test";"test";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+160;"Heli PRO";"20L RUGZAK";"DAKINE";"test";"test";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+161;"Muv micro";"Wereldstekker";"SKROSS";"test";"test";"";"24,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+162;"Pack-it ";"Specter compression cube set";"EAGLECREEK";"test";"test";"29";"44,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+163;"Cube set";"";"EAGLECREEK";"test";"test";"25";"39,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+164;"Tranzshell S";"";"EASTPAK";"test";"test";"";"159,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+165;"Tranzshell S";"";"EASTPAK";"test";"test";"";"159,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+166;"Tranzshell S";"";"EASTPAK";"test";"test";"";"159,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+167;"Tranzshell M";"";"EASTPAK";"test";"test";"";"179,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+168;"Tranzshell M";"";"EASTPAK";"test";"test";"";"179,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+169;"Tranzshell M";"";"EASTPAK";"test";"test";"";"179,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+170;"Tranzshell L";"";"EASTPAK";"test";"test";"";"199,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+171;"Tranzshell L";"";"EASTPAK";"test";"test";"";"199,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+172;"Tranzshell L";"";"EASTPAK";"test";"test";"";"199,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+173;"Here";"Small";"PALOMAR";"test";"test";"";"24,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+174;"Pacific 780";"";"THULE";"test";"test";"289";"369,95";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"reizen";0;NULL;NULL
+175;"";"";"";"";"";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"";NULL;NULL;NULL
+176;"";"";"";"";"";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"";NULL;NULL;NULL
+177;"";"";"";"";"";"";"";"";"";NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;"";NULL;NULL;NULL
